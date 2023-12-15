@@ -6,3 +6,4 @@ Repositório para práticas da trilha de Python para o Programa de Residência e
 ## Equipe
  - Everaldina Guimaraes Barbosa (egbarbosa.cic@uesc.br)
  - Ian Robert Luz Pinheiro (irlpinheiro.ege@uesc.br)
+ - Vinicius Lima da Silva (vlsilva.ege@uesc.br)
