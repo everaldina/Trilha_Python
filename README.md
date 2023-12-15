@@ -8,3 +8,4 @@ Repositório para práticas da trilha de Python para o Programa de Residência e
  - Ian Robert Luz Pinheiro (irlpinheiro.ege@uesc.br)
  - Vinicius Lima da Silva (vlsilva.ege@uesc.br)
  - Marcos Vinícius Tavares Gomes (mvtgomes.ege@uesc.br)
+ - João Manoel Almeida Olivera (jmaoliveira.cic@uesc.br)
