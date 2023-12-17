@@ -1,39 +1,44 @@
 from datafruta import AnaliseDados
 
-class ListaNomes(AnaliseDados):
-    
+class ListaSalarios(AnaliseDados):
+
     def __init__(self):
-        super().__init__(type("String"))
+        super().__init__(type(float))
         self.__lista = []        
 
     @property
     def lista(self):
         return self.__lista
     
-
     def entradaDeDados(self):
         '''
         Este método pergunta ao usuários quantos
         elementos vão existir na lista e depois
-        solicita a digitação de cada um deles.
+        solicita a digitação de cada um deles
         '''
-        print("------------------Entrada de nomes------------------")
+        print("------------------Entrada de Salarios------------------")
+        # Pergunta a quantidade de elementos e verifica se é um número inteiro
         try:
-            qtde = int(input("Quantidade de nomes a serem incluidos: "))
-
-            if qtde < 0:
-                raise ValueError("Quantidade inválida de nomes.")
+            qnt = int(input("Quantidade de elementos na lista de salarios: "))
         except Exception:
-            print("Quantidade inválida de nomes.")
+            print("Quantidade inválida de elementos")
             return
-
-        for i in range(qtde):
-            try:
-                nome = input(f"Digite o nome {i+1}: ")
-                self.__lista.append(nome)
-            except Exception:
-                print("Nome inválido.")
-                i -= 1
+        
+        for i in range(qnt):
+            salario = 0
+            invalido = True
+            while invalido:
+                try:
+                    salario = float(input("Digite o valor do salario: "))
+                except:
+                    print("Valor inválido.")
+                
+                if salario < 0:
+                    print("Salario não pode ser nagativo")
+                else:
+                    self.__lista.append(salario)
+                    print("Salario adicionado com sucesso!!")
+                    invalido = False        
 
     def mostraMediana(self):
         '''
@@ -41,70 +46,57 @@ class ListaNomes(AnaliseDados):
         elemento que está na metade da lista
         '''
         if len(self.__lista) == 0:
-            print("Lista de datas vazia.")
+            print("Lista de salarios vazia.")
+            return
+        ordenados = sorted(self.__lista)
+        tamanho = len(self.__lista)
+        mediana = -1
+        if tamanho % 2 == 0:
+            mediana1 = ordenados[(tamanho // 2) - 1]
+            mediana2 = ordenados[tamanho // 2]
+            mediana = (mediana1 + mediana2) / 2
         else:
-            listaOrdenada = sorted(self.__lista)
+            mediana = ordenados[tamanho // 2]
 
-            tam = len(listaOrdenada)
-
-            if tam <= 0:
-                print("Lista de nomes vazia.")
-                return
-
-            if tam % 2 == 0:
-                mediana = listaOrdenada[(tam // 2) - 1]
-            else:
-                mediana = listaOrdenada[(tam // 2)]
-
-            print("Mediana de nomes: ", mediana)
+        print("Mediana de salarios: ", mediana)
 
     def mostraMenor(self):
         '''
         Este método retorna o menos elemento da lista
         '''
         if len(self.__lista) == 0:
-            print("Lista de nomes vazia.")
-        else:
-            menor = self.__lista[0]
-
-            for nome in self.__lista:
-                if nome < menor:
-                    menor = nome
-            
-            print("Menor nome: ", menor)
+            print("Lista de salarios vazia.")
+            return
+        ordenada = sorted(self.__lista)
+        menor = ordenada[0]
+        print("Menor salario: ", menor)
 
     def mostraMaior(self):
         '''
         Este método retorna o maior elemento da lista
         '''
         if len(self.__lista) == 0:
-            print("Lista de nomes vazia.")
-        else:
-            maior = self.__lista[0]
-
-            for nome in self.__lista:
-                if nome > maior:
-                    maior = nome
-            
-            print("Maior nome: ", maior)
-
+            print("Lista de salarios vazia.")
+            return
+        ordenada = sorted(self.__lista)
+        maior = ordenada[-1]
+        print("Maior salario: ", maior)
+    
     def __str__(self):
-        strLista = "--------Lista de Nomes--------\n"
-
-        for nome in self.__lista:
-            strLista += nome + "\n"
-        
+        strLista = "--------Lista de Salarios--------\n"
+        for salario in self.__lista:
+            strLista += str(salario) + "\n"
         return strLista
     
     def listarEmOrdem(self):
         if len(self.__lista) == 0:
-            print("Lista de nomes vazia.")
+            print("Lista de salarios vazia.")
         else:
             listaOrdenada = sorted(self.__lista)
 
-            print("--------Lista ordenada de Nomes--------")
-            for nome in listaOrdenada:
-                print(nome)
+            print("--------Lista ordenada de Salarios--------")
+            for salario in listaOrdenada:
+                print(salario)
 
-    def add(self, nome):
-        self.__lista.append(nome)
+    def add(self, salario):
+        self.__lista.append(salario)
