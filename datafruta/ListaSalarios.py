@@ -68,14 +68,8 @@ class ListaSalarios(AnaliseDados):
         '''
         if len(self.__lista) == 0:
             return None
-        
-        menor = self.__lista[0]
-
-        for i in self.__lista:
-            if i < menor:
-                menor = i
-        
-        return menor
+        else:
+            return min(self.__lista)
 
     def mostraMaior(self):
         '''
@@ -83,14 +77,8 @@ class ListaSalarios(AnaliseDados):
         '''
         if len(self.__lista) == 0:
             return None
-        
-        maior = self.__lista[0]
-
-        for i in self.__lista:
-            if i > maior:
-                maior = i
-        
-        return maior
+        else:
+            return max(self.__lista)
     
     def __str__(self):
         strLista = "--------Lista de Salarios--------\n"
