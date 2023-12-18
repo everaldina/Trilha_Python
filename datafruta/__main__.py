@@ -2,6 +2,7 @@ from datafruta import ListaIdades
 from datafruta import ListaNomes
 from datafruta import ListaSalarios
 from datafruta import ListaDatas
+from datafruta import Data
 
 def menu():
     nomes = ListaNomes()
@@ -74,7 +75,7 @@ def menu():
         elif opcao == 7:
             print()
             filtrarDatas(datas)
-        elif opcao == 8:
+        elif opcao == 0:
             break
 
         print()

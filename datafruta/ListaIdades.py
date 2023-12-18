@@ -8,8 +8,11 @@ class ListaIdades(AnaliseDados):
     
     @property
     def lista(self):
-        return self.__lista
+        return self.__lista.copy()
     
+    def add(self, data):
+        self.__lista.append(data)   
+
     def entradaDeDados(self):
         '''
         Este método pergunta ao usuários quantos
@@ -53,20 +56,19 @@ class ListaIdades(AnaliseDados):
         '''
 
         if len(self.__lista) == 0:
-            print("A lista esta vazia")
-            return
+            return None
         
         listaAuxiliar = self.__lista.copy()
         listaAuxiliar.sort()
         tamanho = len(listaAuxiliar)
-        mediana = 0;
+        mediana = 0
 
         if tamanho % 2 == 0:
             mediana = (listaAuxiliar[tamanho//2] + listaAuxiliar[(tamanho//2) - 1]) / 2
         else:
             mediana = listaAuxiliar[tamanho//2]
 
-        print("Mediana de idades: ", mediana)    
+        return mediana  
     
     def mostraMenor(self):
         '''
@@ -74,8 +76,7 @@ class ListaIdades(AnaliseDados):
         '''
 
         if len(self.__lista) == 0:
-            print("A lista esta vazia")
-            return
+            return None
         
         menor = self.__lista[0]
 
@@ -83,7 +84,7 @@ class ListaIdades(AnaliseDados):
             if i < menor:
                 menor = i
 
-        print("Menor idade: ", menor)
+        return menor
     
     def mostraMaior(self):
         '''
@@ -91,8 +92,7 @@ class ListaIdades(AnaliseDados):
         '''
 
         if len(self.__lista) == 0:
-            print("A lista esta vazia")
-            return
+            return None
         
         maior = self.__lista[0]
 
@@ -100,7 +100,7 @@ class ListaIdades(AnaliseDados):
             if i > maior:
                 maior = i
 
-        print("Maior idade ", maior)
+        return maior
 
     def __str__(self):
         strLista = "--------Lista de Idades--------\n"
@@ -112,13 +112,8 @@ class ListaIdades(AnaliseDados):
     
     def listarEmOrdem(self):
         if len(self.__lista) == 0:
-            print("Lista de idades vazia.")
+            return None
         else:
             listaOrdenada = sorted(self.__lista)
 
-            print("--------Lista ordenada de Idades--------")
-            for idade in listaOrdenada:
-                print(idade)
-
-    def add(self, idade):
-        self.__lista.append(idade)
+            return listaOrdenada

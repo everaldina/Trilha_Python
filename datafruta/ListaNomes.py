@@ -8,8 +8,10 @@ class ListaNomes(AnaliseDados):
 
     @property
     def lista(self):
-        return self.__lista
+        return self.__lista.copy()
     
+    def add(self, data):
+        self.__lista.append(data)
 
     def entradaDeDados(self):
         '''
@@ -41,29 +43,28 @@ class ListaNomes(AnaliseDados):
         elemento que está na metade da lista
         '''
         if len(self.__lista) == 0:
-            print("Lista de datas vazia.")
+            return None
         else:
             listaOrdenada = sorted(self.__lista)
 
             tam = len(listaOrdenada)
 
             if tam <= 0:
-                print("Lista de nomes vazia.")
-                return
+                return None
 
             if tam % 2 == 0:
                 mediana = listaOrdenada[(tam // 2) - 1]
             else:
                 mediana = listaOrdenada[(tam // 2)]
 
-            print("Mediana de nomes: ", mediana)
+            return mediana
 
     def mostraMenor(self):
         '''
         Este método retorna o menos elemento da lista
         '''
         if len(self.__lista) == 0:
-            print("Lista de nomes vazia.")
+            return None
         else:
             menor = self.__lista[0]
 
@@ -71,14 +72,14 @@ class ListaNomes(AnaliseDados):
                 if nome < menor:
                     menor = nome
             
-            print("Menor nome: ", menor)
+            return menor
 
     def mostraMaior(self):
         '''
         Este método retorna o maior elemento da lista
         '''
         if len(self.__lista) == 0:
-            print("Lista de nomes vazia.")
+            return None
         else:
             maior = self.__lista[0]
 
@@ -86,7 +87,7 @@ class ListaNomes(AnaliseDados):
                 if nome > maior:
                     maior = nome
             
-            print("Maior nome: ", maior)
+            return maior
 
     def __str__(self):
         strLista = "--------Lista de Nomes--------\n"
@@ -98,13 +99,8 @@ class ListaNomes(AnaliseDados):
     
     def listarEmOrdem(self):
         if len(self.__lista) == 0:
-            print("Lista de nomes vazia.")
+            return None
         else:
             listaOrdenada = sorted(self.__lista)
 
-            print("--------Lista ordenada de Nomes--------")
-            for nome in listaOrdenada:
-                print(nome)
-
-    def add(self, nome):
-        self.__lista.append(nome)
+            return listaOrdenada

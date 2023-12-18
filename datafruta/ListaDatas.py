@@ -9,7 +9,10 @@ class ListaDatas(AnaliseDados):
     
     @property
     def lista(self):
-        return self.__lista      
+        return self.__lista.copy()
+
+    def add(self, data):
+        self.__lista.append(data)   
     
     def entradaDeDados(self):
         '''
@@ -56,41 +59,44 @@ class ListaDatas(AnaliseDados):
         '''
         
         if len(self.__lista) == 0:
-            print("Lista de datas vazia.")
+            return None
         else:
             lista_ordenada = sorted(self.__lista)
             tamanho = len(self.__lista)
+
             if len(self.__lista) % 2 == 0:
                 mediana =  lista_ordenada[(tamanho // 2)-1]
             else:
                 mediana =  lista_ordenada[tamanho // 2]
-            print("Mediana de datas: ", mediana)
+            
+            return mediana
      
     def mostraMenor(self):
         '''
         Este método retorna o menos elemento da lista
         '''
         if len(self.__lista) == 0:
-            print("Lista de datas vazia.")
+            return None
         else:
             menor = self.__lista[0]
             for data in self.__lista:
                 if data < menor:
                     menor = data
-            print("Menor data: ", menor)
+            
+            return menor
     
     def mostraMaior(self):
         '''
         Este método retorna o maior elemento da lista
         '''
         if len(self.__lista) == 0:
-            print("Lista de datas vazia.")
+            return None
         else:
             maior = self.__lista[0]
             for data in self.__lista:
                 if data > maior:
                     maior = data
-            print("Maior data: ", maior)
+            return maior
     
     def __str__(self):
         strLista = "--------Lista ordenada de Datas--------\n"
@@ -110,13 +116,8 @@ class ListaDatas(AnaliseDados):
             implementar um algoritmo de ordenação.
         '''
         if len(self.__lista) == 0:
-            print("Lista de datas vazia.")
+            return None
         else:
             listaOrdenada = sorted(self.__lista)
 
-            print("--------Lista de Datas--------")
-            for data in listaOrdenada:
-                print(data)
-
-    def add(self, data):
-        self.__lista.append(data)
+            return listaOrdenada

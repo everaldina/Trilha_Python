@@ -8,7 +8,10 @@ class ListaSalarios(AnaliseDados):
 
     @property
     def lista(self):
-        return self.__lista
+        return self.__lista.copy()
+    
+    def add(self, data):
+        self.__lista.append(data)
     
     def entradaDeDados(self):
         '''
@@ -46,8 +49,7 @@ class ListaSalarios(AnaliseDados):
         elemento que está na metade da lista
         '''
         if len(self.__lista) == 0:
-            print("Lista de salarios vazia.")
-            return
+            return None
         ordenados = sorted(self.__lista)
         tamanho = len(self.__lista)
         mediana = -1
@@ -58,29 +60,37 @@ class ListaSalarios(AnaliseDados):
         else:
             mediana = ordenados[tamanho // 2]
 
-        print("Mediana de salarios: ", mediana)
+        return mediana
 
     def mostraMenor(self):
         '''
         Este método retorna o menos elemento da lista
         '''
         if len(self.__lista) == 0:
-            print("Lista de salarios vazia.")
-            return
-        ordenada = sorted(self.__lista)
-        menor = ordenada[0]
-        print("Menor salario: ", menor)
+            return None
+        
+        menor = self.__lista[0]
+
+        for i in self.__lista:
+            if i < menor:
+                menor = i
+        
+        return menor
 
     def mostraMaior(self):
         '''
         Este método retorna o maior elemento da lista
         '''
         if len(self.__lista) == 0:
-            print("Lista de salarios vazia.")
-            return
-        ordenada = sorted(self.__lista)
-        maior = ordenada[-1]
-        print("Maior salario: ", maior)
+            return None
+        
+        maior = self.__lista[0]
+
+        for i in self.__lista:
+            if i > maior:
+                maior = i
+        
+        return maior
     
     def __str__(self):
         strLista = "--------Lista de Salarios--------\n"
@@ -90,13 +100,8 @@ class ListaSalarios(AnaliseDados):
     
     def listarEmOrdem(self):
         if len(self.__lista) == 0:
-            print("Lista de salarios vazia.")
+            return None
         else:
             listaOrdenada = sorted(self.__lista)
 
-            print("--------Lista ordenada de Salarios--------")
-            for salario in listaOrdenada:
-                print(salario)
-
-    def add(self, salario):
-        self.__lista.append(salario)
+            return listaOrdenada
