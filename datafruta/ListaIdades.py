@@ -1,10 +1,11 @@
 from datafruta import AnaliseDados
+import random
 
 class ListaIdades(AnaliseDados):
     
-    def __init__(self):
+    def __init__(self, lista = []):
         super().__init__(type(int))
-        self.__lista = []        
+        self.__lista = lista.copy()      
     
     @property
     def lista(self):
@@ -12,6 +13,11 @@ class ListaIdades(AnaliseDados):
     
     def add(self, data):
         self.__lista.append(data)   
+        
+    @classmethod
+    def geraListaIdades(cls, n, iMin=18, iMax=65):
+        idades_geradas = [random.randint(iMin, iMax) for _ in range(n)]
+        return cls(idades_geradas)
 
     def entradaDeDados(self):
         '''

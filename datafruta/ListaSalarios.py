@@ -1,10 +1,11 @@
 from datafruta import AnaliseDados
+import random
 
 class ListaSalarios(AnaliseDados):
 
-    def __init__(self):
+    def __init__(self, lista = []):
         super().__init__(type(float))
-        self.__lista = []        
+        self.__lista = lista.copy()       
 
     @property
     def lista(self):
@@ -12,6 +13,12 @@ class ListaSalarios(AnaliseDados):
     
     def add(self, data):
         self.__lista.append(data)
+    
+    @classmethod
+    def geraListaSalarios(cls, n, sMin=1000, sMax=5000):
+        salarios_gerados = [round(random.uniform(sMin, sMax), 2) for _ in range(n)]
+        
+        return cls(salarios_gerados)
     
     def entradaDeDados(self):
         '''
