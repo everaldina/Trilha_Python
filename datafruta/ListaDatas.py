@@ -78,12 +78,7 @@ class ListaDatas(AnaliseDados):
         if len(self.__lista) == 0:
             return None
         else:
-            menor = self.__lista[0]
-            for data in self.__lista:
-                if data < menor:
-                    menor = data
-            
-            return menor
+            return min(self.__lista)
     
     def mostraMaior(self):
         '''
@@ -92,11 +87,7 @@ class ListaDatas(AnaliseDados):
         if len(self.__lista) == 0:
             return None
         else:
-            maior = self.__lista[0]
-            for data in self.__lista:
-                if data > maior:
-                    maior = data
-            return maior
+            return max(self.__lista)
     
     def __str__(self):
         strLista = "--------Lista ordenada de Datas--------\n"

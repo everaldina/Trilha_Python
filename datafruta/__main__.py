@@ -18,9 +18,9 @@ def menu():
         input("Pressione enter para continuar...\n")
         lista.listarEmOrdem()
         print("___________________")
-        lista.mostraMediana()
-        lista.mostraMenor()
-        lista.mostraMaior()
+        print("Mediana: " + lista.mostraMediana())
+        print("Menor elemento: " + lista.mostraMenor())
+        print("Maior elemento: "+lista.mostraMaior())
         print("___________________")
         print("\n")
 
