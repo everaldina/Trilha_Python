@@ -2,7 +2,7 @@ from datafruta import AnaliseDados
 import random
 
 class ListaSalarios(AnaliseDados):
-
+    __salario_minimo = 1320
     def __init__(self, lista = []):
         super().__init__(type(float))
         self.__lista = lista.copy()       
@@ -11,11 +11,15 @@ class ListaSalarios(AnaliseDados):
     def lista(self):
         return self.__lista.copy()
     
+    @property
+    def salario_minimo(self):
+        return self.__salario_minimo
+    
     def add(self, data):
         self.__lista.append(data)
     
     @classmethod
-    def geraListaSalarios(cls, n, sMin=1000, sMax=5000):
+    def geraListaSalarios(cls, n, sMin=__salario_minimo, sMax=10*__salario_minimo):
         salarios_gerados = [round(random.uniform(sMin, sMax), 2) for _ in range(n)]
         
         return cls(salarios_gerados)
