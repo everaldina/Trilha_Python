@@ -64,7 +64,7 @@ class ListaSalarios(AnaliseDados):
 
     def mostraMenor(self):
         '''
-        Este método retorna o menos elemento da lista
+        Este método retorna o menor elemento da lista
         '''
         if len(self.__lista) == 0:
             return None
