@@ -1,4 +1,4 @@
-from datafruta import AnaliseDados
+from DataFruta_V1 import AnaliseDados
 
 class ListaNotas(AnaliseDados):
 
