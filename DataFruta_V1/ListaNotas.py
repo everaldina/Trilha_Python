@@ -43,7 +43,7 @@ class ListaNotas(AnaliseDados):
                     print("Nota adicionado com sucesso!!")
                     invalido = False        
 
-    def mostraMediana(self):
+    def mediana(self):
         '''
         Este método ordena a lista e mostra o
         elemento que está na metade da lista
@@ -62,7 +62,7 @@ class ListaNotas(AnaliseDados):
 
         return mediana
 
-    def mostraMenor(self):
+    def menor(self):
         '''
         Este método retorna o menor elemento da lista
         '''
@@ -77,7 +77,7 @@ class ListaNotas(AnaliseDados):
         
         return menor
 
-    def mostraMaior(self):
+    def maior(self):
         '''
         Este método retorna o maior elemento da lista
         '''
