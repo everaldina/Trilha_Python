@@ -74,3 +74,50 @@ class ListaDatas(AnaliseDados):
             listaOrdenada = sorted(self.__lista)
 
             return listaOrdenada
+    
+    def mediaAritmetica(self):
+        return None
+
+    def mediaGeometrica(self):    
+        return None
+
+    def mediaHarmonica(self):
+        return None
+
+    def medianaInferior(self):
+        if len(self.__lista) == 0:
+            return None
+        else:
+            listaOrdenada = sorted(self.__lista)
+            tamanho = len(self.__lista)
+
+            mediana_inf = listaOrdenada[tamanho // 4] if tamanho % 2 == 0 else listaOrdenada[tamanho // 4]
+            
+            return mediana_inf
+
+    def medianaSuperior(self):
+        if len(self.__lista) == 0:
+            return None
+        else:
+            listaOrdenada = sorted(self.__lista)
+            tamanho = len(self.__lista)
+
+            mediana_sup = listaOrdenada[(3 * tamanho) // 4] if tamanho % 2 == 0 else listaOrdenada[(3 * tamanho) // 4]
+            
+            return mediana_sup
+    
+    '''
+    Medidas de Espalhamento
+    '''
+
+    def desvioPadraoPopulacional(self):
+        return None
+    
+    def varianciaPopulacional(self):
+        return None
+    
+    def desvioPadraoAmostral(self):
+        return None
+    
+    def varianciaAmostral(self):
+        return None

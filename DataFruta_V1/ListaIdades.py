@@ -86,3 +86,121 @@ class ListaIdades(AnaliseDados):
             listaOrdenada = sorted(self.__lista)
 
             return listaOrdenada
+    
+    def mediaAritmetica(self):
+        if len(self.__lista) == 0:
+            return None
+        else:
+            soma = sum(self.__lista)
+            
+            media = soma / len(self.__lista)
+
+            return media
+
+    def mediaGeometrica(self):    
+        if len(self.__lista) == 0:
+            return None
+        else:
+            produto = 1
+
+            for i in self.__lista:
+                produto *= i
+            
+            media = produto ** (1 / len(self.__lista))
+
+            return media
+
+    def mediaHarmonica(self):
+        if len(self.__lista) == 0:
+            return None
+        else:
+            soma = 0
+
+            for i in self.__lista:
+                soma += 1 / i
+            
+            media = len(self.__lista) / soma
+
+            return media
+
+    def medianaInferior(self):
+        if len(self.__lista) == 0:
+            return None
+        else:
+            listaOrdenada = sorted(self.__lista)
+            tamanho = len(self.__lista)
+
+            mediana_inf = listaOrdenada[tamanho // 4] if tamanho % 2 == 0 else listaOrdenada[tamanho // 4]
+            
+            return mediana_inf
+
+    def medianaSuperior(self):
+        if len(self.__lista) == 0:
+            return None
+        else:
+            listaOrdenada = sorted(self.__lista)
+            tamanho = len(self.__lista)
+
+            mediana_sup = listaOrdenada[(3 * tamanho) // 4] if tamanho % 2 == 0 else listaOrdenada[(3 * tamanho) // 4]
+            
+            return mediana_sup
+    
+    '''
+    Medidas de Espalhamento
+    '''
+
+    def desvioPadraoPopulacional(self):
+        if len(self.__lista) == 0:
+            return None
+        else:
+            media = self.mediaAritmetica()
+            somatorio = 0
+
+            for i in self.__lista:
+                somatorio += (i - media) ** 2
+            
+            desvio = (somatorio / len(self.__lista)) ** (1/2)
+
+            return desvio
+    
+    def varianciaPopulacional(self):
+        if len(self.__lista) == 0:
+            return None
+        else:
+            media = self.mediaAritmetica()
+            somatorio = 0
+
+            for i in self.__lista:
+                somatorio += (i - media) ** 2
+            
+            variancia = somatorio / len(self.__lista)
+
+            return variancia
+    
+    def desvioPadraoAmostral(self):
+        if len(self.__lista) == 0:
+            return None
+        else:
+            media = self.mediaAritmetica()
+            somatorio = 0
+
+            for i in self.__lista:
+                somatorio += (i - media) ** 2
+            
+            desvio = (somatorio / (len(self.__lista) - 1)) ** (1/2)
+            
+            return desvio
+    
+    def varianciaAmostral(self):
+        if len(self.__lista) == 0:
+            return None
+        else:
+            media = self.mediaAritmetica()
+            somatorio = 0
+
+            for i in self.__lista:
+                somatorio += (i - media) ** 2
+            
+            variancia = somatorio / (len(self.__lista) - 1)
+            
+            return variancia
