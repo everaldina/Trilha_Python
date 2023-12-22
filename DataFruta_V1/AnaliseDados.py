@@ -21,30 +21,32 @@ class AnaliseDados(ABC):
     @abstractmethod
     def listarEmOrdem(self):
         pass
+
+    
+    #Média e medidas de valor central
     
     @abstractmethod
     def mediaAritmetica(self):
         pass
-
+    
     @abstractmethod
-    def mediaGeometrica(self):    
+    def mediaGeometrica(self):
         pass
-
+    
     @abstractmethod
     def mediaHarmonica(self):
         pass
-
+    
     @abstractmethod
     def medianaInferior(self):
         pass
-
+    
     @abstractmethod
     def medianaSuperior(self):
         pass
-    
-    '''
-    Medidas de Espalhamento
-    '''
+
+
+    #Medidas de espalhamento
 
     @abstractmethod
     def desvioPadraoPopulacional(self):

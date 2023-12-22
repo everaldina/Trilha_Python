@@ -59,7 +59,13 @@ class ListaIdades(AnaliseDados):
         if len(self.__lista) == 0:
             return None
         else:
-            return min(self.__lista)
+            menor = self.__lista[0]
+
+            for i in self.__lista:
+                if i < menor:
+                    menor = i
+
+            return menor
     
     def maior(self):
         '''
@@ -69,7 +75,13 @@ class ListaIdades(AnaliseDados):
         if len(self.__lista) == 0:
             return None
         else:
-            return max(self.__lista)
+            maior = self.__lista[0]
+
+            for i in self.__lista:
+                if i > maior:
+                    maior = i
+
+            return maior
 
     def __str__(self):
         strLista = "--------Lista de Idades--------\n"
