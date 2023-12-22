@@ -8,7 +8,7 @@ class ListaSalarios(AnaliseDados):
     def __init__(self, lista = None):
         super().__init__(type(float))
 
-        if lista == None:
+        if lista is None:
             self.__lista = np.array([], dtype='float64')
         else:
             if not isinstance(lista, np.ndarray):
@@ -34,10 +34,10 @@ class ListaSalarios(AnaliseDados):
         self.__lista = np.append(self.__lista, data)
     
     @classmethod
-    def geraListaSalarios(n, sMin=1320, sMax=10000):
+    def geraListaSalarios(cls, n, sMin=1320, sMax=10000):
         salarios_gerados = [random.uniform(sMin, sMax) for _ in range(n)]
 
-        return ListaSalarios(np.array(salarios_gerados, dtype='float64'))      
+        return cls(np.array(salarios_gerados, dtype='float64'))      
 
     def mediana(self):
         '''
