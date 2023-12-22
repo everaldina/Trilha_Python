@@ -12,6 +12,27 @@ Notebook com a resolução do problema PI-002, que consiste em testes para compr
 
 Foi criado para os testes metodos em datafruta que geram dados aleatorios para salarios e idades.
 
+## [DataFruta_V1](DataFruta/)
+Versão aprimorada do pacote datafruta, contando com novos tipos de medidas estatisticas, como:
+
+- Médias e medidas de valor central:
+    - Média aritmética dos dados
+    - Média aritmética dos dados
+    - Média geométrica dos dados
+    - Média harmônica dos dados
+    - Mediana (valor do meio) dos dados
+    - Mediana inferior dos dados
+    - Mediana superior dos dados
+- Medidas de espalhamento
+    - Desvio padrão populacional dos dados
+    - Variância populacional dos dados
+    - Desvio padrão amostral dos dados
+    - Variância amostral dos dados
+
+## [PI-003](PI-003.ipynb)
+Notebook com a resolução do problema PI-003, que consiste em testes para comprar a eficiencia de metodos estaticos de metodos implementados na classe DataFruta_V1 com metodos de arrays do numpy.
+
+
 ## Equipe
  - Everaldina Guimaraes Barbosa (egbarbosa.cic@uesc.br)
  - Ian Robert Luz Pinheiro (irlpinheiro.ege@uesc.br)
