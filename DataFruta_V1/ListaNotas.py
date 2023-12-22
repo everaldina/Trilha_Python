@@ -136,16 +136,16 @@ class ListaNotas(AnaliseDados):
         return media_geom
 
     def mediaHarmonica(self):
-            if len(self.__lista) == 0:
-                return None
+        if len(self.__lista) == 0:
+            return None
 
-            soma_reciprocos = 0
-            for elemento in self.__lista:
-                soma_reciprocos += 1 / elemento
+        soma_reciprocos = 0
+        for elemento in self.__lista:
+            soma_reciprocos += 1 / elemento
 
-            media_harm = len(self.__lista) / soma_reciprocos
+        media_harm = len(self.__lista) / soma_reciprocos
 
-            return media_harm
+        return media_harm
 
     def medianaInferior(self):
         if len(self.__lista) == 0:
