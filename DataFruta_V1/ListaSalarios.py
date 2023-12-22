@@ -105,7 +105,7 @@ class ListaSalarios(AnaliseDados):
 
             return listaOrdenada
         
-        def mediaAritmetica(self):
+    def mediaAritmetica(self):
         if len(self.__lista) == 0:
             return None
         else:
@@ -220,5 +220,5 @@ class ListaSalarios(AnaliseDados):
                 somatorio += (i - media) ** 2
             
             variancia = somatorio / (len(self.__lista) - 1)
-            
+
             return variancia
