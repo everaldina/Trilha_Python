@@ -102,20 +102,10 @@ class NotasTurma:
             i += 1
         return strNotas
     
-    def geraDados(self):
-        '''
-        Gera dados aleatórios para a turma.
-        '''
-        notas = np.random.random_sample(self.__notas.shape) * 10
+    # def geraDados(self):
+    #     '''
+    #     Gera dados aleatórios para a turma.
+    #     '''
+    #     notas = np.random.random_sample(self.__notas.shape) * 10
         
-        self.__notas = notas
-    
-def main():
-    notasTurma = NotasTurma()
-    notasTurma.geraDados()
-    
-    print(notasTurma)
-
-    
-if __name__ == "__main__":
-    main()
+    #     self.__notas = notas.astype('float32')
