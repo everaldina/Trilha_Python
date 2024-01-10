@@ -36,9 +36,9 @@ class NotasTurma:
         '''
         return self.__notas.mean().mean()
     
-    def mediaAluno(self, index = 0):
+    def mediaAritmeticaAluno(self, index = 0):
         '''
-        Retorna a média do aluno de índice index.
+        Retorna a média aritmetica do aluno de índice index.
         Entrada:
             index: índice do aluno
         Saída:
@@ -46,16 +46,117 @@ class NotasTurma:
         '''
         return self.__notas[index].mean()
 
-    def mediaAvaliaçao(self, index = 0):
+    def mediaAritmeticaAvaliacao(self, index = 0):
         '''
-        Retorna a média da turma na avaliação de índice index.
+        Retorna a média aritimetica da turma na avaliação de índice index.
         Entrada:
             index: índice da avaliação
         Saída:
             média da turma na avaliação de índice index
         '''
         return self.__notas[:, index].mean()
+    
+    def mediaGeometricaAluno(self, index = 0):
+        '''
+        Retorna a média geometrica do aluno de índice index.
+        Entrada:
+            index: índice do aluno
+        Saída:
+            média do aluno de índice index
+        '''
+        return np.prod(self.__notas[index])**(1/len(self.__notas[index]))
+    
+    def mediaGeometricaAvaliacao(self, index = 0):
+        '''
+        Retorna a média geometrica da turma na avaliação de índice index.
+        Entrada:
+            index: índice da avaliação
+        Saída:
+            média da turma na avaliação de índice index
+        '''
+        return np.prod(self.__notas[:, index])**(1/len(self.__notas[:, index]))
+    
+    def mediaHarmonicaAluno(self, index = 0):
+        '''
+        Retorna a média harmonica do aluno de índice index.
+        Entrada:
+            index: índice do aluno
+        Saída:
+            média do aluno de índice index
+        '''
+        return len(self.__notas[index]) / np.sum(1/self.__notas[index])
+    
+    def mediaHarmonicaAvaliacao(self, index = 0):
+        '''
+        Retorna a média harmonica da turma na avaliação de índice index.
+        Entrada:
+            index: índice da avaliação
+        Saída:
+            média da turma na avaliação de índice index
+        '''
+        return len(self.__notas[:, index]) / np.sum(1/self.__notas[:, index])
 
+    def medianaAluno(self, index = 0):
+        '''
+        Retorna a mediana do aluno de índice index.
+        Entrada:
+            index: índice do aluno
+        Saída:
+            mediana do aluno de índice index
+        '''
+        return np.median(self.__notas[index])
+    
+    def medianaAvaliacao(self, index = 0):
+        '''
+        Retorna a mediana da turma na avaliação de índice index.
+        Entrada:
+            index: índice da avaliação
+        Saída:
+            mediana da turma na avaliação de índice index
+        '''
+        return np.median(self.__notas[:, index])
+    
+    def mediaInferiorAluno(self, index = 0):
+        '''
+        Retorna a média inferior do aluno de índice index.
+        Entrada:
+            index: índice do aluno
+        Saída:
+            média inferior do aluno de índice index
+        '''
+        return np.percentile(self.__notas[index], 25)
+    
+    def mediaInferiorAvaliacao(self, index = 0):
+        '''
+        Retorna a média inferior da turma na avaliação de índice index.
+        Entrada:
+            index: índice da avaliação
+        Saída:
+            média inferior da turma na avaliação de índice index
+        '''
+        return np.percentile(self.__notas[:, index], 25)
+    
+    def mediaSuperiorAluno(self, index = 0):
+        '''
+        Retorna a média superior do aluno de índice index.
+        Entrada:
+            index: índice do aluno
+        Saída:
+            média superior do aluno de índice index
+        '''
+        return np.percentile(self.__notas[index], 75)
+    
+    def mediaSuperiorAvaliacao(self, index = 0):
+        '''
+        Retorna a média superior da turma na avaliação de índice index.
+        Entrada:
+            index: índice da avaliação
+        Saída:
+            média superior da turma na avaliação de índice index
+        '''
+        return np.percentile(self.__notas[:, index], 75)
+    
+    
     def quantAprovados(self):
         '''
         Retorna a quantidade de alunos aprovados (media >= 6).
@@ -65,6 +166,7 @@ class NotasTurma:
         medias = self.__notas.mean(axis=1)
         
         return len(medias[medias >= 7])
+    
         
     def quantReprovados(self):
         '''
