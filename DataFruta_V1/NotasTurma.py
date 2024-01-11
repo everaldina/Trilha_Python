@@ -24,6 +24,7 @@ class NotasTurma:
             for i in range(len(self.__notas)):
                 for j in range(len(self.__notas[i])):
                     self.__notas[i][j] = float(input(f"Digite a nota do aluno {i+1} na avaliação {j+1}: "))
+            self.__notas = np.round(self.__notas, 2)
         except Exception:
             print("Nota inválida.")
             return
@@ -204,10 +205,9 @@ class NotasTurma:
             i += 1
         return strNotas
     
-    # def geraDados(self):
-    #     '''
-    #     Gera dados aleatórios para a turma.
-    #     '''
-    #     notas = np.random.random_sample(self.__notas.shape) * 10
-        
-    #     self.__notas = notas.astype('float32')
+    def geraDados(self):
+        '''
+        Gera dados aleatórios para a turma.
+        '''
+        notas = np.random.uniform(0, 10, self.__notas.shape)
+        self.__notas = np.round(notas, 2).astype('float32')
