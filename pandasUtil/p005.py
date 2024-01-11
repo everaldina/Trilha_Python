@@ -2,14 +2,14 @@ import pandas as pd
 
 def main():
     #Exercicio 1
-    identificador = ["tic18Py08200"]
-    idade = [23]
-    formação = [2]
-    formaçãoGeral = [1]
-    formaçãoEspecífica = ["Ciência da Computação"]
-    andamentoGraduação = [0.6]
-    tempoFormação = [None]
-    experiênciaPrevia = [True]
+    identificador = ["tic18Py08200", "tic18Py86001", "tic18Py05999"]
+    idade = [23, 22, 24]
+    formação = [2, 2, 2]
+    formaçãoGeral = [1, 1, 0]
+    formaçãoEspecífica = ["Ciência da Computação", "Ciência da Computação", "Engenharia Elétrica"]
+    andamentoGraduação = [0.66, 0.66, 0.99]
+    tempoFormação = [None, None, None]
+    experiênciaPrevia = [True, True, True]
     
     
     # Exercicio 2
