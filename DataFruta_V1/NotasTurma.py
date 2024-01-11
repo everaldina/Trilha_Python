@@ -14,7 +14,31 @@ class NotasTurma:
             nAlunos: número de alunos da turma
             nCreditos: número de créditos da disciplina
         '''
-        self.__notas = np.zeros((nAlunos, nCreditos), dtype='float32')
+        self.__notas = np.zeros((nAlunos, nCreditos), dtype='float64')
+    
+    @property
+    def notas(self):
+        return self.__notas.copy()
+    
+    def getNotasAluno(self, index = 0):
+        '''
+        Retorna as notas do aluno de índice index.
+        Entrada:
+            index: índice do aluno
+        Saída:
+            notas do aluno de índice index
+        '''
+        return self.__notas[index].copy()
+    
+    def getNotasAvaliacao(self, index = 0):
+        '''
+        Retorna as notas da turma na avaliação de índice index.
+        Entrada:
+            index: índice da avaliação
+        Saída:
+            notas da turma na avaliação de índice index
+        '''
+        return self.__notas[:, index].copy()
 
     def leNotas(self):
         '''
@@ -24,6 +48,7 @@ class NotasTurma:
             for i in range(len(self.__notas)):
                 for j in range(len(self.__notas[i])):
                     self.__notas[i][j] = float(input(f"Digite a nota do aluno {i+1} na avaliação {j+1}: "))
+            self.__notas = np.round(self.__notas, 2)
         except Exception:
             print("Nota inválida.")
             return
@@ -116,7 +141,7 @@ class NotasTurma:
         '''
         return np.median(self.__notas[:, index])
     
-    def mediaInferiorAluno(self, index = 0):
+    def medianaInferiorAluno(self, index = 0):
         '''
         Retorna a média inferior do aluno de índice index.
         Entrada:
@@ -126,7 +151,7 @@ class NotasTurma:
         '''
         return np.percentile(self.__notas[index], 25)
     
-    def mediaInferiorAvaliacao(self, index = 0):
+    def medianaInferiorAvaliacao(self, index = 0):
         '''
         Retorna a média inferior da turma na avaliação de índice index.
         Entrada:
@@ -136,7 +161,7 @@ class NotasTurma:
         '''
         return np.percentile(self.__notas[:, index], 25)
     
-    def mediaSuperiorAluno(self, index = 0):
+    def medianaSuperiorAluno(self, index = 0):
         '''
         Retorna a média superior do aluno de índice index.
         Entrada:
@@ -146,7 +171,7 @@ class NotasTurma:
         '''
         return np.percentile(self.__notas[index], 75)
     
-    def mediaSuperiorAvaliacao(self, index = 0):
+    def medianaSuperiorAvaliacao(self, index = 0):
         '''
         Retorna a média superior da turma na avaliação de índice index.
         Entrada:
@@ -204,10 +229,9 @@ class NotasTurma:
             i += 1
         return strNotas
     
-    # def geraDados(self):
-    #     '''
-    #     Gera dados aleatórios para a turma.
-    #     '''
-    #     notas = np.random.random_sample(self.__notas.shape) * 10
-        
-    #     self.__notas = notas.astype('float32')
+    def geraDados(self):
+        '''
+        Gera dados aleatórios para a turma.
+        '''
+        notas = np.random.uniform(0, 10, self.__notas.shape)
+        self.__notas = np.round(notas, 2)
