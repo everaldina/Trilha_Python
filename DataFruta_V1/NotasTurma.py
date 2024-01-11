@@ -14,7 +14,31 @@ class NotasTurma:
             nAlunos: número de alunos da turma
             nCreditos: número de créditos da disciplina
         '''
-        self.__notas = np.zeros((nAlunos, nCreditos), dtype='float32')
+        self.__notas = np.zeros((nAlunos, nCreditos), dtype='float64')
+    
+    @property
+    def notas(self):
+        return self.__notas.copy()
+    
+    def getNotasAluno(self, index = 0):
+        '''
+        Retorna as notas do aluno de índice index.
+        Entrada:
+            index: índice do aluno
+        Saída:
+            notas do aluno de índice index
+        '''
+        return self.__notas[index]
+    
+    def getNotasAvaliacao(self, index = 0):
+        '''
+        Retorna as notas da turma na avaliação de índice index.
+        Entrada:
+            index: índice da avaliação
+        Saída:
+            notas da turma na avaliação de índice index
+        '''
+        return self.__notas[:, index]
 
     def leNotas(self):
         '''
@@ -210,4 +234,4 @@ class NotasTurma:
         Gera dados aleatórios para a turma.
         '''
         notas = np.random.uniform(0, 10, self.__notas.shape)
-        self.__notas = np.round(notas, 2).astype('float32')
+        self.__notas = np.round(notas, 2)
