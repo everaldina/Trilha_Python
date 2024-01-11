@@ -28,7 +28,7 @@ class NotasTurma:
         Saída:
             notas do aluno de índice index
         '''
-        return self.__notas[index]
+        return self.__notas[index].copy()
     
     def getNotasAvaliacao(self, index = 0):
         '''
@@ -38,7 +38,7 @@ class NotasTurma:
         Saída:
             notas da turma na avaliação de índice index
         '''
-        return self.__notas[:, index]
+        return self.__notas[:, index].copy()
 
     def leNotas(self):
         '''
@@ -141,7 +141,7 @@ class NotasTurma:
         '''
         return np.median(self.__notas[:, index])
     
-    def mediaInferiorAluno(self, index = 0):
+    def medianaInferiorAluno(self, index = 0):
         '''
         Retorna a média inferior do aluno de índice index.
         Entrada:
@@ -151,7 +151,7 @@ class NotasTurma:
         '''
         return np.percentile(self.__notas[index], 25)
     
-    def mediaInferiorAvaliacao(self, index = 0):
+    def medianaInferiorAvaliacao(self, index = 0):
         '''
         Retorna a média inferior da turma na avaliação de índice index.
         Entrada:
@@ -161,7 +161,7 @@ class NotasTurma:
         '''
         return np.percentile(self.__notas[:, index], 25)
     
-    def mediaSuperiorAluno(self, index = 0):
+    def medianaSuperiorAluno(self, index = 0):
         '''
         Retorna a média superior do aluno de índice index.
         Entrada:
@@ -171,7 +171,7 @@ class NotasTurma:
         '''
         return np.percentile(self.__notas[index], 75)
     
-    def mediaSuperiorAvaliacao(self, index = 0):
+    def medianaSuperiorAvaliacao(self, index = 0):
         '''
         Retorna a média superior da turma na avaliação de índice index.
         Entrada:
