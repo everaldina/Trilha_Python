@@ -1,16 +1,21 @@
 import pandas as pd
 
 def main():
-    identificador = []
-    idade = []
-    formação = []
-    formaçãoGeral = []
-    formaçãoEspecífica = []
-    andamentoGraduação = []
-    tempoFormação = []
-    experiênciaPrevia = []
+    #Exercicio 1
+    identificador = ["tic18Py08200"]
+    idade = [23]
+    formação = [2]
+    formaçãoGeral = [1]
+    formaçãoEspecífica = ["Ciência da Computação"]
+    andamentoGraduação = [0.6]
+    tempoFormação = [None]
+    experiênciaPrevia = [True]
     
-    index = pd.Index(identificador)
+    
+    # Exercicio 2
+    index = pd.Index(identificador, name="Identificador")
+    print(index, end="\n\n")
+    
     idade = pd.Series(idade)
     formação = pd.Series(formação)
     formaçãoGeral= pd.Series(formaçãoGeral)
@@ -25,6 +30,14 @@ def main():
     
     print("Formação geral predominante: ", formacaoGeralPredominante(formaçãoGeral))
     
+    
+    # Exercicio 3
+    
+    
+    
+    
+    
+    
 def mediaIdade(idades):
     return idades.mean()
 
@@ -35,8 +48,8 @@ def formacaoPredominante(formacoes):
         2: "Graduação em andamento",
         3: "Graduação concluída"
     }
-    
-    return formacoesPosssiveis[formacoes.mode()]
+        
+    return formacoesPosssiveis[formacoes.mode()[0]]
 
 def formacaoGeralPredominante(formacoesGerais):
     formacoesGeraisPosssiveis = {
@@ -44,7 +57,7 @@ def formacaoGeralPredominante(formacoesGerais):
         1: "Computação"
     }
     
-    return formacoesGeraisPosssiveis[formacoesGerais.mode]()
+    return formacoesGeraisPosssiveis[formacoesGerais.mode()[0]]
 
 if __name__ == '__main__':
     main()
