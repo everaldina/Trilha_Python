@@ -13,16 +13,16 @@ def main():
     
     
     # Exercicio 2
-    index = pd.Index(identificador, name="Identificador")
-    print(index, end="\n\n")
     
-    idade = pd.Series(idade)
-    formação = pd.Series(formação)
-    formaçãoGeral= pd.Series(formaçãoGeral)
-    formaçãoEspecífica = pd.Series(formaçãoEspecífica)
-    andamentoGraduação = pd.Series(andamentoGraduação)
-    tempoFormação = pd.Series(tempoFormação)
-    experiênciaPrevia = pd.Series(experiênciaPrevia)
+    index = pd.Index(identificador)
+    idade = pd.Series(idade, index = index)
+    formação = pd.Series(formação, index = index)
+    formaçãoGeral= pd.Series(formaçãoGeral, index = index)
+    formaçãoEspecífica = pd.Series(formaçãoEspecífica, index = index)
+    andamentoGraduação = pd.Series(andamentoGraduação, index = index)
+    tempoFormação = pd.Series(tempoFormação, index = index).fillna(0)
+    experiênciaPrevia = pd.Series(experiênciaPrevia, index = index)
+       
     
     print("Média de idade: ", mediaIdade(idade))
     
@@ -30,9 +30,16 @@ def main():
     
     print("Formação geral predominante: ", formacaoGeralPredominante(formaçãoGeral))
     
+    print()
     
     # Exercicio 3
+    data = pd.DataFrame({'Idade': idade, 'Formação': formação, 
+                         'Formação Geral': formaçãoGeral, 'Formação Específica': formaçãoEspecífica, 
+                         'Andamento Graduação': andamentoGraduação, 'Tempo Formação': tempoFormação, 
+                         'Experiência Prévia': experiênciaPrevia}, index = index)
     
+    print("Dataframe: ")
+    print(data)
     
     
     
