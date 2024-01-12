@@ -12,7 +12,7 @@ Notebook com a resolução do problema PI-002, que consiste em testes para compr
 
 Foi criado para os testes metodos em datafruta que geram dados aleatorios para salarios e idades.
 
-## [DataFruta_V1](DataFruta/)
+## [DataFruta_V1](DataFruta_V1/)
 Versão aprimorada do pacote datafruta, contando com novos tipos de medidas estatisticas, como:
 
 - Médias e medidas de valor central:
@@ -32,10 +32,15 @@ Versão aprimorada do pacote datafruta, contando com novos tipos de medidas esta
 ## [PI-003](PI-003.ipynb)
 Notebook com a resolução do problema PI-003, que consiste em testes para comprar a eficiencia de metodos estaticos de metodos implementados na classe DataFruta_V1 com metodos de arrays do numpy.
 
+## [PI-004](PI-004.ipynb)
+Notebook com a resolução do problema PI-004, que compara a eficiciecia de metodos estaticos nativos do numpy da classe [NotasTurma](DataFruta_V1/NotasTurma.py), com metodos estaticos implementado sem uso de ufunc,
+
 
 ## Equipe
  - Everaldina Guimaraes Barbosa (egbarbosa.cic@uesc.br)
  - Ian Robert Luz Pinheiro (irlpinheiro.ege@uesc.br)
+ - João Manoel Almeida Olivera (jmaoliveira.cic@uesc.br)
+
+## Membros anteriores
  - Vinicius Lima da Silva (vlsilva.ege@uesc.br)
  - Marcos Vinícius Tavares Gomes (mvtgomes.ege@uesc.br)
- - João Manoel Almeida Olivera (jmaoliveira.cic@uesc.br)
