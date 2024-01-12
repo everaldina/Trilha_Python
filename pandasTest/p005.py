@@ -4,7 +4,7 @@ def main():
     #Exercicio 1
     identificador = ["tic18Py08200", "tic18Py86001", "tic18Py05999"]
     idade = [23, 22, 24]
-    formação = [2, 2, 2]
+    formação = [1, 1, 2]
     formaçãoGeral = [1, 1, 0]
     formaçãoEspecífica = ["Ciência da Computação", "Ciência da Computação", "Engenharia Elétrica"]
     andamentoGraduação = [0.66, 0.66, 0.99]
@@ -13,7 +13,6 @@ def main():
     
     
     # Exercicio 2
-    
     index = pd.Index(identificador)
     idade = pd.Series(idade, index = index)
     formação = pd.Series(formação, index = index)
