@@ -15,6 +15,7 @@ class NotasTurma:
             nCreditos: número de créditos da disciplina
         '''
         self.__notas = np.zeros((nAlunos, nCreditos), dtype='float64')
+        
     
     @property
     def notas(self):
@@ -184,7 +185,7 @@ class NotasTurma:
     
     def quantAprovados(self):
         '''
-        Retorna a quantidade de alunos aprovados (media >= 6).
+        Retorna a quantidade de alunos aprovados (media >= 7).
         Saída:
             quantidade de alunos aprovados
         '''
@@ -195,7 +196,7 @@ class NotasTurma:
         
     def quantReprovados(self):
         '''
-        Retorna a quantidade de alunos reprovados (media < 6).
+        Retorna a quantidade de alunos reprovados (media < 7).
         Saída:
             quantidade de alunos reprovados
         '''
@@ -220,6 +221,88 @@ class NotasTurma:
             na media final
         '''
         return self.__notas.max().max()
+    
+    def desvioPadraoPopulacionalAluno(self, index = 0):
+        '''
+        Retorna o desvio padrão populacional do aluno de índice index.
+        Entrada:
+            index: índice do aluno
+        Saída:
+            desvio padrão populacional do aluno de índice index
+        '''
+        return np.std(self.__notas[index])
+    
+    def desvioPadraoPopulacionalAvaliacao(self, index = 0):
+        '''
+        Retorna o desvio padrão populacional da turma na avaliação de índice index.
+        Entrada:
+            index: índice da avaliação
+        Saída:
+            desvio padrão populacional da turma na avaliação de índice index
+        '''
+        return np.std(self.__notas[:, index])
+    
+    
+    def varianciaPopulacionalAluno(self, index=0):
+        '''
+        Retorna a variância populacional do aluno de índice index.
+        Entrada:
+            index: índice do aluno
+        Saída:
+            variância populacional do aluno de índice index
+        '''
+        return np.var(self.__notas[index])
+    
+    def varianciaPopulacionalAvaliacao(self, index=0):
+        '''
+        Retorna a variância populacional da turma na avaliação de índice index.
+        Entrada:
+            index: índice da avaliação
+        Saída:
+            variância populacional da turma na avaliação de índice index
+        '''
+        return np.var(self.__notas[:, index])
+    
+    def desvioPadraoAmostralAluno(self, index = 0):
+        '''
+        Retorna o desvio padrão amostral do aluno de índice index.
+        Entrada:
+            index: índice do aluno
+        Saída:
+            desvio padrão amostral do aluno de índice index
+        '''
+        return np.std(self.__notas[index], ddof=1)
+    
+    def desvioPadraoAmostralAvaliacao(self, index = 0):
+        '''
+        Retorna o desvio padrão amostral da turma na avaliação de índice index.
+        Entrada:
+            index: índice da avaliação
+        Saída:
+            desvio padrão amostral da turma na avaliação de índice index
+        '''
+        return np.std(self.__notas[:, index], ddof=1)
+    
+    
+    def varianciaAmostralAluno(self, index=0):
+        '''
+        Retorna a variância amostral do aluno de índice index.
+        Entrada:
+            index: índice do aluno
+        Saída:
+            variância amostral do aluno de índice index
+        '''
+        return np.var(self.__notas[index], ddof=1)
+    
+    def varianciaAmostralAvaliacao(self, index=0):
+        '''
+        Retorna a variância amostral da turma na avaliação de índice index.
+        Entrada:
+            index: índice da avaliação
+        Saída:
+            variância amostral da turma na avaliação de índice index
+        '''
+        return np.var(self.__notas[:, index], ddof=1)
     
     def __str__(self):
         i = 0
