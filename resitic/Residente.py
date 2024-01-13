@@ -12,7 +12,7 @@ class Residente():
     __experienciaPrevia: bool
     
     def __init__(self, identificador: str = None):
-        self.indetificador = identificador
+        self.__indetificador = identificador
     
     @property
     def identificador(self) -> str:
