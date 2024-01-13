@@ -1,0 +1,1 @@
+from resitic import Residente
