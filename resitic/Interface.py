@@ -13,9 +13,7 @@ class Interface(ctk.CTk):
         # configure grid layout (4x4)
         self.grid_columnconfigure((0, 1, 2, 3), weight=1)
         self.grid_rowconfigure((0, 1, 2, 4), weight=1)
-        
-        self.actual = ctk.CTkFrame(self)
-        
+                
         # create buttons
         self.btnAddResidentes = ctk.CTkButton(self, command=self.add_residentes)
         self.btnAddResidentes.grid(row=1, column=1)
