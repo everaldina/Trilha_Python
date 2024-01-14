@@ -33,7 +33,10 @@ Versão aprimorada do pacote datafruta, contando com novos tipos de medidas esta
 Notebook com a resolução do problema PI-003, que consiste em testes para comprar a eficiencia de metodos estaticos de metodos implementados na classe DataFruta_V1 com metodos de arrays do numpy.
 
 ## [PI-004](PI-004.ipynb)
-Notebook com a resolução do problema PI-004, que compara a eficiciecia de metodos estaticos nativos do numpy da classe [NotasTurma](DataFruta_V1/NotasTurma.py), com metodos estaticos implementado sem uso de ufunc,
+Notebook com a resolução do problema PI-004, que compara a eficiciecia de metodos estaticos nativos do numpy da classe [NotasTurma](DataFruta_V1/NotasTurma.py), com metodos estaticos implementado sem uso de ufunc.
+
+## [PI-005](PI-005.ipynb)
+Notebook com a resolução do problema PI-005, onde é criado series e dataframes com dados de residentes. Praticas de criação de series e dataframes, manipulação de dados, e visualização de dados são feitas nessa pratica.
 
 
 ## Equipe
