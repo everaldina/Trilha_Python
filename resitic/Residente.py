@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 @dataclass
 class Residente():
-    __indetificador: str
+    __identificador: str
     __idade: int
     __formacao: int
     __formacaoGeral: int
@@ -12,15 +12,15 @@ class Residente():
     __experienciaPrevia: bool
     
     def __init__(self, identificador: str = None):
-        self.__indetificador = identificador
+        self.__identificador = identificador
     
     @property
     def identificador(self) -> str:
-        return self.__indetificador
+        return self.__identificador
         
     @identificador.setter
     def identificador(self, identificador: str) -> None:
-        self.__indetificador = identificador
+        self.__identificador = identificador
     
     @property
     def idade(self) -> int:
