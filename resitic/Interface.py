@@ -121,7 +121,7 @@ class Interface(ctk.CTk):
         self.janelaAdd.inpFormacao.grid(row=4, column=3)
         
         self.janelaAdd.inpFormacaoGeral = ctk.CTkComboBox(self.janelaAdd, values=areasFormacaoGeral,
-                                    command=None, variable=self.janelaAdd.varFormacaoGeral, state="readonly")
+                                    command=self.set_formacao_geral, variable=self.janelaAdd.varFormacaoGeral, state="readonly")
         self.janelaAdd.inpFormacaoGeral.grid(row=5, column=3)
         
         self.janelaAdd.inpFormacaoEspecifica = ctk.CTkEntry(self.janelaAdd, width=200, textvariable=self.janelaAdd.varFormacaoEspecifica)
@@ -159,4 +159,17 @@ class Interface(ctk.CTk):
         janeleCarregar = ctk.CTkToplevel(self)
         janeleCarregar.title("Carregar Dados")
         janeleCarregar.geometry(f"{400}x{400}")
+        
+    def set_formacao_geral(self, formacao: str) -> None:
+        if formacao == "Computação":
+            areasEspeficas = ["Ciência da Computação", "Sistemas de Informação", "Análise e Desenvolvimento de Sistemas", "Engenharia de Software", "Outro"]
+        elif formacao == "Engenharia":
+            areasEspeficas = ["Engenharia de Computação", "Engenharia Química", "Engenharia de Produção", "Engenharia Mecânica", "Engenharia Elétrica", 
+                                             "Engenharia Civil", "Engenharia de Alimentos", "Engenharia Ambiental", "Engenharia Aeroespacial", "Engenharia Nuclear", 
+                                             "Engenharia de Materiais", "Outro"]
+        else:
+            areasEspeficas = []
+        
+        # self.janelaAdd.varFormacaoEspecifica.set("")
+        self.janelaAdd.inpFormacaoEspecifica.configure(values=areasEspeficas)
         
