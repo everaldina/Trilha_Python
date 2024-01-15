@@ -24,4 +24,23 @@ class Trilha():
         return self.__residentes
     
     def addResidente(self, residente: Residente) -> None:
-        self.residentes = self.residentes.append(residente)
+        if not isinstance(residente, Residente):
+            raise TypeError("Residente não é do tipo Residente")
+        
+        if residente.identificador in self.residentes['identificador']:
+            raise ValueError("Residente já cadastrado")
+        
+        residente_dict = {
+            'identificador': residente.identificador,
+            'idade': residente.idade,
+            'formacao': residente.formacao,
+            'formacaoGeral': residente.formacaoGeral,
+            'formacaoEspecifica': residente.formacaoEspecifica,
+            'andamentoGraduacao': residente.andamentoGraduacao,
+            'tempoFormacao': residente.tempoFormacao,
+            'experienciaPrevia': residente.experienciaPrevia
+        }
+        
+        residente_df = pd.DataFrame(residente_dict)
+        
+        self.residentes = pd.concat([self.residentes, residente_df])
