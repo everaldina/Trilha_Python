@@ -101,3 +101,15 @@ class Residente():
     @experienciaPrevia.setter
     def experienciaPrevia(self, experienciaPrevia: bool) -> None:
         self.__experienciaPrevia = experienciaPrevia
+        
+    def __dict__(self):
+        return {
+            'identificador': self.identificador,
+            'idade': self.idade,
+            'formacao': self.formacao,
+            'formacaoGeral': self.formacaoGeral,
+            'formacaoEspecifica': self.formacaoEspecifica,
+            'andamentoGraduacao': self.andamentoGraduacao,
+            'tempoFormacao': self.tempoFormacao,
+            'experienciaPrevia': self.experienciaPrevia
+        }

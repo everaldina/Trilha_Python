@@ -52,7 +52,14 @@ class Residencia():
         else:
             raise ValueError("Trilha não cadastrada")
         
-        residente = Residente(residenteDict['identificador'])
+        if nome_trilha == "python":
+            id = "tic18Py"
+        elif nome_trilha == "dotnet":
+            id = "tic18Net"
+        elif nome_trilha == "java":
+            id = "tic18Jav"
+        
+        residente = Residente(id + residenteDict['identificador'])
         
         residente.idade = residenteDict['idade']
         residente.formacao = residenteDict['formacao']
@@ -63,8 +70,6 @@ class Residencia():
         residente.experienciaPrevia = residenteDict['experienciaPrevia']
         
         trilha.addResidente(residente)
-
-        # print(trilha.residentes)
         
         
     def add_trilha_dataframe(self, nome_trilha: str, trilha: pd.DataFrame) -> None:

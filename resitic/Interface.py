@@ -196,6 +196,8 @@ class Interface(ctk.CTk):
         self.residencia.add_residente(trilha, residente)
         # except ValueError as e:
         #     print(e)
+        
+        ic(self.residencia.trilhas[0].residentes)
     
     def carregar_dados(self) -> None:
         janeleCarregar = ctk.CTkToplevel(self)

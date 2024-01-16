@@ -34,18 +34,6 @@ class Trilha():
         if residente.identificador in self.residentes['identificador']:
             raise ValueError("Residente já cadastrado")
         
-        residente_dict = {
-            'identificador': residente.identificador,
-            'idade': residente.idade,
-            'formacao': residente.formacao,
-            'formacaoGeral': residente.formacaoGeral,
-            'formacaoEspecifica': residente.formacaoEspecifica,
-            'andamentoGraduacao': residente.andamentoGraduacao,
-            'tempoFormacao': residente.tempoFormacao,
-            'experienciaPrevia': residente.experienciaPrevia
-        }
-
         index = len(self.residentes)
-
-        # self.residentes.iloc[index:] = residente_dict
-        self.residentes = self.residentes._append(residente_dict, ignore_index=True)
+        
+        self.residentes.loc[index] = residente.__dict__()
