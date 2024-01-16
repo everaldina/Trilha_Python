@@ -1,10 +1,11 @@
 from dataclasses import dataclass
+from resitic import Trilha, Residente
 import pandas as pd
 import os
 
 @dataclass
 class Residencia():
-    __trilhas: list[str]
+    __trilhas: list[Trilha]
     __residencia: pd.DataFrame
     __colunas: list[str]
     
@@ -18,11 +19,11 @@ class Residencia():
             self.__trilhas = []
         
     @property
-    def trilhas(self) -> list[str]:
+    def trilhas(self) -> list[Trilha]:
         return self.__trilhas
     
     @trilhas.setter
-    def trilhas(self, trilhas: list[str]) -> None:
+    def trilhas(self, trilhas: list[Trilha]) -> None:
         self.__trilhas = trilhas
         
     @property
@@ -33,7 +34,38 @@ class Residencia():
     def residencia(self, residencia: pd.DataFrame) -> None:
         self.__residencia = residencia
         
-    def add_trilha(self, nome_trilha: str, trilha: pd.DataFrame) -> None:
+    def add_trilha(self, nome_trilha: str) -> None:
+        for trilha in self.trilhas:
+            if trilha.nome == nome_trilha:
+                raise ValueError("Trilha já cadastrada")
+        
+        trilha = Trilha(nome_trilha)
+        
+        self.trilhas.append(trilha)
+        
+    def add_residente(self, nome_trilha: str, residenteDict: dict) -> None:
+        trilha = None
+        
+        for trilha in self.trilhas:
+            if trilha.nome == nome_trilha:
+                break
+        else:
+            raise ValueError("Trilha não cadastrada")
+        
+        residente = Residente(residenteDict['identificador'])
+        
+        residente.idade = residenteDict['idade']
+        residente.formacao = residenteDict['formacao']
+        residente.formacaoGeral = residenteDict['formacaoGeral']
+        residente.formacaoEspecifica = residenteDict['formacaoEspecifica']
+        residente.andamentoGraduacao = residenteDict['andamentoGraduacao']
+        residente.tempoFormacao = residenteDict['tempoFormacao']
+        residente.experienciaPrevia = residenteDict['experienciaPrevia']
+        
+        trilha.addResidente(residente)
+        
+        
+    def add_trilha_dataframe(self, nome_trilha: str, trilha: pd.DataFrame) -> None:
         if nome_trilha in self.trilhas:
             raise ValueError("Trilha já cadastrada")
         

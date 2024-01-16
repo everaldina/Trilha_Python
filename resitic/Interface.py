@@ -1,5 +1,7 @@
 import tkinter as tk
 import customtkinter as ctk
+from resitic import Residencia
+from icecream import ic
 
 ctk.set_appearance_mode("System")  # Modes: "System" (standard), "Dark", "Light"
 ctk.set_default_color_theme("dark-blue")  # Themes: "blue" (standard), "green", "dark-blue"
@@ -7,9 +9,14 @@ ctk.set_default_color_theme("dark-blue")  # Themes: "blue" (standard), "green", 
 class Interface(ctk.CTk):
     def __init__(self):
         super().__init__()
-        
         self.title("Resitic")
         self.geometry(f"{400}x{400}")
+        
+        
+        self.residencia = Residencia()
+        self.residencia.add_trilha("python")
+        self.residencia.add_trilha("dotnet")
+        self.residencia.add_trilha("java")
         
         # configure grid layout (4x4)
         self.grid_columnconfigure((1, 2, 3, 4), weight=1)
@@ -51,31 +58,22 @@ class Interface(ctk.CTk):
         areasFormacao = ["Formação técnica", "Formação técnica graduação em andamento", "Graduação em andamento", "Graduação concluída"]
         areasFormacaoGeral = ["Engenharia", "Computação"]
         experienciaPrevia = ["Sim", "Não"]
-        # areasEspeficas = []
-        
-        
-        # create variables with self
-        self.janelaAdd.varCPF = ctk.StringVar()
-        self.janelaAdd.varAnoNasc = ctk.StringVar()
-        self.janelaAdd.varIdade = ctk.StringVar()
-        self.janelaAdd.varFormacao = ctk.StringVar()
-        self.janelaAdd.varFormacaoGeral = ctk.StringVar()
-        self.janelaAdd.varFormacaoEspecifica = ctk.StringVar()
-        self.janelaAdd.varAndamentoGraduacao = ctk.StringVar()
-        self.janelaAdd.varTempoFormacao = ctk.StringVar()
-        self.janelaAdd.varExperienciaPrevia = ctk.StringVar()
-        
+                
         
         # create variables
-        # varCPF = ctk.StringVar()
-        # varAnoNasc = ctk.StringVar()
-        # varIdade = ctk.StringVar()
-        # varFormacao = ctk.StringVar()
-        # varFormacaoGeral = ctk.StringVar()
-        # varFormacaoEspecifica = ctk.StringVar()
-        # varAndamentoGraduacao = ctk.StringVar()
-        # varTempoFormacao = ctk.StringVar()
-        # varExperienciaPrevia = ctk.StringVar()
+        varCPF = ctk.StringVar()
+        varAnoNasc = ctk.StringVar()
+        varIdade = ctk.StringVar()
+        varFormacao = ctk.StringVar()
+        varFormacaoGeral = ctk.StringVar()
+        varFormacaoEspecifica = ctk.StringVar()
+        varAndamentoGraduacao = ctk.StringVar()
+        varTempoFormacao = ctk.StringVar()
+        varExperienciaPrevia = ctk.StringVar()
+        variaveis = {"cpf": varCPF, "anoNasc": varAnoNasc, "idade": varIdade, "formacao": varFormacao, 
+                     "formacaoGeral": varFormacaoGeral, "formacaoEspecifica": varFormacaoEspecifica, 
+                     "andamentoGraduacao": varAndamentoGraduacao, "tempoFormacao": varTempoFormacao, 
+                     "experienciaPrevia": varExperienciaPrevia}
         
         
         # create labels
@@ -108,40 +106,40 @@ class Interface(ctk.CTk):
         
         
         # create inputs
-        self.janelaAdd.inpCPF = ctk.CTkEntry(self.janelaAdd, textvariable=self.janelaAdd.varCPF)
+        self.janelaAdd.inpCPF = ctk.CTkEntry(self.janelaAdd, textvariable=varCPF)
         self.janelaAdd.inpCPF.grid(row=1, column=3)
         
-        self.janelaAdd.inpAnoNasc = ctk.CTkEntry(self.janelaAdd, textvariable=self.janelaAdd.varAnoNasc)
+        self.janelaAdd.inpAnoNasc = ctk.CTkEntry(self.janelaAdd, textvariable=varAnoNasc)
         self.janelaAdd.inpAnoNasc.grid(row=2, column=3)
         
-        self.janelaAdd.inpIdade = ctk.CTkEntry(self.janelaAdd, textvariable=self.janelaAdd.varIdade)
+        self.janelaAdd.inpIdade = ctk.CTkEntry(self.janelaAdd, textvariable=varIdade)
         self.janelaAdd.inpIdade.grid(row=3, column=3)
         
         self.janelaAdd.inpFormacao = ctk.CTkComboBox(self.janelaAdd, values=areasFormacao,
-                                    width=200, command=None, variable=self.janelaAdd.varFormacao, state="readonly")
+                                    width=200, command=None, variable=varFormacao, state="readonly")
         self.janelaAdd.inpFormacao.grid(row=4, column=3)
         
         self.janelaAdd.inpFormacaoGeral = ctk.CTkComboBox(self.janelaAdd, values=areasFormacaoGeral,
-                                    command=self.set_formacao_geral, variable=self.janelaAdd.varFormacaoGeral, state="readonly")
+                                    command=self.set_formacao_geral, variable=varFormacaoGeral, state="readonly")
         self.janelaAdd.inpFormacaoGeral.grid(row=5, column=3)
         
         self.janelaAdd.inpFormacaoEspecifica = ctk.CTkComboBox(self.janelaAdd, width=200,
-                                                               command=None, variable=self.janelaAdd.varFormacaoEspecifica)
+                                                               command=None, variable=varFormacaoEspecifica)
         self.janelaAdd.inpFormacaoEspecifica.grid(row=6, column=3)
         
-        self.janelaAdd.inpAndamentoGraduacao = ctk.CTkEntry(self.janelaAdd, textvariable=self.janelaAdd.varAndamentoGraduacao)
+        self.janelaAdd.inpAndamentoGraduacao = ctk.CTkEntry(self.janelaAdd, textvariable=varAndamentoGraduacao)
         self.janelaAdd.inpAndamentoGraduacao.grid(row=7, column=3)
         
-        self.janelaAdd.inpTempoFormacao = ctk.CTkEntry(self.janelaAdd, textvariable=self.janelaAdd.varTempoFormacao)
+        self.janelaAdd.inpTempoFormacao = ctk.CTkEntry(self.janelaAdd, textvariable=varTempoFormacao)
         self.janelaAdd.inpTempoFormacao.grid(row=8, column=3)
         
         self.janelaAdd.inpExperienciaPrevia = ctk.CTkComboBox(self.janelaAdd, values=experienciaPrevia,
-                                    command=None, variable=self.janelaAdd.varExperienciaPrevia, state="readonly")
+                                    command=None, variable=varExperienciaPrevia, state="readonly")
         self.janelaAdd.inpExperienciaPrevia.grid(row=9, column=3)
         
         
         # create buttons
-        self.janelaAdd.btnAdcionar = ctk.CTkButton(self.janelaAdd, fg_color="green", command=lambda: self.adicionar(trilha))
+        self.janelaAdd.btnAdcionar = ctk.CTkButton(self.janelaAdd, fg_color="green", command=lambda: self.adicionar(trilha, variaveis))
         self.janelaAdd.btnAdcionar.grid(row=11, column=2)
         self.janelaAdd.btnAdcionar.configure(text="Adcionar")
         
@@ -150,14 +148,29 @@ class Interface(ctk.CTk):
         self.janelaAdd.btnVoltar.configure(text="Voltar")
     
     
-    def voltar(self):
+    def voltar(self) -> None:
         self.janelaAdd.destroy()
         
-    def adicionar(self, trilha):
-        # print(f"Variavel {self.janelaAdd.varCPF.get()}")
-        print(f"Adicionar na trilha de {trilha}")
+    def adicionar(self, trilha: str, variaveis: dict) -> None:
+        id = variaveis['cpf'].get()[:3] + variaveis['anoNasc'].get()[2:]
+        
+        residente = {
+            'identificador': id,
+            'idade': int(variaveis['idade'].get()),
+            'formacao': variaveis['formacao'].get(),
+            'formacaoGeral': variaveis['formacaoGeral'].get(),
+            'formacaoEspecifica': variaveis['formacaoEspecifica'].get(),
+            'andamentoGraduacao': float(variaveis['andamentoGraduacao'].get()),
+            'tempoFormacao': int(variaveis['tempoFormacao'].get()) or None,
+            'experienciaPrevia': True if variaveis['experienciaPrevia'].get() == "Sim" else False
+        }
+        
+        try:
+            self.residencia.add_residente(trilha, residente)
+        except ValueError as e:
+            print(e)
     
-    def carregar_dados(self):
+    def carregar_dados(self) -> None:
         janeleCarregar = ctk.CTkToplevel(self)
         janeleCarregar.title("Carregar Dados")
         janeleCarregar.geometry(f"{400}x{400}")
