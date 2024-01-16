@@ -3,7 +3,7 @@ import customtkinter as ctk
 from resitic import Residencia
 from icecream import ic
 
-ctk.set_appearance_mode("System")  # Modes: "System" (standard), "Dark", "Light"
+ctk.set_appearance_mode("Dark")  # Modes: "System" (standard), "Dark", "Light"
 ctk.set_default_color_theme("dark-blue")  # Themes: "blue" (standard), "green", "dark-blue"
 
 class Interface(ctk.CTk):
@@ -33,19 +33,19 @@ class Interface(ctk.CTk):
     def select_trilha(self):
         self.janelaAdd = ctk.CTkToplevel(self)
         self.janelaAdd.title("Adicionar Residentes")
-        self.janelaAdd.geometry(f"{600}x{700}")
+        self.janelaAdd.geometry(f"{550}x{650}")
         
-        self.janelaAdd.grid_columnconfigure((1, 2, 3, 4), weight=1)
-        self.janelaAdd.grid_rowconfigure((1, 2, 3, 4), weight=1, pad=20)
+        self.janelaAdd.grid_columnconfigure((1, 2, 3, 4, 5), weight=1)
+        self.janelaAdd.grid_rowconfigure((1, 2, 3, 4), weight=1)
         
         self.janelaAdd.btnTrilhaPython = ctk.CTkButton(self.janelaAdd, text="Trilha Python", command=lambda: self.add_residentes("python"))
-        self.janelaAdd.btnTrilhaPython.grid(row=2, column=1)
+        self.janelaAdd.btnTrilhaPython.grid(row=2, column=2)
 
         self.janelaAdd.btnTrilhaDotNet = ctk.CTkButton(self.janelaAdd, text="Trilha .NET", command=lambda: self.add_residentes("dotnet"))
-        self.janelaAdd.btnTrilhaDotNet.grid(row=2, column=2)
+        self.janelaAdd.btnTrilhaDotNet.grid(row=2, column=3)
 
         self.janelaAdd.btnTrilhaJava = ctk.CTkButton(self.janelaAdd, text="Trilha Java", command=lambda: self.add_residentes("java"))
-        self.janelaAdd.btnTrilhaJava.grid(row=2, column=3)
+        self.janelaAdd.btnTrilhaJava.grid(row=2, column=4)
         
         
     def add_residentes(self, trilha):
@@ -58,6 +58,7 @@ class Interface(ctk.CTk):
         areasFormacao = ["Formação técnica", "Formação técnica graduação em andamento", "Graduação em andamento", "Graduação concluída"]
         areasFormacaoGeral = ["Engenharia", "Computação"]
         experienciaPrevia = ["Sim", "Não"]
+        areasEspeficas = []
                 
         
         # create variables
@@ -124,7 +125,8 @@ class Interface(ctk.CTk):
         self.janelaAdd.inpFormacaoGeral.grid(row=5, column=3)
         
         self.janelaAdd.inpFormacaoEspecifica = ctk.CTkComboBox(self.janelaAdd, width=200,
-                                                               command=None, variable=varFormacaoEspecifica)
+                                                               command=None, values=areasEspeficas, 
+                                                               variable=varFormacaoEspecifica, state="readonly")
         self.janelaAdd.inpFormacaoEspecifica.grid(row=6, column=3)
         
         self.janelaAdd.inpAndamentoGraduacao = ctk.CTkEntry(self.janelaAdd, textvariable=varAndamentoGraduacao)
@@ -152,23 +154,48 @@ class Interface(ctk.CTk):
         self.janelaAdd.destroy()
         
     def adicionar(self, trilha: str, variaveis: dict) -> None:
+        formacoes = {"Formação técnica" : 0, "Formação técnica graduação em andamento": 1,
+                      "Graduação em andamento": 2, "Graduação concluída": 3}
+        
+        formacoesGerais = {"Engenharia": 0, "Computação": 1}
+        
         id = variaveis['cpf'].get()[:3] + variaveis['anoNasc'].get()[2:]
+
+        formacaoGeral = variaveis['formacaoGeral'].get() or None
+
+        if formacaoGeral:
+           formacaoGeral = formacoesGerais[formacaoGeral] 
+
+        formacaoEspecifica = variaveis['formacaoEspecifica'].get() or None
+        andamentoGraduacao = variaveis['andamentoGraduacao'].get()
+
+        if andamentoGraduacao:
+            andamentoGraduacao = float(andamentoGraduacao)
+        else:
+            andamentoGraduacao = None
+
+        tempoFormacao = variaveis['tempoFormacao'].get() or None
+
+        if tempoFormacao:
+            tempoFormacao = int(tempoFormacao)
+        else:
+            tempoFormacao = None
         
         residente = {
             'identificador': id,
             'idade': int(variaveis['idade'].get()),
-            'formacao': variaveis['formacao'].get(),
-            'formacaoGeral': variaveis['formacaoGeral'].get(),
-            'formacaoEspecifica': variaveis['formacaoEspecifica'].get(),
-            'andamentoGraduacao': float(variaveis['andamentoGraduacao'].get()),
-            'tempoFormacao': int(variaveis['tempoFormacao'].get()) or None,
+            'formacao': formacoes[variaveis['formacao'].get()],
+            'formacaoGeral': formacaoGeral,
+            'formacaoEspecifica': formacaoEspecifica,
+            'andamentoGraduacao': andamentoGraduacao,
+            'tempoFormacao': tempoFormacao,
             'experienciaPrevia': True if variaveis['experienciaPrevia'].get() == "Sim" else False
         }
         
-        try:
-            self.residencia.add_residente(trilha, residente)
-        except ValueError as e:
-            print(e)
+        # try:
+        self.residencia.add_residente(trilha, residente)
+        # except ValueError as e:
+        #     print(e)
     
     def carregar_dados(self) -> None:
         janeleCarregar = ctk.CTkToplevel(self)

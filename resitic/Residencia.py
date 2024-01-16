@@ -63,6 +63,8 @@ class Residencia():
         residente.experienciaPrevia = residenteDict['experienciaPrevia']
         
         trilha.addResidente(residente)
+
+        # print(trilha.residentes)
         
         
     def add_trilha_dataframe(self, nome_trilha: str, trilha: pd.DataFrame) -> None:

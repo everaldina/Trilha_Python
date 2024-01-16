@@ -23,6 +23,10 @@ class Trilha():
     def residentes(self) -> list[Residente]:
         return self.__residentes
     
+    @residentes.setter
+    def residentes(self, residentes: list[Residente]) -> None:
+        self.__residentes = residentes
+    
     def addResidente(self, residente: Residente) -> None:
         if not isinstance(residente, Residente):
             raise TypeError("Residente não é do tipo Residente")
@@ -40,7 +44,8 @@ class Trilha():
             'tempoFormacao': residente.tempoFormacao,
             'experienciaPrevia': residente.experienciaPrevia
         }
-        
-        residente_df = pd.DataFrame(residente_dict)
-        
-        self.residentes = pd.concat([self.residentes, residente_df])
+
+        index = len(self.residentes)
+
+        # self.residentes.iloc[index:] = residente_dict
+        self.residentes = self.residentes._append(residente_dict, ignore_index=True)
