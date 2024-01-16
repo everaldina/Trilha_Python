@@ -1,5 +1,6 @@
 import tkinter as tk
 import customtkinter as ctk
+from tkinter import messagebox
 from resitic import Residencia
 from icecream import ic
 
@@ -18,10 +19,12 @@ class Interface(ctk.CTk):
         self.residencia.add_trilha("dotnet")
         self.residencia.add_trilha("java")
         
+        
         # configure grid layout (4x4)
         self.grid_columnconfigure((1, 2, 3, 4), weight=1)
         self.grid_rowconfigure((1, 2, 3, 4), weight=1)
-                
+        
+        
         # create buttons
         self.btnAddResidentes = ctk.CTkButton(self, text="Add Residentes", command=self.select_trilha)
         self.btnAddResidentes.grid(row=2, column=2)
@@ -109,8 +112,10 @@ class Interface(ctk.CTk):
         # create inputs
         self.janelaAdd.inpCPF = ctk.CTkEntry(self.janelaAdd, textvariable=varCPF)
         self.janelaAdd.inpCPF.grid(row=1, column=3)
+        self.janelaAdd.inpCPF.bind("<FocusOut>", lambda event: Interface.verificar_entrada_numero(self.janelaAdd.inpCPF))
+
         
-        self.janelaAdd.inpAnoNasc = ctk.CTkEntry(self.janelaAdd, textvariable=varAnoNasc)
+        self.janelaAdd.inpAnoNasc = ctk.CTkEntry(self.janelaAdd, textvariable=varAnoNasc, validate="key", validatecommand=(self.register(Interface.validar_numero), "%P"))
         self.janelaAdd.inpAnoNasc.grid(row=2, column=3)
         
         self.janelaAdd.inpIdade = ctk.CTkEntry(self.janelaAdd, textvariable=varIdade)
@@ -192,17 +197,20 @@ class Interface(ctk.CTk):
             'experienciaPrevia': True if variaveis['experienciaPrevia'].get() == "Sim" else False
         }
         
-        # try:
-        self.residencia.add_residente(trilha, residente)
-        # except ValueError as e:
-        #     print(e)
+        try:
+          self.residencia.add_residente(trilha, residente)
+        except ValueError as e:
+            print(e)
         
         ic(self.residencia.trilhas[0].residentes)
     
     def carregar_dados(self) -> None:
-        janeleCarregar = ctk.CTkToplevel(self)
-        janeleCarregar.title("Carregar Dados")
-        janeleCarregar.geometry(f"{400}x{400}")
+        file = ctk.filedialog.askopenfilename(title="Carregar Dados", filetypes=[("CSV", "*.csv")])
+        
+        if file:
+            self.residencia.load(file)
+        else:
+            ctk.CTkMessageBox.showerror("Erro", "Arquivo não selecionado")
         
     def set_formacao_geral(self, formacao: str) -> None:
         if formacao == "Computação":
@@ -214,6 +222,26 @@ class Interface(ctk.CTk):
         else:
             areasEspeficas = []
         
-        # self.janelaAdd.varFormacaoEspecifica.set("")
         self.janelaAdd.inpFormacaoEspecifica.configure(values=areasEspeficas)
         
+    def validar_texto(entrada):
+        return entrada.isalpha()
+
+    def validar_numero(entrada):
+        if entrada == "":
+            return True
+        
+        return entrada.isdigit()
+
+    def verificar_entrada_texto(input):
+        valor = input.get()
+        
+        if not Interface.validar_texto(valor):
+            messagebox.showerror("Erro de validação", "A entrada deve conter apenas letras.")
+
+    def verificar_entrada_numero(input):
+        valor = input.get()
+        
+        if not Interface.validar_numero(valor):
+            messagebox.showerror("Erro de validação", "A entrada deve conter apenas números.")
+            input.delete(0, tk.END)
