@@ -3,6 +3,8 @@ import customtkinter as ctk
 from tkinter import messagebox
 from resitic import Residencia
 from icecream import ic
+import re
+from datetime import date
 
 ctk.set_appearance_mode("Dark")  # Modes: "System" (standard), "Dark", "Light"
 ctk.set_default_color_theme("dark-blue")  # Themes: "blue" (standard), "green", "dark-blue"
@@ -99,10 +101,10 @@ class Interface(ctk.CTk):
         self.janelaAdd.lblFormacaoEspecifica = ctk.CTkLabel(self.janelaAdd, text="Formação Específica:")
         self.janelaAdd.lblFormacaoEspecifica.grid(row=6, column=2)
         
-        self.janelaAdd.lblAndamentoGraduacao = ctk.CTkLabel(self.janelaAdd, text="Andamento da Graduação:")
+        self.janelaAdd.lblAndamentoGraduacao = ctk.CTkLabel(self.janelaAdd, text="Andamento da Graduação (%):")
         self.janelaAdd.lblAndamentoGraduacao.grid(row=7, column=2)
         
-        self.janelaAdd.lblTempoFormacao = ctk.CTkLabel(self.janelaAdd, text="Tempo de Formação:")
+        self.janelaAdd.lblTempoFormacao = ctk.CTkLabel(self.janelaAdd, text="Tempo de Formação (anos):")
         self.janelaAdd.lblTempoFormacao.grid(row=8, column=2)
         
         self.janelaAdd.lblExperienciaPrevia = ctk.CTkLabel(self.janelaAdd, text="Experiência Prévia:")
@@ -112,13 +114,13 @@ class Interface(ctk.CTk):
         # create inputs
         self.janelaAdd.inpCPF = ctk.CTkEntry(self.janelaAdd, textvariable=varCPF)
         self.janelaAdd.inpCPF.grid(row=1, column=3)
-        self.janelaAdd.inpCPF.bind("<FocusOut>", lambda event: Interface.verificar_entrada_numero(self.janelaAdd.inpCPF))
+        #self.janelaAdd.inpCPF.bind("<FocusOut>", lambda event: Interface.verificar_entrada_numero(self.janelaAdd.inpCPF))
 
         
         self.janelaAdd.inpAnoNasc = ctk.CTkEntry(self.janelaAdd, textvariable=varAnoNasc, validate="key", validatecommand=(self.register(Interface.validar_numero), "%P"))
         self.janelaAdd.inpAnoNasc.grid(row=2, column=3)
         
-        self.janelaAdd.inpIdade = ctk.CTkEntry(self.janelaAdd, textvariable=varIdade)
+        self.janelaAdd.inpIdade = ctk.CTkEntry(self.janelaAdd, textvariable=varIdade, validate="key", validatecommand=(self.register(Interface.validar_numero), "%P"))
         self.janelaAdd.inpIdade.grid(row=3, column=3)
         
         self.janelaAdd.inpFormacao = ctk.CTkComboBox(self.janelaAdd, values=areasFormacao,
@@ -137,7 +139,7 @@ class Interface(ctk.CTk):
         self.janelaAdd.inpAndamentoGraduacao = ctk.CTkEntry(self.janelaAdd, textvariable=varAndamentoGraduacao)
         self.janelaAdd.inpAndamentoGraduacao.grid(row=7, column=3)
         
-        self.janelaAdd.inpTempoFormacao = ctk.CTkEntry(self.janelaAdd, textvariable=varTempoFormacao)
+        self.janelaAdd.inpTempoFormacao = ctk.CTkEntry(self.janelaAdd, textvariable=varTempoFormacao, validate="key", validatecommand=(self.register(Interface.validar_numero), "%P"))
         self.janelaAdd.inpTempoFormacao.grid(row=8, column=3)
         
         self.janelaAdd.inpExperienciaPrevia = ctk.CTkComboBox(self.janelaAdd, values=experienciaPrevia,
@@ -164,30 +166,59 @@ class Interface(ctk.CTk):
         
         formacoesGerais = {"Engenharia": 0, "Computação": 1}
         
-        id = variaveis['cpf'].get()[:3] + variaveis['anoNasc'].get()[2:]
-
         formacaoGeral = variaveis['formacaoGeral'].get() or None
-
-        if formacaoGeral:
-           formacaoGeral = formacoesGerais[formacaoGeral] 
-
         formacaoEspecifica = variaveis['formacaoEspecifica'].get() or None
-        andamentoGraduacao = variaveis['andamentoGraduacao'].get()
-
-        if andamentoGraduacao:
-            andamentoGraduacao = float(andamentoGraduacao)
-        else:
-            andamentoGraduacao = None
-
+        andamentoGraduacao = variaveis['andamentoGraduacao'].get() or None
         tempoFormacao = variaveis['tempoFormacao'].get() or None
-
+        formacao = variaveis['formacao'].get() or None
+        cpf = variaveis['cpf'].get()
+        ano = variaveis['anoNasc'].get()
+        idade = variaveis['idade'].get()
+        
+        # validando campos
+        if not Interface.validar_cpf(cpf):
+            messagebox.showerror("Erro", "CPF inválido.")
+            return
+        
+        if len(ano) != 4 or ano == '':
+            messagebox.showerror("Erro", "Ano inválido.")
+            return
+        
+        if idade == "":
+            messagebox.showerror("Erro", "Idade não preenchida.")
+            return
+        else:
+            idade = int(idade)
+        
+        ano_atual = date.today().year
+        if idade == "" or (ano_atual - int(ano) != idade and ano_atual - int(ano) != idade +1):
+            messagebox.showerror("Erro", "Idade inválida.")
+            return
+        
+        if not formacao:
+            messagebox.showerror("Erro  de formação", "Campo formação nao preenchido.")
+            return
+        formacao = formacoes[formacao]
+        
+        
+        erro_formatacao = Interface.validar_formacao(formacao, formacaoGeral, formacaoEspecifica, andamentoGraduacao, tempoFormacao)
+        if erro_formatacao:
+            messagebox.showerror("Erro de formação", erro_formatacao)
+            return
+        
+        if formacaoGeral:
+            formacaoGeral = formacoesGerais[formacaoGeral]
         if tempoFormacao:
             tempoFormacao = int(tempoFormacao)
-        else:
-            tempoFormacao = None
         
+        if Interface.validar_float(andamentoGraduacao):
+            andamentoGraduacao = float(andamentoGraduacao)
+        else:
+            messagebox.showerror("Erro de formatação", "Andamento de graduação inválido.")
+            return
+    
         residente = {
-            'identificador': id,
+            'identificador': cpf[:3] + ano[2:],
             'idade': int(variaveis['idade'].get()),
             'formacao': formacoes[variaveis['formacao'].get()],
             'formacaoGeral': formacaoGeral,
@@ -233,15 +264,68 @@ class Interface(ctk.CTk):
         
         return entrada.isdigit()
 
+    def validar_float(entrada):
+        if entrada == "" or entrada is None:
+            return False
+        
+        try:
+            float(entrada)
+            return True
+        except ValueError:
+            return False
+
     def verificar_entrada_texto(input):
         valor = input.get()
         
         if not Interface.validar_texto(valor):
             messagebox.showerror("Erro de validação", "A entrada deve conter apenas letras.")
 
+    '''
     def verificar_entrada_numero(input):
         valor = input.get()
         
         if not Interface.validar_numero(valor):
             messagebox.showerror("Erro de validação", "A entrada deve conter apenas números.")
             input.delete(0, tk.END)
+    '''
+            
+    def validar_cpf(cpf):
+        if cpf == "":
+            return False
+
+        padrao = re.findall("^\d{3}\.\d{3}\.\d{3}-\d{2}|\d{11}", cpf)
+        
+        if len(padrao) == 1 and len(padrao[0]) == len(cpf):
+            return True
+        else:
+            return False
+    
+    def validar_formacao(formacao, formacaoGeral, formacaoEspecifica, andamentoGraduacao, tempoFormacao):
+        if formacao == 0: # formação técnica
+            if formacaoGeral:
+                return "Não é possivel ter uma formação geral com formação técnica."
+            if andamentoGraduacao or tempoFormacao:
+                return "Não é possivel ter um andamento de graduação ou um tempo de formação com formação técnica."
+        else: # nivel superior
+            if andamentoGraduacao and tempoFormacao:
+                return "Não é possivel ter um andamento de graduação e um tempo de formação."
+            if not formacaoEspecifica:
+                return "Campo formação específica não preenchido."
+            if not formacaoGeral:
+                return "Campo formação geral não preenchido."
+            
+            if formacao == 1 or formacao == 2: # graduação em andamento
+                if tempoFormacao:
+                    return "Não é possivel ter um tempo de formação como graduando."
+                if not andamentoGraduacao:
+                    return "Campo andamento de graduação não preenchido."
+                
+            else: # graduação concluída
+                if andamentoGraduacao:
+                    return "Não é possivel ter um andamento de graduação com formação técnica."
+                if not tempoFormacao:
+                    return "Campo tempo de formação não preenchido."
+        return None
+
+    
+    
