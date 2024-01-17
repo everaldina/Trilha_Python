@@ -1,6 +1,6 @@
 import tkinter as tk
 import customtkinter as ctk
-from tkinter import messagebox
+from tkinter import messagebox, ttk
 from resitic import Residencia
 from icecream import ic
 
@@ -29,8 +29,15 @@ class Interface(ctk.CTk):
         self.btnAddResidentes = ctk.CTkButton(self, text="Add Residentes", command=self.select_trilha)
         self.btnAddResidentes.grid(row=2, column=2)
         
+        self.btnExibirResidentes = ctk.CTkButton(self, text="Exibir Residentes", command=self.exibir_residentes)
+        self.btnExibirResidentes.grid(row=2, column=3)
+        
+        self.btnSalvarDados = ctk.CTkButton(self, text="Salvar Dados", command=self.salvar_dados)
+        self.btnSalvarDados.grid(row=3, column=2)
+        
         self.btnCarregarDados = ctk.CTkButton(self, text="Carregar Dados", command=self.carregar_dados)
-        self.btnCarregarDados.grid(row=2, column=3)
+        self.btnCarregarDados.grid(row=3, column=3)
+        
         
     
     def select_trilha(self):
@@ -209,8 +216,50 @@ class Interface(ctk.CTk):
         
         if file:
             self.residencia.load(file)
-        else:
-            ctk.CTkMessageBox.showerror("Erro", "Arquivo não selecionado")
+            
+    def salvar_dados(self) -> None:
+        file = ctk.filedialog.asksaveasfilename(title="Salvar Dados", filetypes=[("CSV", "*.csv")])
+        
+        if file:
+            self.residencia.save(file)
+            
+    
+    def exibir_residentes(self) -> None:
+        self.janelaResidentes = ctk.CTkToplevel(self)
+        self.janelaResidentes.title("Residentes")
+        self.janelaResidentes.geometry(f"{800}x{400}")
+                
+        residentes = self.residencia.get_residentes()
+        
+        # Criar um Treeview para exibir os dados
+        tree = ttk.Treeview(self.janelaResidentes)
+        tree["columns"] = tuple(residentes.columns)
+        tree["show"] = "headings"
+
+        # Adicionar colunas ao Treeview
+        for column in residentes.columns:
+            tree.heading(column, text=column)
+            tree.column(column, anchor="center", width=100)
+
+        # Adicionar linhas ao Treeview
+        for index, row in residentes.iterrows():
+            tree.insert("", "end", values=tuple(row))
+
+        # Adicionar Scrollbars
+        yscroll = ttk.Scrollbar(self.janelaResidentes, orient="vertical", command=tree.yview)
+        yscroll.grid(row=0, column=1, sticky="ns")
+        tree.configure(yscrollcommand=yscroll.set)
+
+        xscroll = ttk.Scrollbar(self.janelaResidentes, orient="horizontal", command=tree.xview)
+        xscroll.grid(row=1, column=0, sticky="ew")
+        tree.configure(xscrollcommand=xscroll.set)
+
+        tree.grid(row=0, column=0, sticky="nsew")
+
+        # Configurar pesos das linhas e colunas para que o Treeview expanda conforme necessário
+        self.janelaResidentes.grid_rowconfigure(0, weight=1)
+        self.janelaResidentes.grid_columnconfigure(0, weight=1)
+    
         
     def set_formacao_geral(self, formacao: str) -> None:
         if formacao == "Computação":

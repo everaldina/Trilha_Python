@@ -97,6 +97,11 @@ class Residencia():
         
         return self.residencia.loc[nome_trilha]
     
+    def get_residentes(self) -> pd.DataFrame:
+        dataframe = pd.concat([trilha.residentes for trilha in self.trilhas])
+        
+        return dataframe
+    
     def save(self) -> None:
         diretorio_atual = os.path.dirname(os.path.abspath(__file__))
 

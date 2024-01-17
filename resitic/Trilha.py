@@ -20,7 +20,7 @@ class Trilha():
         self.__nome = nome
     
     @property
-    def residentes(self) -> list[Residente]:
+    def residentes(self) -> pd.DataFrame:
         return self.__residentes
     
     @residentes.setter
