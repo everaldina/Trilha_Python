@@ -29,11 +29,15 @@ class Interface(ctk.CTk):
         self.btnAddResidentes = ctk.CTkButton(self, text="Add Residentes", command=self.select_trilha)
         self.btnAddResidentes.grid(row=2, column=2)
         
-        self.btnCarregarDados = ctk.CTkButton(self, text="Carregar Dados", command=self.carregar_dados)
-        self.btnCarregarDados.grid(row=2, column=3)
-        
         self.btnExibirResidentes = ctk.CTkButton(self, text="Exibir Residentes", command=self.exibir_residentes)
-        self.btnExibirResidentes.grid(row=3, column=2)
+        self.btnExibirResidentes.grid(row=2, column=3)
+        
+        self.btnSalvarDados = ctk.CTkButton(self, text="Salvar Dados", command=self.salvar_dados)
+        self.btnSalvarDados.grid(row=3, column=2)
+        
+        self.btnCarregarDados = ctk.CTkButton(self, text="Carregar Dados", command=self.carregar_dados)
+        self.btnCarregarDados.grid(row=3, column=3)
+        
         
     
     def select_trilha(self):
@@ -212,8 +216,12 @@ class Interface(ctk.CTk):
         
         if file:
             self.residencia.load(file)
-        else:
-            ctk.CTkMessageBox.showerror("Erro", "Arquivo não selecionado")
+            
+    def salvar_dados(self) -> None:
+        file = ctk.filedialog.asksaveasfilename(title="Salvar Dados", filetypes=[("CSV", "*.csv")])
+        
+        if file:
+            self.residencia.save(file)
             
     
     def exibir_residentes(self) -> None:
