@@ -6,17 +6,19 @@ import os
 @dataclass
 class Residencia():
     __trilhas: list[Trilha]
-    __residencia: pd.DataFrame
     __colunas: list[str]
     
-    def __init__(self, data: pd.DataFrame = None):
-        self.__colunas = ['identificador']
-        if data is not None:
-            self.__trilhas = data.index.get_level_values('trilha').unique()
-            self.__residencia = data
-        else:
-            self.__residencia = pd.DataFrame(columns=self.__colunas)
+    def __init__(self, trilhas: list[Trilha] = None, data: pd.DataFrame = None):
+        if trilhas and data:
+            raise ValueError("Não é possível passar trilhas e data ao mesmo tempo")
+        if trilhas:
+            self.__trilhas = trilhas
+        elif data:
             self.__trilhas = []
+            for trilha in data.index.get_level_values(0).unique():
+                self.__trilhas.append(Trilha(trilha))
+            
+        
         
     @property
     def trilhas(self) -> list[Trilha]:
@@ -98,9 +100,21 @@ class Residencia():
         return self.residencia.loc[nome_trilha]
     
     def get_residentes(self) -> pd.DataFrame:
-        dataframe = pd.concat([trilha.residentes for trilha in self.trilhas])
+        dataframes_trilha = []
         
-        return dataframe
+        for trilha in self.trilhas:
+            residentes = trilha.get_identificadores()
+            coluna_trilha = trilha.nome*len(residentes)
+            index = pd.MultiIndex.from_arrays([coluna_trilha, residentes], names=['identificador', 'trilha'])
+            residentes_trilha = trilha.residentes.set_index(index)
+            dataframes_trilha.append(residentes_trilha)
+        
+        return pd.concat(dataframes_trilha)
+    
+    def get_trilhas(data: pd.DataFrame) -> list[Trilha]:
+        trilhas = []
+        for trilha in data.index.get_level_values(0).unique():
+            self.__trilhas.append(Trilha(trilha))
     
     def save(self, path = None) -> None:
         if path is not None:
@@ -118,7 +132,8 @@ class Residencia():
             
             self.residencia.to_csv(caminho_csv, index=True)
         else:
-            self.residencia.to_csv(path, index=True)
+            caminho_csv = os.path.join(path, 'residencia.csv')
+            self.residencia.to_csv(caminho_csv, index=True)
         
     def load(path = None) -> 'Residencia':
         if path is not None:
@@ -136,6 +151,7 @@ class Residencia():
             dados = pd.read_csv(caminho_csv, index_col=[0, 1])
             return Residencia(dados)
         else:
-            dados = pd.read_csv(path, index_col=[0, 1])
+            caminho_csv = os.path.join(path, 'residencia.csv')
+            dados = pd.read_csv(caminho_csv, index_col=[0, 1])
             return Residencia(dados)
         

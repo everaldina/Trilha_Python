@@ -37,3 +37,6 @@ class Trilha():
         index = len(self.residentes)
         
         self.residentes.loc[index] = residente.__dict__()
+        
+    def get_identificadores(self):
+        return self.residentes['identificador']
