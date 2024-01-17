@@ -97,33 +97,40 @@ class Residencia():
         
         return self.residencia.loc[nome_trilha]
     
-    def save(self) -> None:
-        diretorio_atual = os.path.dirname(os.path.abspath(__file__))
+    def save(self, path = None) -> None:
+        if path is not None:
+            diretorio_atual = os.path.dirname(os.path.abspath(__file__))
 
-        # Constroi o caminho para o diretório 'data' dentro do pacote1
-        caminho_dados = os.path.join(diretorio_atual, 'data')
+            # Constroi o caminho para o diretório 'data' dentro do pacote1
+            caminho_dados = os.path.join(diretorio_atual, 'data')
 
-        # cria o diretório 'data' se ele não existir
-        if not os.path.exists(caminho_dados):
-            os.makedirs(caminho_dados)
+            # cria o diretório 'data' se ele não existir
+            if not os.path.exists(caminho_dados):
+                os.makedirs(caminho_dados)
 
-        # caminho completo para o arquivo CSV
-        caminho_csv = os.path.join(caminho_dados, 'residencia.csv')
+            # caminho completo para o arquivo CSV
+            caminho_csv = os.path.join(caminho_dados, 'residencia.csv')
+            
+            self.residencia.to_csv(caminho_csv, index=True)
+        else:
+            self.residencia.to_csv(path, index=True)
         
-        self.residencia.to_csv(caminho_csv, index=True)
-        
-    def load() -> 'Residencia':
-        diretorio_atual = os.path.dirname(os.path.abspath(__file__))
+    def load(path = None) -> 'Residencia':
+        if path is not None:
+            diretorio_atual = os.path.dirname(os.path.abspath(__file__))
 
-        # Constroi o caminho para o diretório 'data' dentro do pacote1
-        caminho_dados = os.path.join(diretorio_atual, 'data')
+            # Constroi o caminho para o diretório 'data' dentro do pacote1
+            caminho_dados = os.path.join(diretorio_atual, 'data')
 
-        # cria o diretório 'data' se ele não existir
-        if not os.path.exists(caminho_dados):
-           raise FileNotFoundError("Arquivo não encontrado")
+            # cria o diretório 'data' se ele não existir
+            if not os.path.exists(caminho_dados):
+                raise FileNotFoundError("Arquivo não encontrado")
 
-        # caminho completo para o arquivo CSV
-        caminho_csv = os.path.join(caminho_dados, 'residencia.csv')
-        dados = pd.read_csv(caminho_csv, index_col=[0, 1])
-        return Residencia(dados)
+            # caminho completo para o arquivo CSV
+            caminho_csv = os.path.join(caminho_dados, 'residencia.csv')
+            dados = pd.read_csv(caminho_csv, index_col=[0, 1])
+            return Residencia(dados)
+        else:
+            dados = pd.read_csv(path, index_col=[0, 1])
+            return Residencia(dados)
         
