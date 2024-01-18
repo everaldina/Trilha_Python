@@ -42,7 +42,7 @@ class Interface(ctk.CTk):
     def select_trilha(self):
         self.janelaAdd = ctk.CTkToplevel(self)
         self.janelaAdd.title("Adicionar Residentes")
-        self.janelaAdd.geometry(f"{550}x{650}")
+        self.janelaAdd.geometry(f"{650}x{650}")
         
         self.janelaAdd.grid_columnconfigure((1, 2, 3, 4, 5), weight=1)
         self.janelaAdd.grid_rowconfigure((1, 2, 3, 4), weight=1)
@@ -66,7 +66,7 @@ class Interface(ctk.CTk):
         
         areasFormacao = ["Formação técnica", "Formação técnica graduação em andamento", "Graduação em andamento", "Graduação concluída"]
         areasFormacaoGeral = ["Engenharia", "Computação"]
-        experienciaPrevia = ["Sim", "Não"]
+        experienciaPrevia = ["Nenhuma", "Conhecimento básico", "Conhecimento intermediário", "Conhecimento avançado"]
         areasEspeficas = []
                 
         
@@ -77,7 +77,7 @@ class Interface(ctk.CTk):
         varFormacao = ctk.StringVar()
         varFormacaoGeral = ctk.StringVar()
         varFormacaoEspecifica = ctk.StringVar()
-        varAndamentoGraduacao = ctk.StringVar()
+        varAndamentoGraduacao = ctk.IntVar()
         varTempoFormacao = ctk.StringVar()
         varExperienciaPrevia = ctk.StringVar()
         variaveis = {"cpf": varCPF, "anoNasc": varAnoNasc, "idade": varIdade, "formacao": varFormacao, 
@@ -109,23 +109,22 @@ class Interface(ctk.CTk):
         self.janelaAdd.lblAndamentoGraduacao.grid(row=7, column=2)
         
         self.janelaAdd.lblTempoFormacao = ctk.CTkLabel(self.janelaAdd, text="Tempo de Formação (anos):")
-        self.janelaAdd.lblTempoFormacao.grid(row=8, column=2)
+        self.janelaAdd.lblTempoFormacao.grid(row=9, column=2)
         
         self.janelaAdd.lblExperienciaPrevia = ctk.CTkLabel(self.janelaAdd, text="Experiência Prévia:")
-        self.janelaAdd.lblExperienciaPrevia.grid(row=9, column=2)
+        self.janelaAdd.lblExperienciaPrevia.grid(row=10, column=2)
         
         
         # create inputs
         self.janelaAdd.inpCPF = ctk.CTkEntry(self.janelaAdd, textvariable=varCPF)
         self.janelaAdd.inpCPF.grid(row=1, column=3)
-        #self.janelaAdd.inpCPF.bind("<FocusOut>", lambda event: Interface.verificar_entrada_numero(self.janelaAdd.inpCPF))
-
         
         self.janelaAdd.inpAnoNasc = ctk.CTkEntry(self.janelaAdd, textvariable=varAnoNasc, validate="key", validatecommand=(self.register(Interface.validar_numero), "%P"))
         self.janelaAdd.inpAnoNasc.grid(row=2, column=3)
         
         self.janelaAdd.inpIdade = ctk.CTkEntry(self.janelaAdd, textvariable=varIdade, validate="key", validatecommand=(self.register(Interface.validar_numero), "%P"))
         self.janelaAdd.inpIdade.grid(row=3, column=3)
+        self.janelaAdd.inpIdade.bind("<FocusOut>", lambda event: Interface.verificar_idade(self.janelaAdd.inpIdade, self.janelaAdd.inpAnoNasc.get()))
         
         self.janelaAdd.inpFormacao = ctk.CTkComboBox(self.janelaAdd, values=areasFormacao,
                                     width=200, command=None, variable=varFormacao, state="readonly")
@@ -140,15 +139,17 @@ class Interface(ctk.CTk):
                                                                variable=varFormacaoEspecifica, state="readonly")
         self.janelaAdd.inpFormacaoEspecifica.grid(row=6, column=3)
         
-        self.janelaAdd.inpAndamentoGraduacao = ctk.CTkEntry(self.janelaAdd, textvariable=varAndamentoGraduacao)
+        self.janelaAdd.inpAndamentoGraduacao = ctk.CTkEntry(self.janelaAdd, textvariable=varAndamentoGraduacao, state="readonly")
         self.janelaAdd.inpAndamentoGraduacao.grid(row=7, column=3)
+        self.janelaAdd.inpAndamentoGraduacaoSlider = ctk.CTkSlider(self.janelaAdd, from_=0, to=100, variable=varAndamentoGraduacao)
+        self.janelaAdd.inpAndamentoGraduacaoSlider.grid(row=8, column=3)
         
         self.janelaAdd.inpTempoFormacao = ctk.CTkEntry(self.janelaAdd, textvariable=varTempoFormacao, validate="key", validatecommand=(self.register(Interface.validar_numero), "%P"))
-        self.janelaAdd.inpTempoFormacao.grid(row=8, column=3)
+        self.janelaAdd.inpTempoFormacao.grid(row=9, column=3)
         
         self.janelaAdd.inpExperienciaPrevia = ctk.CTkComboBox(self.janelaAdd, values=experienciaPrevia,
                                     command=None, variable=varExperienciaPrevia, state="readonly")
-        self.janelaAdd.inpExperienciaPrevia.grid(row=9, column=3)
+        self.janelaAdd.inpExperienciaPrevia.grid(row=10, column=3)
         
         
         # create buttons
@@ -169,6 +170,8 @@ class Interface(ctk.CTk):
                       "Graduação em andamento": 2, "Graduação concluída": 3}
         
         formacoesGerais = {"Engenharia": 0, "Computação": 1}
+        
+        experienciaPrevia = {"Nenhuma": 0, "Conhecimento básico": 1, "Conhecimento intermediário": 2, "Conhecimento avançado": 3}
         
         formacaoGeral = variaveis['formacaoGeral'].get() or None
         formacaoEspecifica = variaveis['formacaoEspecifica'].get() or None
@@ -229,11 +232,22 @@ class Interface(ctk.CTk):
             'formacaoEspecifica': formacaoEspecifica,
             'andamentoGraduacao': andamentoGraduacao,
             'tempoFormacao': tempoFormacao,
-            'experienciaPrevia': True if variaveis['experienciaPrevia'].get() == "Sim" else False
+            'experienciaPrevia': experienciaPrevia[variaveis['experienciaPrevia'].get()]
         }
         
         try:
-          self.residencia.add_residente(trilha, residente)
+            self.residencia.add_residente(trilha, residente)
+          
+            self.janelaAdd.inpCPF.delete(0, tk.END)
+            self.janelaAdd.inpAnoNasc.delete(0, tk.END)
+            self.janelaAdd.inpIdade.delete(0, tk.END)
+            self.janelaAdd.inpFormacao.set("")
+            self.janelaAdd.inpFormacaoGeral.set("")
+            self.janelaAdd.inpFormacaoEspecifica.set("")
+            self.janelaAdd.inpAndamentoGraduacaoSlider.set(0)
+            self.janelaAdd.inpTempoFormacao.delete(0, tk.END)
+            self.janelaAdd.inpExperienciaPrevia.set("")
+            
         except ValueError as e:
             print(e)
         
@@ -364,5 +378,20 @@ class Interface(ctk.CTk):
                     return "Campo tempo de formação não preenchido."
         return None
 
-    
-    
+    def verificar_idade(inpIdade, ano):
+        idade = inpIdade.get()
+        
+        if idade == "":
+            return
+        
+        if ano == "":
+            messagebox.showerror("Erro", "Ano de nascimento não preenchido.")
+            return
+        
+        idade = int(idade)
+        ano_atual = date.today().year
+        
+        if idade == "" or (ano_atual - int(ano) != idade and ano_atual - int(ano) != idade +1):
+            messagebox.showerror("Erro", "Idade inválida.")
+            inpIdade.delete(0, tk.END)
+            return

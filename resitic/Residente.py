@@ -9,7 +9,7 @@ class Residente():
     __formacaoEspecifica: str
     __andamentoGraduacao: float
     __tempoFormacao: int
-    __experienciaPrevia: bool
+    __experienciaPrevia: int
     
     def __init__(self, identificador: str = None):
         self.__identificador = identificador
@@ -95,11 +95,11 @@ class Residente():
         self.__tempoFormacao = tempoFormacao
         
     @property
-    def experienciaPrevia(self) -> bool:
+    def experienciaPrevia(self) -> int:
         return self.__experienciaPrevia
     
     @experienciaPrevia.setter
-    def experienciaPrevia(self, experienciaPrevia: bool) -> None:
+    def experienciaPrevia(self, experienciaPrevia: int) -> None:
         self.__experienciaPrevia = experienciaPrevia
         
     def __dict__(self):
