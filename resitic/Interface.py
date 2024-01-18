@@ -16,10 +16,7 @@ class Interface(ctk.CTk):
         self.geometry(f"{400}x{400}")
         
         
-        self.residencia = Residencia()
-        self.residencia.add_trilha("python")
-        self.residencia.add_trilha("dotnet")
-        self.residencia.add_trilha("java")
+        self.residencia = Residencia(["python", "dotnet", "java"])
         
         
         # configure grid layout (4x4)
@@ -328,15 +325,6 @@ class Interface(ctk.CTk):
         
         if not Interface.validar_texto(valor):
             messagebox.showerror("Erro de validação", "A entrada deve conter apenas letras.")
-
-    '''
-    def verificar_entrada_numero(input):
-        valor = input.get()
-        
-        if not Interface.validar_numero(valor):
-            messagebox.showerror("Erro de validação", "A entrada deve conter apenas números.")
-            input.delete(0, tk.END)
-    '''
             
     def validar_cpf(cpf):
         if cpf == "":

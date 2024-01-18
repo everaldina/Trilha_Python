@@ -6,17 +6,12 @@ import os
 @dataclass
 class Residencia():
     __trilhas: list[Trilha]
-    __colunas: list[str]
     
-    def __init__(self, trilhas: list[Trilha] = None, data: pd.DataFrame = None):
-        if trilhas and data:
-            raise ValueError("Não é possível passar trilhas e data ao mesmo tempo")
+    def __init__(self, trilhas: list[str] = None):
         if trilhas:
-            self.__trilhas = trilhas
-        elif data:
-            self.__trilhas = []
-            for trilha in data.index.get_level_values(0).unique():
-                self.__trilhas.append(Trilha(trilha))
+            self.trilhas = []
+            for trilha in trilhas:
+                self.add_trilha(trilha)
         else:
             self.__trilhas = []
         
@@ -37,21 +32,17 @@ class Residencia():
         self.__residencia = residencia
         
     def add_trilha(self, nome_trilha: str) -> None:
-        for trilha in self.trilhas:
-            if trilha.nome == nome_trilha:
-                raise ValueError("Trilha já cadastrada")
+        if nome_trilha in self.get_trilhas():
+            raise ValueError("Trilha já cadastrada")
         
         trilha = Trilha(nome_trilha)
         
         self.trilhas.append(trilha)
         
     def add_residente(self, nome_trilha: str, residenteDict: dict) -> None:
-        trilha = None
+        trilha = self.get_trilha(nome_trilha)
         
-        for trilha in self.trilhas:
-            if trilha.nome == nome_trilha:
-                break
-        else:
+        if not trilha:
             raise ValueError("Trilha não cadastrada")
         
         if nome_trilha == "python":
@@ -72,3 +63,24 @@ class Residencia():
         residente.experienciaPrevia = residenteDict['experienciaPrevia']
         
         trilha.addResidente(residente)
+    
+    def get_trilhas(self) -> list[str]:
+        return [trilha.nome for trilha in self.trilhas]
+        
+    def get_trilha(self, nome_trilha: str) -> Trilha:
+        for trilha in self.trilhas:
+            if trilha.nome == nome_trilha:
+                return trilha
+        return None
+    
+    def get_residentes(self) -> pd.DataFrame:
+        dataframes_trilha = []
+        
+        for trilha in self.trilhas:
+            residentes = trilha.get_identificadores()
+            coluna_trilha = [trilha.nome]*len(residentes)
+            index = pd.MultiIndex.from_arrays([coluna_trilha, residentes], names=['identificador', 'trilha'])
+            residentes_trilha = trilha.residentes.set_index(index)
+            dataframes_trilha.append(residentes_trilha)
+        
+        return pd.concat(dataframes_trilha).drop(columns=['identificador'])

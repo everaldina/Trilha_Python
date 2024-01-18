@@ -39,7 +39,7 @@ class Trilha():
         self.residentes.loc[index] = residente.__dict__()
         
     def get_identificadores(self):
-        return self.residentes['identificador']
+        return self.residentes['identificador'].values.tolist()
     
     def __eq__(self, __value: object) -> bool:
         if not isinstance(__value, Trilha):
