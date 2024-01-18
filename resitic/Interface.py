@@ -252,7 +252,10 @@ class Interface(ctk.CTk):
         file = ctk.filedialog.askopenfilename(title="Carregar Dados", filetypes=[("CSV", "*.csv")])
         
         if file:
-            self.residencia.load(file)
+            try:
+                self.residencia.load(file)
+            except ValueError as e:
+                print(e)
             
     def salvar_dados(self) -> None:
         file = ctk.filedialog.asksaveasfilename(title="Salvar Dados", filetypes=[("CSV", "*.csv")])

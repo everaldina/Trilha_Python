@@ -31,7 +31,7 @@ class Trilha():
         if not isinstance(residente, Residente):
             raise TypeError("Residente não é do tipo Residente")
         
-        if residente.identificador in self.residentes['identificador']:
+        if residente.identificador in list(self.residentes['identificador']):
             raise ValueError("Residente já cadastrado")
         
         index = len(self.residentes)
