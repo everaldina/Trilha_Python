@@ -265,23 +265,25 @@ class Interface(ctk.CTk):
     def exibir_residentes(self) -> None:
         self.janelaResidentes = ctk.CTkToplevel(self)
         self.janelaResidentes.title("Residentes")
-        self.janelaResidentes.geometry(f"{800}x{400}")
+        self.janelaResidentes.geometry(f"{900}x{400}")
                 
         residentes = self.residencia.get_residentes()
         
+        columns = residentes.index.names + list(residentes.columns)
+        
         # Criar um Treeview para exibir os dados
         tree = ttk.Treeview(self.janelaResidentes)
-        tree["columns"] = tuple(residentes.columns)
+        tree["columns"] = columns
         tree["show"] = "headings"
 
         # Adicionar colunas ao Treeview
-        for column in residentes.columns:
+        for column in columns:
             tree.heading(column, text=column)
             tree.column(column, anchor="center", width=100)
 
         # Adicionar linhas ao Treeview
         for index, row in residentes.iterrows():
-            tree.insert("", "end", values=tuple(row))
+            tree.insert("", "end", values=tuple(index) + tuple(row))
 
         # Adicionar Scrollbars
         yscroll = ttk.Scrollbar(self.janelaResidentes, orient="vertical", command=tree.yview)
