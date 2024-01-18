@@ -208,6 +208,11 @@ class Interface(ctk.CTk):
         formacao = formacoes[formacao]
         
         
+        try:
+            andamentoGraduacao = float(andamentoGraduacao)
+        except:
+            andamentoGraduacao = None
+            
         erro_formatacao = Interface.validar_formacao(formacao, formacaoGeral, formacaoEspecifica, andamentoGraduacao, tempoFormacao)
         if erro_formatacao:
             messagebox.showerror("Erro de formação", erro_formatacao)
@@ -217,12 +222,6 @@ class Interface(ctk.CTk):
             formacaoGeral = formacoesGerais[formacaoGeral]
         if tempoFormacao:
             tempoFormacao = int(tempoFormacao)
-        
-        if Interface.validar_float(andamentoGraduacao):
-            andamentoGraduacao = float(andamentoGraduacao)
-        else:
-            messagebox.showerror("Erro de formatação", "Andamento de graduação inválido.")
-            return
     
         residente = {
             'identificador': cpf[:3] + ano[2:],
@@ -234,6 +233,7 @@ class Interface(ctk.CTk):
             'tempoFormacao': tempoFormacao,
             'experienciaPrevia': experienciaPrevia[variaveis['experienciaPrevia'].get()]
         }
+        print(residente)
         
         try:
             self.residencia.add_residente(trilha, residente)
@@ -355,8 +355,10 @@ class Interface(ctk.CTk):
         if formacao == 0: # formação técnica
             if formacaoGeral:
                 return "Não é possivel ter uma formação geral com formação técnica."
-            if andamentoGraduacao or tempoFormacao:
-                return "Não é possivel ter um andamento de graduação ou um tempo de formação com formação técnica."
+            if tempoFormacao:
+                return "Não é possivel ter tempo de formação com formação técnica."
+            if andamentoGraduacao:
+                return "Não é possivel ter um andamento de graduação com formação técnica."
         else: # nivel superior
             if andamentoGraduacao and tempoFormacao:
                 return "Não é possivel ter um andamento de graduação e um tempo de formação."

@@ -53,7 +53,7 @@ class Residencia():
             id = "tic18Jav"
         
         residente = Residente(id + residenteDict['identificador'])
-        
+        print(residenteDict)
         residente.idade = residenteDict['idade']
         residente.formacao = residenteDict['formacao']
         residente.formacaoGeral = residenteDict['formacaoGeral']
@@ -79,7 +79,7 @@ class Residencia():
         for trilha in self.trilhas:
             residentes = trilha.get_identificadores()
             coluna_trilha = [trilha.nome]*len(residentes)
-            index = pd.MultiIndex.from_arrays([coluna_trilha, residentes], names=['identificador', 'trilha'])
+            index = pd.MultiIndex.from_arrays([coluna_trilha, residentes], names=['trilha', 'identificador'])
             residentes_trilha = trilha.residentes.set_index(index)
             dataframes_trilha.append(residentes_trilha)
         
