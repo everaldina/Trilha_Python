@@ -2,7 +2,6 @@ import tkinter as tk
 import customtkinter as ctk
 from tkinter import messagebox, ttk
 from resitic import Residencia
-from icecream import ic
 import re
 from datetime import date
 

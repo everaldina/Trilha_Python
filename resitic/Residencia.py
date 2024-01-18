@@ -3,7 +3,6 @@ from resitic import Trilha, Residente
 import pandas as pd
 import numpy as np
 import os
-from icecream import ic
 
 @dataclass
 class Residencia():
@@ -126,8 +125,8 @@ class Residencia():
         for trilha in trilhas:
             try:
                 self.add_trilha(trilha)
-            except:
-                pass
+            except ValueError as e:
+                print(e)
         
         for index, row in data_frame.iterrows():           
             residente = Residente(index[1])
