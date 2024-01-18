@@ -117,26 +117,19 @@ class Residencia():
     def load(self, path = None) -> None:
         if path is None:
             raise ValueError("Caminho não informado")
-        else:
-            data_frame = pd.read_csv(path, index_col=[0,1])
+        
+        data_frame = pd.read_csv(path, index_col=[0,1])
+        data_frame.replace(np.nan, None, inplace=True)
         
         trilhas = data_frame.index.get_level_values('trilha').unique().values.tolist()
-        
-        self.trilhas = []
-        
+                
         for trilha in trilhas:
-            self.add_trilha(trilha)
-            
-        ic('trilhas', self.trilhas)
+            try:
+                self.add_trilha(trilha)
+            except:
+                pass
         
-        for index, row in data_frame.iterrows():
-            row = row.replace({np.nan: None})
-            ic('index', index)
-            ic('row', row)
-            
-            print()
-            print()
-            
+        for index, row in data_frame.iterrows():           
             residente = Residente(index[1])
             
             residente.idade = row['idade']
@@ -147,4 +140,4 @@ class Residencia():
             residente.tempoFormacao = row['tempoFormacao']
             residente.experienciaPrevia = row['experienciaPrevia']
             
-            self.add_residente(index[1], residente = residente)
+            self.add_residente(index[0], residente = residente)

@@ -233,7 +233,6 @@ class Interface(ctk.CTk):
             'tempoFormacao': tempoFormacao,
             'experienciaPrevia': experienciaPrevia[variaveis['experienciaPrevia'].get()]
         }
-        print(residente)
         
         try:
             self.residencia.add_residente(trilha, residente)
@@ -250,8 +249,6 @@ class Interface(ctk.CTk):
             
         except ValueError as e:
             print(e)
-        
-        ic(self.residencia.trilhas[0].residentes)
     
     def carregar_dados(self) -> None:
         file = ctk.filedialog.askopenfilename(title="Carregar Dados", filetypes=[("CSV", "*.csv")])
@@ -264,7 +261,6 @@ class Interface(ctk.CTk):
         
         if file:
             self.residencia.save(file)
-            
     
     def exibir_residentes(self) -> None:
         self.janelaResidentes = ctk.CTkToplevel(self)
