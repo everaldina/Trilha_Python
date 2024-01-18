@@ -28,6 +28,11 @@ Versão aprimorada do pacote datafruta, contando com novos tipos de medidas esta
     - Variância populacional dos dados
     - Desvio padrão amostral dos dados
     - Variância amostral dos dados
+  
+## [resitic](resitic/)
+Pacote para coleta de dados sobre residentes de diferenças trilhas. O programa possui interface grafica e trabalha com dataframes do pandas. 
+
+As dependencias do pacote estao disponiveis no arquivo [requirements.txt](resitic/requirements.txt). Para instalação dos requisitos, basta executar o comando `pip install -r requirements.txt` na pasta do pacote.
 
 ## [PI-003](PI-003.ipynb)
 Notebook com a resolução do problema PI-003, que consiste em testes para comprar a eficiencia de metodos estaticos de metodos implementados na classe DataFruta_V1 com metodos de arrays do numpy.
