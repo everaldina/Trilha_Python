@@ -11,12 +11,11 @@ ctk.set_default_color_theme("dark-blue")  # Themes: "blue" (standard), "green", 
 class Interface(ctk.CTk):
     def __init__(self):
         super().__init__()
+        
         self.title("Resitic")
         self.geometry(f"{400}x{400}")
         
-        
         self.residencia = Residencia(["python", "dotnet", "java"])
-        
         
         # configure grid layout (4x4)
         self.grid_columnconfigure((1, 2, 3, 4), weight=1)
