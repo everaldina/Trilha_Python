@@ -17,8 +17,8 @@ class Residencia():
             self.__trilhas = []
             for trilha in data.index.get_level_values(0).unique():
                 self.__trilhas.append(Trilha(trilha))
-            
-        
+        else:
+            self.__trilhas = []
         
     @property
     def trilhas(self) -> list[Trilha]:
@@ -72,86 +72,3 @@ class Residencia():
         residente.experienciaPrevia = residenteDict['experienciaPrevia']
         
         trilha.addResidente(residente)
-        
-        
-    def add_trilha_dataframe(self, nome_trilha: str, trilha: pd.DataFrame) -> None:
-        if nome_trilha in self.trilhas:
-            raise ValueError("Trilha já cadastrada")
-        
-        if not isinstance(trilha, pd.DataFrame):
-            raise TypeError("Trilha não é do tipo DataFrame")
-        
-        
-        self.trilhas.append(nome_trilha)
-        
-        index = [(nome_trilha, trilha.loc[i, 'identificador']) for i in range(len(trilha))]
-        
-        index = pd.MultiIndex.from_tuples(index, names=['trilha', 'identificador'])
-        
-        if self.residencia.empty:
-            self.residencia = trilha.set_index(index).drop(columns=['identificador'])
-        else:
-            self.residencia = pd.concat([self.residencia, trilha.set_index(index).drop(columns=['identificador'])])
-            
-    def get_trilha(self, nome_trilha: str) -> pd.DataFrame:
-        if nome_trilha not in self.trilhas:
-            return None
-        
-        return self.residencia.loc[nome_trilha]
-    
-    def get_residentes(self) -> pd.DataFrame:
-        dataframes_trilha = []
-        
-        for trilha in self.trilhas:
-            residentes = trilha.get_identificadores()
-            coluna_trilha = trilha.nome*len(residentes)
-            index = pd.MultiIndex.from_arrays([coluna_trilha, residentes], names=['identificador', 'trilha'])
-            residentes_trilha = trilha.residentes.set_index(index)
-            dataframes_trilha.append(residentes_trilha)
-        
-        return pd.concat(dataframes_trilha)
-    
-    def get_trilhas(data: pd.DataFrame) -> list[Trilha]:
-        trilhas = []
-        for trilha in data.index.get_level_values(0).unique():
-            self.__trilhas.append(Trilha(trilha))
-    
-    def save(self, path = None) -> None:
-        if path is not None:
-            diretorio_atual = os.path.dirname(os.path.abspath(__file__))
-
-            # Constroi o caminho para o diretório 'data' dentro do pacote1
-            caminho_dados = os.path.join(diretorio_atual, 'data')
-
-            # cria o diretório 'data' se ele não existir
-            if not os.path.exists(caminho_dados):
-                os.makedirs(caminho_dados)
-
-            # caminho completo para o arquivo CSV
-            caminho_csv = os.path.join(caminho_dados, 'residencia.csv')
-            
-            self.residencia.to_csv(caminho_csv, index=True)
-        else:
-            caminho_csv = os.path.join(path, 'residencia.csv')
-            self.residencia.to_csv(caminho_csv, index=True)
-        
-    def load(path = None) -> 'Residencia':
-        if path is not None:
-            diretorio_atual = os.path.dirname(os.path.abspath(__file__))
-
-            # Constroi o caminho para o diretório 'data' dentro do pacote1
-            caminho_dados = os.path.join(diretorio_atual, 'data')
-
-            # cria o diretório 'data' se ele não existir
-            if not os.path.exists(caminho_dados):
-                raise FileNotFoundError("Arquivo não encontrado")
-
-            # caminho completo para o arquivo CSV
-            caminho_csv = os.path.join(caminho_dados, 'residencia.csv')
-            dados = pd.read_csv(caminho_csv, index_col=[0, 1])
-            return Residencia(dados)
-        else:
-            caminho_csv = os.path.join(path, 'residencia.csv')
-            dados = pd.read_csv(caminho_csv, index_col=[0, 1])
-            return Residencia(dados)
-        

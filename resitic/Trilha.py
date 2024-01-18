@@ -40,3 +40,9 @@ class Trilha():
         
     def get_identificadores(self):
         return self.residentes['identificador']
+    
+    def __eq__(self, __value: object) -> bool:
+        if not isinstance(__value, Trilha):
+            return False
+        
+        return self.nome == __value.nome
