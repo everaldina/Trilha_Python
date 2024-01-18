@@ -1,7 +1,9 @@
 from dataclasses import dataclass
 from resitic import Trilha, Residente
 import pandas as pd
+import numpy as np
 import os
+from icecream import ic
 
 @dataclass
 class Residencia():
@@ -39,28 +41,35 @@ class Residencia():
         
         self.trilhas.append(trilha)
         
-    def add_residente(self, nome_trilha: str, residenteDict: dict) -> None:
+    def add_residente(self, nome_trilha: str, residenteDict: dict = None, residente: Residente = None) -> None:
         trilha = self.get_trilha(nome_trilha)
         
-        if not trilha:
-            raise ValueError("Trilha não cadastrada")
+        if not residenteDict and not residente:
+            raise ValueError("Residente não informado")
         
-        if nome_trilha == "python":
-            id = "tic18Py"
-        elif nome_trilha == "dotnet":
-            id = "tic18Net"
-        elif nome_trilha == "java":
-            id = "tic18Jav"
+        if residenteDict and residente:
+            raise ValueError("Residente duplicado")
         
-        residente = Residente(id + residenteDict['identificador'])
-        
-        residente.idade = residenteDict['idade']
-        residente.formacao = residenteDict['formacao']
-        residente.formacaoGeral = residenteDict['formacaoGeral']
-        residente.formacaoEspecifica = residenteDict['formacaoEspecifica']
-        residente.andamentoGraduacao = residenteDict['andamentoGraduacao']
-        residente.tempoFormacao = residenteDict['tempoFormacao']
-        residente.experienciaPrevia = residenteDict['experienciaPrevia']
+        if not residente:
+            if not trilha:
+                raise ValueError("Trilha não cadastrada")
+            
+            if nome_trilha == "python":
+                id = "tic18Py"
+            elif nome_trilha == "dotnet":
+                id = "tic18Net"
+            elif nome_trilha == "java":
+                id = "tic18Jav"
+            
+            residente = Residente(id + residenteDict['identificador'])
+            
+            residente.idade = residenteDict['idade']
+            residente.formacao = residenteDict['formacao']
+            residente.formacaoGeral = residenteDict['formacaoGeral']
+            residente.formacaoEspecifica = residenteDict['formacaoEspecifica']
+            residente.andamentoGraduacao = residenteDict['andamentoGraduacao']
+            residente.tempoFormacao = residenteDict['tempoFormacao']
+            residente.experienciaPrevia = residenteDict['experienciaPrevia']
         
         trilha.addResidente(residente)
     
@@ -104,3 +113,38 @@ class Residencia():
         else:
             caminho_csv = os.path.join(path)
             data_frame.to_csv(caminho_csv, index=True)
+            
+    def load(self, path = None) -> None:
+        if path is None:
+            raise ValueError("Caminho não informado")
+        else:
+            data_frame = pd.read_csv(path, index_col=[0,1])
+        
+        trilhas = data_frame.index.get_level_values('trilha').unique().values.tolist()
+        
+        self.trilhas = []
+        
+        for trilha in trilhas:
+            self.add_trilha(trilha)
+            
+        ic('trilhas', self.trilhas)
+        
+        for index, row in data_frame.iterrows():
+            row = row.replace({np.nan: None})
+            ic('index', index)
+            ic('row', row)
+            
+            print()
+            print()
+            
+            residente = Residente(index[1])
+            
+            residente.idade = row['idade']
+            residente.formacao = row['formacao']
+            residente.formacaoGeral = row['formacaoGeral']
+            residente.formacaoEspecifica = row['formacaoEspecifica']
+            residente.andamentoGraduacao = row['andamentoGraduacao']
+            residente.tempoFormacao = row['tempoFormacao']
+            residente.experienciaPrevia = row['experienciaPrevia']
+            
+            self.add_residente(index[1], residente = residente)
