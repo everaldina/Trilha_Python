@@ -21,7 +21,6 @@ class Interface(ctk.CTk):
         self.grid_columnconfigure((1, 2, 3, 4), weight=1)
         self.grid_rowconfigure((1, 2, 3, 4), weight=1)
         
-        
         # create buttons
         self.btnAddResidentes = ctk.CTkButton(self, text="Add Residentes", command=self.select_trilha)
         self.btnAddResidentes.grid(row=2, column=2)
@@ -36,7 +35,6 @@ class Interface(ctk.CTk):
         self.btnCarregarDados.grid(row=3, column=3)
         
         
-    
     def select_trilha(self):
         self.janelaAdd = ctk.CTkToplevel(self)
         self.janelaAdd.title("Adicionar Residentes")
@@ -66,7 +64,7 @@ class Interface(ctk.CTk):
         areasFormacaoGeral = ["Engenharia", "Computação"]
         experienciaPrevia = ["Nenhuma", "Conhecimento básico", "Conhecimento intermediário", "Conhecimento avançado"]
         areasEspeficas = []
-                
+        
         
         # create variables
         varCPF = ctk.StringVar()
@@ -252,10 +250,7 @@ class Interface(ctk.CTk):
         file = ctk.filedialog.askopenfilename(title="Carregar Dados", filetypes=[("CSV", "*.csv")])
         
         if file:
-            try:
-                self.residencia.load(file)
-            except ValueError as e:
-                print(e)
+            self.residencia.load(file)
             
     def salvar_dados(self) -> None:
         file = ctk.filedialog.asksaveasfilename(title="Salvar Dados", filetypes=[("CSV", "*.csv")])

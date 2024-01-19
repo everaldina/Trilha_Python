@@ -118,7 +118,7 @@ class Residencia():
             raise ValueError("Caminho não informado")
         
         data_frame = pd.read_csv(path, index_col=[0,1])
-        data_frame.replace(np.nan, None, inplace=True)
+        data_frame = data_frame.replace(np.nan, None).drop_duplicates()
         
         trilhas = data_frame.index.get_level_values('trilha').unique().values.tolist()
                 
@@ -128,15 +128,18 @@ class Residencia():
             except ValueError as e:
                 print(e)
         
-        for index, row in data_frame.iterrows():           
-            residente = Residente(index[1])
-            
-            residente.idade = row['idade']
-            residente.formacao = row['formacao']
-            residente.formacaoGeral = row['formacaoGeral']
-            residente.formacaoEspecifica = row['formacaoEspecifica']
-            residente.andamentoGraduacao = row['andamentoGraduacao']
-            residente.tempoFormacao = row['tempoFormacao']
-            residente.experienciaPrevia = row['experienciaPrevia']
-            
-            self.add_residente(index[0], residente = residente)
+        for index, row in data_frame.iterrows():
+            try:     
+                residente = Residente(index[1])
+                
+                residente.idade = row['idade']
+                residente.formacao = row['formacao']
+                residente.formacaoGeral = row['formacaoGeral']
+                residente.formacaoEspecifica = row['formacaoEspecifica']
+                residente.andamentoGraduacao = row['andamentoGraduacao']
+                residente.tempoFormacao = row['tempoFormacao']
+                residente.experienciaPrevia = row['experienciaPrevia']
+                
+                self.add_residente(index[0], residente = residente)
+            except ValueError as e:
+                print(e)
