@@ -2,25 +2,25 @@ from dataclasses import dataclass
 
 @dataclass
 class Residente():
-    __indetificador: str
+    __identificador: str
     __idade: int
     __formacao: int
     __formacaoGeral: int
     __formacaoEspecifica: str
     __andamentoGraduacao: float
     __tempoFormacao: int
-    __experienciaPrevia: bool
+    __experienciaPrevia: int
     
     def __init__(self, identificador: str = None):
-        self.__indetificador = identificador
+        self.__identificador = identificador
     
     @property
     def identificador(self) -> str:
-        return self.__indetificador
+        return self.__identificador
         
     @identificador.setter
     def identificador(self, identificador: str) -> None:
-        self.__indetificador = identificador
+        self.__identificador = identificador
     
     @property
     def idade(self) -> int:
@@ -50,13 +50,13 @@ class Residente():
     
     @formacaoGeral.setter
     def formacaoGeral(self, formacaoGeral: int) -> None:
-        if self.formacao == 0:
+        if formacaoGeral and self.formacao == 0:
             raise ValueError("Formação geral não pode ser cadastrada para formação técnica")
         
-        if not self.formacao:
+        if self.formacao is None:
             raise ValueError("Formação não informada")
         
-        if formacaoGeral not in [0, 1]:
+        if formacaoGeral not in [0, 1] and self.formacao != 0:
             raise ValueError("Formação geral não cadastrada")
         
         self.__formacaoGeral = formacaoGeral
@@ -67,7 +67,7 @@ class Residente():
     
     @formacaoEspecifica.setter
     def formacaoEspecifica(self, formacaoEspecifica: str) -> None:
-        if not self.formacaoGeral:
+        if not self.formacaoGeral and self.formacao != 0:
             raise ValueError("Formação específica não pode ser cadastrada sem formação geral")
         
         self.__formacaoEspecifica = formacaoEspecifica
@@ -78,7 +78,7 @@ class Residente():
     
     @andamentoGraduacao.setter
     def andamentoGraduacao(self, andamentoGraduacao: float) -> None:
-        if self.formacao not in [1, 2]:
+        if self.formacao not in [1, 2] and andamentoGraduacao:
             raise ValueError("Andamento de graduação não pode ser cadastrado sem estar cursando graduação")
         
         self.__andamentoGraduacao = andamentoGraduacao
@@ -95,9 +95,21 @@ class Residente():
         self.__tempoFormacao = tempoFormacao
         
     @property
-    def experienciaPrevia(self) -> bool:
+    def experienciaPrevia(self) -> int:
         return self.__experienciaPrevia
     
     @experienciaPrevia.setter
-    def experienciaPrevia(self, experienciaPrevia: bool) -> None:
+    def experienciaPrevia(self, experienciaPrevia: int) -> None:
         self.__experienciaPrevia = experienciaPrevia
+        
+    def __dict__(self):
+        return {
+            'identificador': self.identificador,
+            'idade': self.idade,
+            'formacao': self.formacao,
+            'formacaoGeral': self.formacaoGeral,
+            'formacaoEspecifica': self.formacaoEspecifica,
+            'andamentoGraduacao': self.andamentoGraduacao,
+            'tempoFormacao': self.tempoFormacao,
+            'experienciaPrevia': self.experienciaPrevia
+        }
