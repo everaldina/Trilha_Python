@@ -38,7 +38,7 @@ class Interface(ctk.CTk):
     def select_trilha(self):
         self.janelaAdd = ctk.CTkToplevel(self)
         self.janelaAdd.title("Adicionar Residentes")
-        self.janelaAdd.geometry(f"{650}x{650}")
+        self.janelaAdd.geometry(f"{500}x{600}")
         
         self.janelaAdd.grid_columnconfigure((1, 2, 3, 4, 5), weight=1)
         self.janelaAdd.grid_rowconfigure((1, 2, 3, 4), weight=1)
@@ -149,17 +149,28 @@ class Interface(ctk.CTk):
         
         
         # create buttons
-        self.janelaAdd.btnAdcionar = ctk.CTkButton(self.janelaAdd, fg_color="green", command=lambda: self.adicionar(trilha, variaveis))
+        self.janelaAdd.btnAdcionar = ctk.CTkButton(self.janelaAdd, text="Adcionar", fg_color="green", command=lambda: self.adicionar(trilha, variaveis))
         self.janelaAdd.btnAdcionar.grid(row=11, column=2)
-        self.janelaAdd.btnAdcionar.configure(text="Adcionar")
         
-        self.janelaAdd.btnVoltar = ctk.CTkButton(self.janelaAdd, fg_color="transparent", text_color="red", command=self.voltar)
-        self.janelaAdd.btnVoltar.grid(row=11, column=3)
-        self.janelaAdd.btnVoltar.configure(text="Voltar")
-    
+        self.janelaAdd.btnLimpar = ctk.CTkButton(self.janelaAdd, fg_color="transparent", text="Limpar", text_color="blue", command=self.limpar)
+        self.janelaAdd.btnLimpar.grid(row=11, column=3)
+        
+        self.janelaAdd.btnVoltar = ctk.CTkButton(self.janelaAdd, text="Voltar", fg_color="transparent", text_color="red", command=self.voltar)
+        self.janelaAdd.btnVoltar.grid(row=12, column=3)
     
     def voltar(self) -> None:
         self.janelaAdd.destroy()
+        
+    def limpar(self) -> None:
+        self.janelaAdd.inpCPF.delete(0, tk.END)
+        self.janelaAdd.inpAnoNasc.delete(0, tk.END)
+        self.janelaAdd.inpIdade.delete(0, tk.END)
+        self.janelaAdd.inpFormacao.set("")
+        self.janelaAdd.inpFormacaoGeral.set("")
+        self.janelaAdd.inpFormacaoEspecifica.set("")
+        self.janelaAdd.inpAndamentoGraduacaoSlider.set(0)
+        self.janelaAdd.inpTempoFormacao.delete(0, tk.END)
+        self.janelaAdd.inpExperienciaPrevia.set("")
         
     def adicionar(self, trilha: str, variaveis: dict) -> None:
         formacoes = {"Formação técnica" : 0, "Formação técnica graduação em andamento": 1,
@@ -231,8 +242,8 @@ class Interface(ctk.CTk):
         }
         
         try:
-            self.residencia.add_residente(trilha, residente)
-          
+            self.residencia.add_residente(trilha, residente)    
+            
             self.janelaAdd.inpCPF.delete(0, tk.END)
             self.janelaAdd.inpAnoNasc.delete(0, tk.END)
             self.janelaAdd.inpIdade.delete(0, tk.END)
@@ -242,10 +253,9 @@ class Interface(ctk.CTk):
             self.janelaAdd.inpAndamentoGraduacaoSlider.set(0)
             self.janelaAdd.inpTempoFormacao.delete(0, tk.END)
             self.janelaAdd.inpExperienciaPrevia.set("")
-            
         except ValueError as e:
-            print(e)
-    
+            messagebox.showerror("Erro", e)
+        
     def carregar_dados(self) -> None:
         file = ctk.filedialog.askopenfilename(title="Carregar Dados", filetypes=[("CSV", "*.csv")])
         
@@ -261,7 +271,7 @@ class Interface(ctk.CTk):
     def exibir_residentes(self) -> None:
         self.janelaResidentes = ctk.CTkToplevel(self)
         self.janelaResidentes.title("Residentes")
-        self.janelaResidentes.geometry(f"{900}x{400}")
+        self.janelaResidentes.geometry(f"{1000}x{400}")
                 
         residentes = self.residencia.get_residentes()
         
@@ -295,7 +305,6 @@ class Interface(ctk.CTk):
         # Configurar pesos das linhas e colunas para que o Treeview expanda conforme necessário
         self.janelaResidentes.grid_rowconfigure(0, weight=1)
         self.janelaResidentes.grid_columnconfigure(0, weight=1)
-    
         
     def set_formacao_geral(self, formacao: str) -> None:
         if formacao == "Computação":
