@@ -67,7 +67,7 @@ class Residente():
     
     @formacaoEspecifica.setter
     def formacaoEspecifica(self, formacaoEspecifica: str) -> None:
-        if not self.formacaoGeral and self.formacao != 0:
+        if self.formacaoGeral not in [0, 1] and self.formacao != 0:
             raise ValueError("Formação específica não pode ser cadastrada sem formação geral")
         
         self.__formacaoEspecifica = formacaoEspecifica
