@@ -7,11 +7,6 @@ Para desenvolvimento de codigos foi usando um ambiente virtual Anaconda na vers�
 ## [DataFruta](datafruta/)
 Pacote com diferentes tipos de daados que implementam metodos estaticos basicos como media, mediana, maior e menor elemento.
 
-## [PI-002](PI-002.ipynb)
-Notebook com a resolução do problema PI-002, que consiste em testes para comprar a eficiencia de metodos estaticos do datafruta com metodos de arrays do numpy.
-
-Foi criado para os testes metodos em datafruta que geram dados aleatorios para salarios e idades.
-
 ## [DataFruta_V1](DataFruta_V1/)
 Versão aprimorada do pacote datafruta, contando com novos tipos de medidas estatisticas, como:
 
@@ -34,6 +29,18 @@ Pacote para coleta de dados sobre residentes de diferenças trilhas. O programa 
 
 As dependencias do pacote estao disponiveis no arquivo [requirements.txt](resitic/requirements.txt). Para instalação dos requisitos, basta executar o comando `pip install -r requirements.txt` na pasta do pacote.
 
+## [datasets](datasets/)
+Pasta com datasets usados para as praticas.
+1. Datasets de estações metereologicas de Salvador nos anos de 2003, 2013 e 2023 (Fonte: [Instituo Nacional de Meteorologia](https://portal.inmet.gov.br/dadoshistoricos)).
+ - estacao_Salvador_2003.CSV
+ - estacao_Salvador_2013.CSV
+ - estacao_Salvador_2023.CSV
+
+## [PI-002](PI-002.ipynb)
+Notebook com a resolução do problema PI-002, que consiste em testes para comprar a eficiencia de metodos estaticos do datafruta com metodos de arrays do numpy.
+
+Foi criado para os testes metodos em datafruta que geram dados aleatorios para salarios e idades.
+
 ## [PI-003](PI-003.ipynb)
 Notebook com a resolução do problema PI-003, que consiste em testes para comprar a eficiencia de metodos estaticos de metodos implementados na classe DataFruta_V1 com metodos de arrays do numpy.
 
@@ -43,6 +50,10 @@ Notebook com a resolução do problema PI-004, que compara a eficiciecia de meto
 ## [PI-005](PI-005.ipynb)
 Notebook com a resolução do problema PI-005, onde é criado series e dataframes com dados de residentes. Praticas de criação de series e dataframes, manipulação de dados, e visualização de dados são feitas nessa pratica.
 
+## [PI-007](PI-007.ipynb)
+Notebook com a resolução do problema PI-007, onde sao pegos dados de estações metereologicas de Salvador nos anos de 2003, 2013 e 2023 (disponivel em: [datasets](datasets/)). Os datasets saõ unificados e as medidas de temperatura e precipitacao sao analizadas.
+
+Para o desenvolvimento dessa pratica, foram usados indices multiplos de ano, mes e dia, e tambem foram usados metodos de agrupamento de dados.
 
 ## Equipe
  - Everaldina Guimaraes Barbosa (egbarbosa.cic@uesc.br)
