@@ -1,5 +1,6 @@
 import numpy as np
 import random
+import matplotlib.pyplot as plt
 
 def realizar_caminha(matrix, limite_passos, origem, destino):
     passos = 0
@@ -54,4 +55,11 @@ def simular_trajetoria():
     max_passos = 500
 
 
-  
+def show_heat_map(array: np.ndarray):
+    plt.figure()
+    plt.imshow(array, interpolation='nearest', origin='lower', cmap='hot')
+    plt.colorbar()
+    plt.show()
+
+
+
