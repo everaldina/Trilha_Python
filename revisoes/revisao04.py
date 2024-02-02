@@ -42,24 +42,42 @@ def realizar_caminha(matrix, limite_passos, origem, destino):
 
 
 def simular_trajetoria():
-    # Tamanho da matriz
-    tamanho_matriz = 400
+  # Tamanho da matriz
+  tamanho_matriz = 400
 
-    # Posição inicial do bar
-    i, j = 200, 200
+  # Posição inicial do bar
+  i, j = 200, 200
 
-    # Inicializar a 
-    visitas = np.zeros((400, 400))
+  # Inicializar a 
+  visitas = np.zeros((400, 400))
 
-    # Número máximo de passos por simulação
-    max_passos = 500
+  # Número máximo de passos por simulação
+  max_passos = 500
+
+def main():
+  limite_passos = 500
+  origem = (200, 200)
+  destino = (0, 0)
+  numero_simulacoes = 1000
+  
+  matriz_result = np.zeros((400,400),dtype=np.int32)
+  for i in range(numero_simulacoes):
+    matriz_result = realizar_caminha(matriz_result, limite_passos, origem, destino)
+  
+  #print(matriz_result)  
+  show_heat_map(matriz_result)
+  
+
 
 
 def show_heat_map(array: np.ndarray):
     plt.figure()
-    plt.imshow(array, interpolation='nearest', origin='lower', cmap='hot')
+    plt.imshow(array, origin='lower', cmap='hot')
     plt.colorbar()
     plt.show()
+    
+if __name__ == '__main__':
+  main()
 
 
 
