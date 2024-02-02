@@ -40,7 +40,6 @@ def realizar_caminha(matrix, limite_passos, origem, destino):
         matrix[posicao_atual] += 1
     return matrix
 
-
 def simular_trajetoria():
   # Tamanho da matriz
   tamanho_matriz = 400
@@ -63,21 +62,25 @@ def main():
   matriz_result = np.zeros((400,400),dtype=np.int32)
   for i in range(numero_simulacoes):
     matriz_result = realizar_caminha(matriz_result, limite_passos, origem, destino)
-  
-  #print(matriz_result)  
-  show_heat_map(matriz_result)
-  
-
-
-
-def show_heat_map(array: np.ndarray):
-    plt.figure()
-    plt.imshow(array, origin='lower', cmap='hot')
-    plt.colorbar()
-    plt.show()
     
+  probabilidade_sucesso = (matriz_result[destino]/numero_simulacoes)*100
+  print(f"Probabilidade de sucesso: {probabilidade_sucesso}%")
+   
+  show_heat_map(matriz_result)
+  show_gray_map(matriz_result)
+  
+def show_heat_map(array: np.ndarray):
+  plt.figure()
+  plt.imshow(array, origin='lower', cmap='hot')
+  plt.colorbar()
+  plt.show()
+    
+def show_gray_map(array: np.ndarray):
+  intensidade = 1
+  plt.figure()
+  plt.imshow(array, origin='lower', cmap='gray', vmin=intensidade, vmax=intensidade)
+  plt.colorbar()
+  plt.show()
+
 if __name__ == '__main__':
   main()
-
-
-
