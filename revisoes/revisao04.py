@@ -2,6 +2,22 @@ import numpy as np
 import random
 import matplotlib.pyplot as plt
 
+def main():
+  limite_passos = 500
+  origem = (200, 200)
+  destino = (0, 0)
+  numero_simulacoes = 1000
+  
+  matriz_result = np.zeros((400,400),dtype=np.int32)
+  for i in range(numero_simulacoes):
+    matriz_result = realizar_caminha(matriz_result, limite_passos, origem, destino)
+    
+  probabilidade_sucesso = (matriz_result[destino]/numero_simulacoes)*100
+  print(f"Probabilidade de sucesso: {probabilidade_sucesso}%")
+   
+  show_heat_map(matriz_result)
+  show_gray_map(matriz_result)
+
 def realizar_caminha(matrix, limite_passos, origem, destino):
     passos = 0
     posicao_atual = origem
@@ -52,22 +68,6 @@ def simular_trajetoria():
 
   # Número máximo de passos por simulação
   max_passos = 500
-
-def main():
-  limite_passos = 500
-  origem = (200, 200)
-  destino = (0, 0)
-  numero_simulacoes = 1000
-  
-  matriz_result = np.zeros((400,400),dtype=np.int32)
-  for i in range(numero_simulacoes):
-    matriz_result = realizar_caminha(matriz_result, limite_passos, origem, destino)
-    
-  probabilidade_sucesso = (matriz_result[destino]/numero_simulacoes)*100
-  print(f"Probabilidade de sucesso: {probabilidade_sucesso}%")
-   
-  show_heat_map(matriz_result)
-  show_gray_map(matriz_result)
   
 def show_heat_map(array: np.ndarray):
   plt.figure()
