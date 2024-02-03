@@ -8,10 +8,14 @@ decorator==5.1.1
 executing==2.0.1
 fonttools==4.47.2
 ipykernel==6.27.0
+ipympl==0.9.3
 ipython==8.17.2
+ipython-genutils==0.2.0
+ipywidgets==8.1.1
 jedi==0.19.1
 jupyter_client==8.6.0
 jupyter_core==5.5.0
+jupyterlab-widgets==3.0.9
 kiwisolver==1.4.5
 matplotlib==3.8.2
 matplotlib-inline==0.1.6
@@ -39,3 +43,4 @@ tornado==6.3.3
 traitlets==5.13.0
 tzdata==2023.3
 wcwidth==0.2.12
+widgetsnbextension==4.0.9
