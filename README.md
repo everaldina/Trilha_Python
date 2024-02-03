@@ -59,7 +59,8 @@ Para o desenvolvimento dessa pratica, foram usados indices multiplos de ano, mes
  - Everaldina Guimaraes Barbosa (egbarbosa.cic@uesc.br)
  - Ian Robert Luz Pinheiro (irlpinheiro.ege@uesc.br)
  - João Manoel Almeida Olivera (jmaoliveira.cic@uesc.br)
-
+ - Nairan Bento Dos santos (nairanbsantos28@gmail.com)
+  
 ## Membros anteriores
  - Vinicius Lima da Silva (vlsilva.ege@uesc.br)
  - Marcos Vinícius Tavares Gomes (mvtgomes.ege@uesc.br)
