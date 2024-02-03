@@ -96,6 +96,7 @@ class Residencia():
     
     def save(self, path = None) -> None:
         data_frame = self.get_residentes()
+        
         if path is None:
             diretorio_atual = os.path.dirname(os.path.abspath(__file__))
 
@@ -114,6 +115,9 @@ class Residencia():
     def load(self, path = None) -> None:
         if path is None:
             raise ValueError("Caminho não informado")
+        
+        if not os.path.exists(path):
+            raise ValueError("Caminho não existe")
         
         data_frame = pd.read_csv(path, index_col=[0,1])
         data_frame = data_frame.replace(np.nan, None).drop_duplicates()

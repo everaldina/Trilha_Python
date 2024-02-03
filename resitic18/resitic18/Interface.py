@@ -2,8 +2,9 @@ import tkinter as tk
 import customtkinter as ctk
 from tkinter import messagebox, ttk
 from resitic18.Residencia import Residencia
-import re
 from datetime import date
+import re
+import os
 
 ctk.set_appearance_mode("Dark")  # Modes: "System" (standard), "Dark", "Light"
 ctk.set_default_color_theme("dark-blue")  # Themes: "blue" (standard), "green", "dark-blue"
@@ -15,7 +16,11 @@ class Interface(ctk.CTk):
         self.title("Resitic")
         self.geometry(f"{400}x{400}")
         
+        self.protocol("WM_DELETE_WINDOW", self.on_closing)
+        
         self.residencia = Residencia(["python", "dotnet", "java"])
+        
+        self.carregar_dados()
         
         # configure grid layout (4x4)
         self.grid_columnconfigure((1, 2, 3, 4), weight=1)
@@ -214,7 +219,6 @@ class Interface(ctk.CTk):
             return
         formacao = formacoes[formacao]
         
-        
         try:
             andamentoGraduacao = float(andamentoGraduacao)
         except:
@@ -257,16 +261,22 @@ class Interface(ctk.CTk):
             messagebox.showerror("Erro", e)
         
     def carregar_dados(self) -> None:
-        file = ctk.filedialog.askopenfilename(title="Carregar Dados", filetypes=[("CSV", "*.csv")])
+        diretorio_atual = os.path.dirname(os.path.abspath(__file__))
+
+        caminho_dados = os.path.join(diretorio_atual, 'data')
+
+        if not os.path.exists(caminho_dados):
+            os.makedirs(caminho_dados)
+
+        caminho_csv = os.path.join(caminho_dados, 'residencia.csv')
         
-        if file:
-            self.residencia.load(file)
+        try:
+            self.residencia.load(caminho_csv)
+        except ValueError as e:
+            print(e)
             
     def salvar_dados(self) -> None:
-        file = ctk.filedialog.asksaveasfilename(title="Salvar Dados", filetypes=[("CSV", "*.csv")])
-        
-        if file:
-            self.residencia.save(file)
+        self.residencia.save()
     
     def exibir_residentes(self) -> None:
         self.janelaResidentes = ctk.CTkToplevel(self)
@@ -397,3 +407,8 @@ class Interface(ctk.CTk):
             messagebox.showerror("Erro", "Idade inválida.")
             inpIdade.delete(0, tk.END)
             return
+        
+    def on_closing(self):
+        self.salvar_dados()
+        
+        self.destroy()
