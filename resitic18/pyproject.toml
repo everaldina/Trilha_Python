@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "resitic18"
-version = "1.1.0"
-description = ""
-authors = ["João Manoel <jmaoliveira.cic@uesc.br>"]
+version = "1.1.1"
+description = "Módulo para coleta de dados dos residentes da Residência TIC18."
+authors = ["João Manoel A. Oliveira <jmaoliveira.cic@uesc.br>", "Everaldina Guimaraes Barbosa <egbarbosa.cic@uesc.br>"]
+license = "Apache-2.0"
 readme = "README.md"
 
 [tool.poetry.dependencies]
