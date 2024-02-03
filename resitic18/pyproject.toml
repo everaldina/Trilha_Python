@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "resitic18"
-version = "1.0.0"
+version = "1.0.1"
 description = ""
 authors = ["João Manoel <jmaoliveira.cic@uesc.br>"]
 readme = "README.md"

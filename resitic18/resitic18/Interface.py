@@ -61,7 +61,7 @@ class Interface(ctk.CTk):
         self.janelaAdd.grid_rowconfigure((1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), weight=0, pad=20)
         
         areasFormacao = ["Formação técnica", "Formação técnica graduação em andamento", "Graduação em andamento", "Graduação concluída"]
-        areasFormacaoGeral = ["Engenharia", "Computação"]
+        areasFormacaoGeral = ["Computação", "Engenharia", ""]
         experienciaPrevia = ["Nenhuma", "Conhecimento básico", "Conhecimento intermediário", "Conhecimento avançado"]
         areasEspeficas = []
         
@@ -137,7 +137,7 @@ class Interface(ctk.CTk):
         
         self.janelaAdd.inpAndamentoGraduacao = ctk.CTkEntry(self.janelaAdd, textvariable=varAndamentoGraduacao, state="readonly")
         self.janelaAdd.inpAndamentoGraduacao.grid(row=7, column=3)
-        self.janelaAdd.inpAndamentoGraduacaoSlider = ctk.CTkSlider(self.janelaAdd, from_=0, to=100, variable=varAndamentoGraduacao)
+        self.janelaAdd.inpAndamentoGraduacaoSlider = ctk.CTkSlider(self.janelaAdd, from_=0, to=99, variable=varAndamentoGraduacao)
         self.janelaAdd.inpAndamentoGraduacaoSlider.grid(row=8, column=3)
         
         self.janelaAdd.inpTempoFormacao = ctk.CTkEntry(self.janelaAdd, textvariable=varTempoFormacao, validate="key", validatecommand=(self.register(Interface.validar_numero), "%P"))
@@ -282,16 +282,13 @@ class Interface(ctk.CTk):
         tree["columns"] = columns
         tree["show"] = "headings"
 
-        # Adicionar colunas ao Treeview
         for column in columns:
             tree.heading(column, text=column)
             tree.column(column, anchor="center", width=100)
 
-        # Adicionar linhas ao Treeview
         for index, row in residentes.iterrows():
             tree.insert("", "end", values=tuple(index) + tuple(row))
 
-        # Adicionar Scrollbars
         yscroll = ttk.Scrollbar(self.janelaResidentes, orient="vertical", command=tree.yview)
         yscroll.grid(row=0, column=1, sticky="ns")
         tree.configure(yscrollcommand=yscroll.set)
@@ -302,7 +299,6 @@ class Interface(ctk.CTk):
 
         tree.grid(row=0, column=0, sticky="nsew")
 
-        # Configurar pesos das linhas e colunas para que o Treeview expanda conforme necessário
         self.janelaResidentes.grid_rowconfigure(0, weight=1)
         self.janelaResidentes.grid_columnconfigure(0, weight=1)
         
@@ -317,6 +313,7 @@ class Interface(ctk.CTk):
             areasEspeficas = []
         
         self.janelaAdd.inpFormacaoEspecifica.configure(values=areasEspeficas)
+        self.janelaAdd.inpFormacaoEspecifica.set("")
         
     def validar_texto(entrada):
         return entrada.isalpha()

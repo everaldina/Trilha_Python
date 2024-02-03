@@ -99,14 +99,11 @@ class Residencia():
         if path is None:
             diretorio_atual = os.path.dirname(os.path.abspath(__file__))
 
-            # Constroi o caminho para o diretório 'data' dentro do pacote1
             caminho_dados = os.path.join(diretorio_atual, 'data')
 
-            # cria o diretório 'data' se ele não existir
             if not os.path.exists(caminho_dados):
                 os.makedirs(caminho_dados)
 
-            # caminho completo para o arquivo CSV
             caminho_csv = os.path.join(caminho_dados, 'residencia.csv')
             
             data_frame.to_csv(caminho_csv, index=True)
