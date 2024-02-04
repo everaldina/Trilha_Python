@@ -96,17 +96,15 @@ class Residencia():
     
     def save(self, path = None) -> None:
         data_frame = self.get_residentes()
+        
         if path is None:
             diretorio_atual = os.path.dirname(os.path.abspath(__file__))
 
-            # Constroi o caminho para o diretório 'data' dentro do pacote1
             caminho_dados = os.path.join(diretorio_atual, 'data')
 
-            # cria o diretório 'data' se ele não existir
             if not os.path.exists(caminho_dados):
                 os.makedirs(caminho_dados)
 
-            # caminho completo para o arquivo CSV
             caminho_csv = os.path.join(caminho_dados, 'residencia.csv')
             
             data_frame.to_csv(caminho_csv, index=True)
@@ -117,6 +115,9 @@ class Residencia():
     def load(self, path = None) -> None:
         if path is None:
             raise ValueError("Caminho não informado")
+        
+        if not os.path.exists(path):
+            raise ValueError("Caminho não existe")
         
         data_frame = pd.read_csv(path, index_col=[0,1])
         data_frame = data_frame.replace(np.nan, None).drop_duplicates()

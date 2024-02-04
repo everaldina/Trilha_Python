@@ -2,8 +2,9 @@ import tkinter as tk
 import customtkinter as ctk
 from tkinter import messagebox, ttk
 from resitic18.Residencia import Residencia
-import re
 from datetime import date
+import re
+import os
 
 ctk.set_appearance_mode("Dark")  # Modes: "System" (standard), "Dark", "Light"
 ctk.set_default_color_theme("dark-blue")  # Themes: "blue" (standard), "green", "dark-blue"
@@ -15,7 +16,11 @@ class Interface(ctk.CTk):
         self.title("Resitic")
         self.geometry(f"{400}x{400}")
         
+        self.protocol("WM_DELETE_WINDOW", self.on_closing)
+        
         self.residencia = Residencia(["python", "dotnet", "java"])
+        
+        self.carregar_dados()
         
         # configure grid layout (4x4)
         self.grid_columnconfigure((1, 2, 3, 4), weight=1)
@@ -61,9 +66,7 @@ class Interface(ctk.CTk):
         self.janelaAdd.grid_rowconfigure((1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), weight=0, pad=20)
         
         areasFormacao = ["Formação técnica", "Formação técnica graduação em andamento", "Graduação em andamento", "Graduação concluída"]
-        areasFormacaoGeral = ["Engenharia", "Computação"]
         experienciaPrevia = ["Nenhuma", "Conhecimento básico", "Conhecimento intermediário", "Conhecimento avançado"]
-        areasEspeficas = []
         
         
         # create variables
@@ -123,21 +126,21 @@ class Interface(ctk.CTk):
         self.janelaAdd.inpIdade.bind("<FocusOut>", lambda event: Interface.verificar_idade(self.janelaAdd.inpIdade, self.janelaAdd.inpAnoNasc.get()))
         
         self.janelaAdd.inpFormacao = ctk.CTkComboBox(self.janelaAdd, values=areasFormacao,
-                                    width=200, command=None, variable=varFormacao, state="readonly")
+                                    width=200, command=self.set_formacao, variable=varFormacao, state="readonly")
         self.janelaAdd.inpFormacao.grid(row=4, column=3)
         
-        self.janelaAdd.inpFormacaoGeral = ctk.CTkComboBox(self.janelaAdd, values=areasFormacaoGeral,
+        self.janelaAdd.inpFormacaoGeral = ctk.CTkComboBox(self.janelaAdd, values=[],
                                     command=self.set_formacao_geral, variable=varFormacaoGeral, state="readonly")
         self.janelaAdd.inpFormacaoGeral.grid(row=5, column=3)
         
         self.janelaAdd.inpFormacaoEspecifica = ctk.CTkComboBox(self.janelaAdd, width=200,
-                                                               command=None, values=areasEspeficas, 
+                                                               command=None, values=[], 
                                                                variable=varFormacaoEspecifica, state="readonly")
         self.janelaAdd.inpFormacaoEspecifica.grid(row=6, column=3)
         
         self.janelaAdd.inpAndamentoGraduacao = ctk.CTkEntry(self.janelaAdd, textvariable=varAndamentoGraduacao, state="readonly")
         self.janelaAdd.inpAndamentoGraduacao.grid(row=7, column=3)
-        self.janelaAdd.inpAndamentoGraduacaoSlider = ctk.CTkSlider(self.janelaAdd, from_=0, to=100, variable=varAndamentoGraduacao)
+        self.janelaAdd.inpAndamentoGraduacaoSlider = ctk.CTkSlider(self.janelaAdd, from_=0, to=99, variable=varAndamentoGraduacao)
         self.janelaAdd.inpAndamentoGraduacaoSlider.grid(row=8, column=3)
         
         self.janelaAdd.inpTempoFormacao = ctk.CTkEntry(self.janelaAdd, textvariable=varTempoFormacao, validate="key", validatecommand=(self.register(Interface.validar_numero), "%P"))
@@ -149,8 +152,8 @@ class Interface(ctk.CTk):
         
         
         # create buttons
-        self.janelaAdd.btnAdcionar = ctk.CTkButton(self.janelaAdd, text="Adcionar", fg_color="green", command=lambda: self.adicionar(trilha, variaveis))
-        self.janelaAdd.btnAdcionar.grid(row=11, column=2)
+        self.janelaAdd.btnAdicionar = ctk.CTkButton(self.janelaAdd, text="Adicionar", fg_color="green", command=lambda: self.adicionar(trilha, variaveis))
+        self.janelaAdd.btnAdicionar.grid(row=11, column=2)
         
         self.janelaAdd.btnLimpar = ctk.CTkButton(self.janelaAdd, fg_color="transparent", text="Limpar", text_color="blue", command=self.limpar)
         self.janelaAdd.btnLimpar.grid(row=11, column=3)
@@ -214,7 +217,6 @@ class Interface(ctk.CTk):
             return
         formacao = formacoes[formacao]
         
-        
         try:
             andamentoGraduacao = float(andamentoGraduacao)
         except:
@@ -257,16 +259,22 @@ class Interface(ctk.CTk):
             messagebox.showerror("Erro", e)
         
     def carregar_dados(self) -> None:
-        file = ctk.filedialog.askopenfilename(title="Carregar Dados", filetypes=[("CSV", "*.csv")])
+        diretorio_atual = os.path.dirname(os.path.abspath(__file__))
+
+        caminho_dados = os.path.join(diretorio_atual, 'data')
+
+        if not os.path.exists(caminho_dados):
+            os.makedirs(caminho_dados)
+
+        caminho_csv = os.path.join(caminho_dados, 'residencia.csv')
         
-        if file:
-            self.residencia.load(file)
+        try:
+            self.residencia.load(caminho_csv)
+        except ValueError as e:
+            print(e)
             
     def salvar_dados(self) -> None:
-        file = ctk.filedialog.asksaveasfilename(title="Salvar Dados", filetypes=[("CSV", "*.csv")])
-        
-        if file:
-            self.residencia.save(file)
+        self.residencia.save()
     
     def exibir_residentes(self) -> None:
         self.janelaResidentes = ctk.CTkToplevel(self)
@@ -282,16 +290,13 @@ class Interface(ctk.CTk):
         tree["columns"] = columns
         tree["show"] = "headings"
 
-        # Adicionar colunas ao Treeview
         for column in columns:
             tree.heading(column, text=column)
             tree.column(column, anchor="center", width=100)
 
-        # Adicionar linhas ao Treeview
         for index, row in residentes.iterrows():
             tree.insert("", "end", values=tuple(index) + tuple(row))
 
-        # Adicionar Scrollbars
         yscroll = ttk.Scrollbar(self.janelaResidentes, orient="vertical", command=tree.yview)
         yscroll.grid(row=0, column=1, sticky="ns")
         tree.configure(yscrollcommand=yscroll.set)
@@ -302,21 +307,55 @@ class Interface(ctk.CTk):
 
         tree.grid(row=0, column=0, sticky="nsew")
 
-        # Configurar pesos das linhas e colunas para que o Treeview expanda conforme necessário
         self.janelaResidentes.grid_rowconfigure(0, weight=1)
         self.janelaResidentes.grid_columnconfigure(0, weight=1)
         
+    def set_formacao(self, formacao: str) -> None:
+        areasFormacaoGeral = ["Computação", "Engenharia", ""]
+        
+        if formacao == "Formação técnica":
+            self.janelaAdd.inpFormacaoGeral.set("")
+            self.janelaAdd.inpFormacaoEspecifica.set("")
+            self.janelaAdd.inpAndamentoGraduacaoSlider.set(0)
+            self.janelaAdd.inpTempoFormacao.delete(0, tk.END)
+            
+            self.janelaAdd.inpFormacaoGeral.configure(state="disabled")
+            self.janelaAdd.inpFormacaoEspecifica.configure(state="disabled")
+            self.janelaAdd.inpAndamentoGraduacaoSlider.configure(state="disabled")
+            self.janelaAdd.inpTempoFormacao.configure(state="disabled")
+            
+            self.janelaAdd.inpFormacaoGeral.configure(values=[])
+            self.janelaAdd.inpFormacaoEspecifica.configure(values=[])
+        elif formacao == "Formação técnica graduação em andamento" or formacao == "Graduação em andamento":
+            self.janelaAdd.inpTempoFormacao.delete(0, tk.END)
+            
+            self.janelaAdd.inpFormacaoGeral.configure(state="readonly")
+            self.janelaAdd.inpFormacaoEspecifica.configure(state="readonly")
+            self.janelaAdd.inpAndamentoGraduacaoSlider.configure(state="normal")
+            self.janelaAdd.inpTempoFormacao.configure(state="disabled")
+            
+            self.janelaAdd.inpFormacaoGeral.configure(values=areasFormacaoGeral)
+        elif formacao == "Graduação concluída":
+            self.janelaAdd.inpAndamentoGraduacaoSlider.set(0)
+            self.janelaAdd.inpAndamentoGraduacaoSlider.configure(state="disabled")
+            self.janelaAdd.inpFormacaoGeral.configure(state="readonly")
+            self.janelaAdd.inpFormacaoEspecifica.configure(state="readonly")
+            self.janelaAdd.inpTempoFormacao.configure(state="normal")
+            
+            self.janelaAdd.inpFormacaoGeral.configure(values=areasFormacaoGeral)        
+
     def set_formacao_geral(self, formacao: str) -> None:
         if formacao == "Computação":
             areasEspeficas = ["Ciência da Computação", "Sistemas de Informação", "Análise e Desenvolvimento de Sistemas", "Engenharia de Software", "Outro"]
         elif formacao == "Engenharia":
-            areasEspeficas = ["Engenharia de Computação", "Engenharia Química", "Engenharia de Produção", "Engenharia Mecânica", "Engenharia Elétrica", 
+            areasEspeficas = ["Engenharia da Computação", "Engenharia Química", "Engenharia de Produção", "Engenharia Mecânica", "Engenharia Elétrica", 
                                              "Engenharia Civil", "Engenharia de Alimentos", "Engenharia Ambiental", "Engenharia Aeroespacial", "Engenharia Nuclear", 
                                              "Engenharia de Materiais", "Outro"]
         else:
             areasEspeficas = []
         
         self.janelaAdd.inpFormacaoEspecifica.configure(values=areasEspeficas)
+        self.janelaAdd.inpFormacaoEspecifica.set("")
         
     def validar_texto(entrada):
         return entrada.isalpha()
@@ -400,3 +439,8 @@ class Interface(ctk.CTk):
             messagebox.showerror("Erro", "Idade inválida.")
             inpIdade.delete(0, tk.END)
             return
+        
+    def on_closing(self):
+        self.salvar_dados()
+        
+        self.destroy()
