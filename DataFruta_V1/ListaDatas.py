@@ -1,5 +1,5 @@
-from datafruta import AnaliseDados
-from datafruta import Data
+from DataFruta_V1 import AnaliseDados
+from DataFruta_V1 import Data
 
 class ListaDatas(AnaliseDados):
         
@@ -13,46 +13,8 @@ class ListaDatas(AnaliseDados):
 
     def add(self, data):
         self.__lista.append(data)   
-    
-    def entradaDeDados(self):
-        '''
-        Este método pergunta ao usuários quantos
-        elementos vão existir na lista e depois
-        solicita a digitação de cada um deles
-        '''
         
-        
-        print("------------------Entrada de datas------------------")
-        # Pergunta a quantidade de elementos e verifica se é um número inteiro
-        try:
-            qnt = int(input("Quantidade de elementos na lista de datas: "))
-        except Exception:
-            print("Quantidade inválida de elementos")
-            return
-        
-        for i in range(qnt):
-            # Pergunta a data e verifica se é uma data válida
-            invalido = True
-            while(invalido):
-                data = input("Digite a data no formato dd/mm/aaaa: ")
-                try:
-                    dia, mes, ano = data.split("/")
-                    
-                    if dia.isnumeric() == False:
-                        raise ValueError("Dia inválido.")
-                    if mes.isnumeric() == False:
-                        raise ValueError("Mes inválido.")
-                    if mes.isnumeric() == False:
-                        raise ValueError("Ano inválido.")
-                    
-                    data = Data(int(dia), int(mes), int(ano))
-                    self.__lista.append(data)
-                    print("Data adicionada com sucesso!!")
-                    invalido = False
-                except ValueError as e:
-                    print(str(e))
-    
-    def mostraMediana(self):
+    def mediana(self):
         '''
         Este método ordena a lista e mostra o
         elemento que está na metade da lista
@@ -71,7 +33,7 @@ class ListaDatas(AnaliseDados):
             
             return mediana
      
-    def mostraMenor(self):
+    def menor(self):
         '''
         Este método retorna o menos elemento da lista
         '''
@@ -80,7 +42,7 @@ class ListaDatas(AnaliseDados):
         else:
             return min(self.__lista)
     
-    def mostraMaior(self):
+    def maior(self):
         '''
         Este método retorna o maior elemento da lista
         '''
@@ -112,3 +74,50 @@ class ListaDatas(AnaliseDados):
             listaOrdenada = sorted(self.__lista)
 
             return listaOrdenada
+    
+    def mediaAritmetica(self):
+        return None
+
+    def mediaGeometrica(self):    
+        return None
+
+    def mediaHarmonica(self):
+        return None
+
+    def medianaInferior(self):
+        if len(self.__lista) == 0:
+            return None
+        else:
+            listaOrdenada = sorted(self.__lista)
+            tamanho = len(self.__lista)
+
+            mediana_inf = listaOrdenada[tamanho // 4] if tamanho % 2 == 0 else listaOrdenada[tamanho // 4]
+            
+            return mediana_inf
+
+    def medianaSuperior(self):
+        if len(self.__lista) == 0:
+            return None
+        else:
+            listaOrdenada = sorted(self.__lista)
+            tamanho = len(self.__lista)
+
+            mediana_sup = listaOrdenada[(3 * tamanho) // 4] if tamanho % 2 == 0 else listaOrdenada[(3 * tamanho) // 4]
+            
+            return mediana_sup
+    
+    '''
+    Medidas de Espalhamento
+    '''
+
+    def desvioPadraoPopulacional(self):
+        return None
+    
+    def varianciaPopulacional(self):
+        return None
+    
+    def desvioPadraoAmostral(self):
+        return None
+    
+    def varianciaAmostral(self):
+        return None

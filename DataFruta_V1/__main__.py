@@ -1,8 +1,8 @@
-from datafruta import ListaIdades
-from datafruta import ListaNomes
-from datafruta import ListaSalarios
-from datafruta import ListaDatas
-from datafruta import Data
+from DataFruta_V1 import ListaIdades
+from DataFruta_V1 import ListaNomes
+from DataFruta_V1 import ListaSalarios
+from DataFruta_V1 import ListaDatas
+from DataFruta_V1 import Data
 
 def menu():
     nomes = ListaNomes()
@@ -12,17 +12,17 @@ def menu():
     
     listaListas = [nomes, datas, salarios, idades]
 
-    # Teste geral de classes
-    for lista in listaListas:
-        lista.entradaDeDados()
-        input("Pressione enter para continuar...\n")
-        lista.listarEmOrdem()
-        print("___________________")
-        print("Mediana: " + lista.mostraMediana())
-        print("Menor elemento: " + lista.mostraMenor())
-        print("Maior elemento: "+lista.mostraMaior())
-        print("___________________")
-        print("\n")
+    # # Teste geral de classes
+    # for lista in listaListas:
+    #     lista.entradaDeDados()
+    #     input("Pressione enter para continuar...\n")
+    #     lista.listarEmOrdem()
+    #     print("___________________")
+    #     print("Mediana: " + lista.mediana())
+    #     print("Menor elemento: " + lista.menor())
+    #     print("Maior elemento: "+lista.maior())
+    #     print("___________________")
+    #     print("\n")
 
     while True:
         print("1. Incluir um nome na lista de nomes.")
@@ -32,7 +32,7 @@ def menu():
         print("5. Percorrer as listas de nomes e salários.")
         print("6. Calcular o valor da folha com um reajuste de 10%")
         print("7. Modificar o dia das datas anteriores a 2019.")
-        print("8. Sair.")
+        print("0. Sair.")
 
         opcao = int(input("Digite a opção desejada: "))
 
