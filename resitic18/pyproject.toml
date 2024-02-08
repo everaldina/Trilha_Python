@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "resitic18"
+version = "1.2.0"
+description = "Módulo para coleta de dados dos residentes da Residência TIC18."
+authors = ["João Manoel A. Oliveira <jmaoliveira.cic@uesc.br>", "Everaldina Guimaraes Barbosa <egbarbosa.cic@uesc.br>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.3"
+pandas = "^2.2.0"
+customtkinter = "^5.2.2"
+
+[tool.poetry.scripts]
+resitic = "resitic18.__main__:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
