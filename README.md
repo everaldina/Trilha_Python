@@ -29,6 +29,9 @@ Pacote para coleta de dados sobre residentes de diferenças trilhas. O programa 
 
 As dependencias do pacote estao disponiveis no arquivo [requirements.txt](resitic/requirements.txt). Para instalação dos requisitos, basta executar o comando `pip install -r requirements.txt` na pasta do pacote.
 
+### Pacote resitic
+O pacote resitic foi continuado no repositorio [https://github.com/John-Parsec/resitic18](https://github.com/John-Parsec/resitic18).
+
 ## [datasets](datasets/)
 Pasta com datasets usados para as praticas.
 1. Datasets de estações metereologicas de Salvador nos anos de 2003, 2013 e 2023 (Fonte: [Instituo Nacional de Meteorologia](https://portal.inmet.gov.br/dadoshistoricos)).
@@ -54,6 +57,13 @@ Notebook com a resolução do problema PI-005, onde é criado series e dataframe
 Notebook com a resolução do problema PI-007, onde sao pegos dados de estações metereologicas de Salvador nos anos de 2003, 2013 e 2023 (disponivel em: [datasets](datasets/)). Os datasets saõ unificados e as medidas de temperatura e precipitacao sao analizadas.
 
 Para o desenvolvimento dessa pratica, foram usados indices multiplos de ano, mes e dia, e tambem foram usados metodos de agrupamento de dados.
+
+
+## [PI-008](PI-008.ipynb)
+Notebook com a resolução do problema PI-008, onde sao pegos dados de estações metereologicas de Salvador nos anos de 2003, 2013 e 2023 (disponivel em: [datasets](datasets/)). Os datasets saõ unificados e as medidas de temperatura e precipitacao sao analizadas, dessa vez com o uso de indexação temporal.
+
+## [PI-009](PI-009.ipynb)
+Notebook com a resolução do problema PI-009, os dados de estações metereologicas de Salvador nos anos de 2003, 2013 e 2023 (disponivel em: [datasets](datasets/)) sao unificados de forma similar a [PI-008](PI-008.ipynb), e são feitas analises de temperatura e precipitacao, dessa vez com o uso de visualização de dados.
 
 ## Equipe
  - Everaldina Guimaraes Barbosa (egbarbosa.cic@uesc.br)
