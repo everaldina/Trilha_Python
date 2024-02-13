@@ -1,3 +1,4 @@
+import pandas as pd
 import requests
 import zipfile
 import shutil
@@ -69,3 +70,10 @@ print('Pasta estacao_ssa removida com sucesso!')
 for nome in nomes_arquivos:
     os.remove(nome)
     print(f'Arquivo {nome} removido com sucesso!')
+    
+# Renomeia os arquivos .csv para o padrão desejado
+for root, dirs, files in os.walk(pasta_destino):
+    for file in files:
+        ano = re.search(r'(\d{4})', file).group(1)
+        os.rename(f'{pasta_destino}{file}', f'{pasta_destino}estacao_Salvador_{ano}.csv')
+        print(f'Arquivo {file} renomeado com sucesso!')
