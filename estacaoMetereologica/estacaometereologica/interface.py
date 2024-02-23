@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk
+from tkinter import messagebox, ttk
 from estacaometereologica.search import Search
 
 class Interface(tk.Tk):
@@ -11,10 +11,6 @@ class Interface(tk.Tk):
 
         self.anoSelecionado = tk.StringVar()
         self.estacaoSelecionada = tk.StringVar()
-
-        self.pesquisa = Search()
-        self.anos = self.pesquisa.get_anos()
-        self.anosList = list(self.anos.keys())
 
         self.grid_columnconfigure([1,2], weight=1)
         self.grid_rowconfigure(1, weight=1)
@@ -31,7 +27,7 @@ class Interface(tk.Tk):
         self.frameEstacao.lblAnos = tk.Label(self, text='Escollha a estação: ')
         self.frameEstacao.lblAnos.grid(row=0, column=1, padx=5, pady=5)
 
-        self.frameEstacao.inpAnos = ttk.Combobox(self, values=self.anosList,
+        self.frameEstacao.inpAnos = ttk.Combobox(self, values=[],
                                                   state='readonly', textvariable=self.anoSelecionado)
         self.frameEstacao.inpAnos.bind('<<ComboboxSelected>>', self.seleciona_ano)
         self.frameEstacao.inpAnos.grid(row=1, column=1, padx=5, pady=5)
@@ -50,6 +46,17 @@ class Interface(tk.Tk):
         self.frameEstacao.btnMostarGrafico = tk.Button(self, text='Mostar grafico', command=None)
         self.frameEstacao.btnMostarGrafico.grid(row=5, column=1, padx=5, pady=5)
 
+        self.carregar_anos()
+
+    def carregar_anos(self):
+        try:
+            self.pesquisa = Search()
+            self.anos = self.pesquisa.get_anos()
+            self.anosList = list(self.anos.keys())
+
+            self.frameEstacao.inpAnos['values'] = self.anosList
+        except Exception as e:
+            messagebox.showerror('Erro', f'Erro de conexão')
 
     def seleciona_ano(self, event):
         print('Ano selecionado:')
