@@ -56,9 +56,15 @@ class Interface(tk.Tk):
 
             self.frameEstacao.inpAnos['values'] = self.anosList
         except ConnectionError:
-            messagebox.showerror('Erro', 'Não foi possível conectar ao servidor')
+            if messagebox.askretrycancel('Erro', 'Não foi possível conectar ao servidor'):
+                self.carregar_anos()
+            else:
+                self.destroy()
         except requests.exceptions.ConnectionError:
-            messagebox.showerror('Erro', 'Não foi possível conectar ao servidor')
+            if messagebox.askretrycancel('Erro', 'Não foi possível conectar ao servidor'):
+                self.carregar_anos()
+            else:
+                self.destroy()
         except Exception as e:
             messagebox.showerror('Erro', e)
 
