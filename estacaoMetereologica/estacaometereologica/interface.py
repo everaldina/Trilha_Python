@@ -3,7 +3,7 @@ from tkinter import ttk
 from estacaometereologica.search import Search
 
 class Interface(tk.Tk):
-    def __init__(self):
+    def __init__(self, anos = None):
         super().__init__()
 
         self.title('Estação Metereológica')
@@ -14,7 +14,7 @@ class Interface(tk.Tk):
 
         self.pesquisa = Search()
         self.anos = self.pesquisa.get_anos()
-        self.anosList = [ano['ano'] for ano in self.anos]
+        self.anosList = list(self.anos.keys())
 
         self.grid_columnconfigure([1,2], weight=1)
         self.grid_rowconfigure(1, weight=1)
@@ -59,4 +59,4 @@ class Interface(tk.Tk):
         pass
 
     def carregar(self):
-        pass
+        print(f"link: {self.anos[self.anoSelecionado.get()]}")

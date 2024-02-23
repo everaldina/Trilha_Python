@@ -22,12 +22,12 @@ class Search:
     
     def get_anos(self):
         if self.resposta:
-            lista_anos = []
+            lista_anos = {}
             lita_links = self.resposta.find('div', attrs={'id': 'main'}).find_all('a')
             for item in lita_links:
                 link = item.attrs['href']
                 ano = link.split('/')[-1]
-                lista_anos.append({'ano': ano[:-4],  'link': link}) # Adiciona tupla com o ano e o link do arquivo .zip
+                lista_anos[ano[:-4]] =  link # Adiciona tupla com o ano e o link do arquivo .zip
             return lista_anos
         else:
             raise Exception('Requisição não foi bem sucedida')
