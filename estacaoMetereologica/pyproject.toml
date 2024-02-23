@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "estacaometereologica"
+version = "0.1.0"
+description = ""
+authors = ["Everaldina G. Barbosa <everaldinag@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
