@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox, ttk
 from estacaometereologica.search import Search
+import requests
 import webbrowser
 
 class Interface(tk.Tk):
@@ -55,6 +56,8 @@ class Interface(tk.Tk):
 
             self.frameEstacao.inpAnos['values'] = self.anosList
         except ConnectionError:
+            messagebox.showerror('Erro', 'Não foi possível conectar ao servidor')
+        except requests.exceptions.ConnectionError:
             messagebox.showerror('Erro', 'Não foi possível conectar ao servidor')
         except Exception as e:
             messagebox.showerror('Erro', e)
