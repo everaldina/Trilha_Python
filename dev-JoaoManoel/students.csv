@@ -1,0 +1,1001 @@
+CPF,Nome,Sexo,Idade,Endereço,Nota do ENEM,Abandono,Semestre de desistência,CRA até 2º semestre,CRA até 4º semestre,CRA até 6º semestre
+114.705.355-86,Isaac Rodrigues,M,20,Rua Ramos Conjunto Jatoba 53298-333 Campos / RJ,679,False,,9.72,9.74,9.71
+588.388.942-19,Srta. Isis Gomes,F,18,"Conjunto Eduardo Rodrigues, 7 Jaraguá 20720659 Rocha / PB",763,False,,5.34,9.96,9.78
+337.376.161-37,Carlos Eduardo Caldeira,M,20,"Viaduto Viana, 7 Universitário 06189-366 da Paz / PE",724,False,,9.11,5.43,6.97
+341.556.934-37,Guilherme Moreira,F,26,"Pátio Novaes, 6 Miramar 96967-239 Souza / AM",689,False,,6.26,9.99,5.82
+855.557.915-38,Julia da Mata,F,21,"Quadra Correia, 90 Silveira 99225-276 Cardoso de Minas / PI",666,False,,6.23,5.91,5.23
+297.031.271-34,Bernardo Porto,F,26,"Via Emanuel Aragão, 7 Distrito Industrial Do Jatoba 04888-252 Moraes de Campos / RR",691,False,,8.59,9.22,7.63
+177.551.797-37,Diego Nascimento,F,26,"Avenida Sophia da Rocha, 37 Horto Florestal 14345-368 das Neves de Costela / SP",668,False,,6.66,7.76,7.36
+973.982.484-38,Davi Lucas Silva,M,22,"Praia Bruna Viana, 247 Cidade Jardim 66174922 da Paz do Norte / ES",797,False,,9.58,9.89,6.51
+424.795.954-81,Sr. André da Rosa,F,26,"Vereda João Porto, 3 Rio Branco 48467-023 Rodrigues / MS",736,True,8.0,6.23,7.66,6.94
+188.949.730-25,Ana Clara Lima,M,22,"Alameda Lucas Gabriel Correia, 993 Minaslandia 64602-932 Duarte / MG",742,False,,7.78,7.15,5.85
+982.934.804-16,André Santos,M,24,"Distrito Cardoso, 82 Barão Homem De Melo 3ª Seção 31696-240 Viana da Praia / AC",682,False,,9.29,9.57,7.59
+775.228.287-33,Davi Farias,M,26,"Praia de Viana, 86 São Bernardo 71116705 Ramos de Goiás / MT",657,True,4.0,8.85,,
+034.321.654-15,Luna Cavalcanti,M,18,"Residencial Ferreira, 7 Jonas Veiga 20059-973 Silva do Sul / DF",740,True,7.0,9.38,5.17,9.91
+644.918.469-62,Dra. Ana Carolina Martins,F,27,"Viela de Oliveira, 33 Pindura Saia 04165557 Azevedo de Aragão / AP",641,True,6.0,6.72,9.46,
+203.389.577-43,Anthony Sales,F,20,"Quadra Santos, 8 Vila Maloca 90883897 Dias de Alves / SC",672,True,5.0,6.83,6.98,
+451.243.701-68,Henrique Azevedo,F,19,Residencial Olivia Nunes Pirineus 95144315 Peixoto Grande / MG,684,False,,7.67,9.58,8.87
+842.748.833-46,Samuel Jesus,M,24,Rodovia Costa Laranjeiras 77061-473 da Rosa / MT,760,True,1.0,,,
+212.150.516-38,Sra. Beatriz Nunes,F,22,"Ladeira Gonçalves, 964 Álvaro Camargos 56761-560 Nascimento de Lopes / PR",725,True,2.0,,,
+397.605.214-07,Heitor Oliveira,F,18,"Núcleo Souza, 197 Vila Aeroporto Jaraguá 81694351 Oliveira / RS",646,True,8.0,9.03,5.55,5.22
+517.919.162-93,Dr. João Gabriel Silveira,M,25,"Avenida Mirella Freitas, 69 Serra Verde 30034107 Correia / CE",770,False,,9.73,9.0,9.76
+419.981.011-99,Erick Costela,F,21,"Setor Pinto, 93 Vila Jardim Alvorada 34102-200 Alves de Novaes / MS",694,True,7.0,9.28,7.07,9.54
+892.840.481-82,Diego Sales,M,25,"Vereda Maria Mendes, 78 Vila Calafate 38890-727 Rodrigues do Campo / CE",641,True,6.0,6.29,7.71,
+674.714.183-98,Sabrina Aragão,M,27,"Lago Henrique Moura, 74 Nova Floresta 06541-681 Moraes de da Cunha / PB",709,True,3.0,7.53,,
+323.119.573-32,Gabrielly Nascimento,M,27,"Colônia de Mendes, 118 Fazendinha 19473-080 Cardoso do Campo / AL",797,False,,5.72,8.23,9.0
+468.120.732-24,Maria Sophia Cavalcanti,M,26,Setor Murilo Pinto Acaiaca 99251613 Barros de Almeida / SP,644,False,,8.83,6.68,9.45
+620.208.993-82,Maria Clara Nunes,M,23,"Trecho de Duarte, 54 Xangri-Lá 60558-162 da Cruz / AM",698,True,6.0,5.35,5.05,
+682.945.000-38,Maria Cecília Nascimento,M,26,"Loteamento Sales, 1 Vila Calafate 17845578 Duarte / PA",746,True,7.0,5.02,9.94,9.42
+405.080.378-59,Dra. Júlia Santos,F,18,"Trevo Correia, 76 Cinquentenário 38725712 da Conceição / MG",768,False,,8.47,5.77,9.1
+040.842.379-23,Sr. Joaquim Gomes,F,19,"Praça de Ramos, 57 Capitão Eduardo 45149948 da Mota / BA",744,True,6.0,5.38,9.64,
+604.203.245-24,Heloísa Vieira,M,27,"Praia de Lopes, 305 Boa Viagem 90576254 da Mata / ES",744,False,,8.22,6.05,7.23
+884.031.734-00,André Oliveira,M,19,Ladeira Enrico Viana Conjunto Taquaril 97894-405 da Cunha / RR,769,True,6.0,5.89,8.39,
+617.492.517-72,Luiz Felipe Monteiro,M,21,"Área Laura Lima, 62 Jardim Guanabara 70823-570 Carvalho / RO",666,False,,5.42,8.73,8.27
+240.965.098-16,Bruno Lima,F,19,"Avenida Nicolas Rodrigues, 41 São Pedro 85761-865 Nunes / ES",690,False,,7.72,8.29,9.22
+007.604.469-41,Emanuel Mendes,F,22,Trevo de Fogaça Santa Efigênia 05525180 Lopes de Dias / RR,643,False,,8.61,7.45,5.34
+685.341.802-62,Vitor Freitas,M,21,Estação Pereira Cabana Do Pai Tomás 82362433 Correia / RO,797,True,4.0,9.94,,
+233.695.858-92,Marina Moraes,F,19,"Residencial Nogueira, 48 Sion 85328132 da Paz / GO",679,True,5.0,5.32,6.4,
+554.720.055-50,Otávio Lima,M,21,"Via Renan Pinto, 39 Alpes 65999-851 Azevedo / GO",772,True,5.0,7.44,5.73,
+320.391.548-66,Dra. Sophia Jesus,F,22,"Travessa de Dias, 64 Grota 58917-853 Moreira / RN",794,True,1.0,,,
+153.634.505-81,Sophia Barros,F,25,"Chácara Carlos Eduardo Costa, 66 São Marcos 92995210 Moreira / SP",785,True,7.0,8.42,5.67,7.25
+302.025.708-70,Juliana Castro,F,19,"Rodovia Oliveira, 229 Mangabeiras 38491-729 Costa / RN",796,True,8.0,7.81,7.11,9.84
+640.079.468-06,Lorena Lopes,F,24,"Morro Rafael Souza, 24 Vila Independencia 1ª Seção 86444029 Porto de Goiás / SC",674,True,7.0,8.06,9.97,7.76
+156.544.554-20,Rafael da Rosa,M,27,"Chácara de Martins, 9 Vila Madre Gertrudes 1ª Seção 95894-629 da Mota / PR",669,True,4.0,7.04,,
+691.610.243-80,Ana Júlia Novaes,M,20,"Lagoa de Costela, 59 Jardim Do Vale 94111836 Moraes Grande / AC",775,True,1.0,,,
+362.796.775-44,Stella Cavalcanti,M,23,Núcleo Sabrina Oliveira Cidade Jardim Taquaril 48879543 Cunha / CE,799,False,,9.88,6.58,5.12
+706.277.544-77,Danilo Souza,F,26,"Ladeira Eloah Moura, 319 São Bento 96590-819 Martins / PB",762,True,8.0,7.21,7.12,8.22
+094.943.576-49,Isaac das Neves,F,26,"Colônia Luiza Santos, 714 Vila Ecológica 76149633 da Rocha do Campo / PB",787,False,,6.59,6.17,8.99
+935.376.347-71,Levi Vieira,M,27,"Setor Luiz Fernando Duarte, 60 Caetano Furquim 11762-143 Rezende dos Dourados / DF",641,False,,7.12,7.54,9.31
+145.747.112-86,Thiago Souza,F,19,"Estação Letícia Ferreira, 6 União 77937-993 Alves de Almeida / AL",689,True,4.0,6.77,,
+085.301.431-52,Henrique da Mota,M,20,"Sítio Thiago Araújo, 57 Canaa 86631-752 Monteiro do Amparo / AC",686,False,,7.72,6.61,5.98
+031.741.932-50,Laura Campos,F,25,"Pátio Milena Nunes, 897 Cachoeirinha 14516-403 Oliveira do Campo / PI",764,True,2.0,,,
+123.858.959-34,Dr. Caio da Costa,M,27,"Fazenda Agatha Melo, 81 Indaiá 10093487 Gomes Alegre / PR",712,True,2.0,,,
+881.118.587-04,Carolina Oliveira,M,20,"Colônia de Dias, 74 Alto Vera Cruz 84283-819 Correia do Amparo / SP",668,True,7.0,9.48,7.34,9.89
+567.661.182-92,Sr. Enrico da Cruz,F,27,"Vale Alves, 1 Coração Eucarístico 14300-944 Jesus / MA",709,False,,7.43,5.98,6.54
+955.578.550-96,Isis Fogaça,M,27,"Praça Lucas Gabriel Ferreira, 49 Vila Rica 07889343 Cardoso / AL",709,True,1.0,,,
+334.604.705-41,Milena Moura,M,25,"Distrito Alves, 51 Grota 71895-162 Ramos do Amparo / RO",753,False,,6.77,7.32,9.99
+932.737.112-72,Maria Julia Jesus,F,24,"Alameda da Costa, 7 Jardim São José 80946201 Moraes / RJ",692,True,5.0,6.36,9.51,
+135.346.809-14,Joaquim Castro,M,25,Jardim Almeida Palmeiras 46645-825 Vieira de Minas / GO,716,False,,7.75,6.51,9.44
+531.349.457-35,Rodrigo Peixoto,F,27,"Avenida de Jesus, 26 Vila Mangueiras 11692434 Duarte da Mata / AC",661,False,,7.13,8.82,9.97
+368.546.125-48,Dr. Luiz Henrique Cavalcanti,M,19,Rodovia Calebe da Conceição Serra Do Curral 99626531 Monteiro Alegre / MG,777,False,,9.49,6.84,9.77
+275.176.805-79,Lorena Correia,F,20,"Estação Peixoto, 43 Maria Virgínia 52240-912 Porto da Prata / MA",780,True,6.0,7.12,7.15,
+803.468.687-79,Thomas Araújo,F,24,"Campo Alana Almeida, 14 Jaraguá 91501-697 Ribeiro / RS",668,False,,7.91,5.73,7.57
+942.579.995-54,Giovanna Melo,F,18,"Condomínio de da Rocha, 131 Tiradentes 83287311 Rezende das Pedras / PR",655,False,,6.58,6.84,8.48
+820.053.591-33,Dr. Thiago Almeida,F,27,"Viela de Fernandes, 5 Conjunto Capitão Eduardo 56253532 Souza / BA",773,True,1.0,,,
+153.473.289-22,Danilo Carvalho,F,20,"Esplanada de Freitas, 6 Distrito Industrial Do Jatoba 02514-170 Ferreira de Ramos / SE",740,False,,5.39,8.32,6.91
+654.658.376-38,Maria das Neves,F,22,"Trecho da Paz, 89 Vila Barragem Santa Lúcia 04245-755 Aragão Grande / RJ",719,False,,6.37,6.97,9.15
+276.789.992-99,Isabel Novaes,F,20,"Largo de Oliveira, 26 Ouro Preto 57775009 Correia de Goiás / BA",700,True,6.0,8.5,9.05,
+870.131.029-86,Cecília Carvalho,M,21,"Trevo Isis Dias, 304 Vila Jardim São José 47955951 Pinto de Gonçalves / DF",770,True,6.0,9.66,7.1,
+202.681.113-69,Anthony Silveira,M,27,"Colônia de da Luz, 524 Lagoinha Leblon 75423-793 Moreira / SE",785,True,5.0,5.16,7.49,
+925.196.031-05,Felipe Costa,F,26,"Ladeira de Pereira, 415 Buritis 88844688 Azevedo / SE",701,False,,6.73,9.62,8.73
+897.695.479-58,Arthur Fogaça,M,18,"Rua Caldeira, 8 Pongelupe 89218004 da Conceição / RO",747,False,,5.68,7.53,9.44
+876.766.994-39,Dra. Helena da Paz,F,19,Distrito Stephany Barros São Francisco Das Chagas 76015992 Aragão de Goiás / BA,660,False,,8.39,5.03,8.94
+882.996.021-85,Matheus Jesus,M,21,"Jardim Rodrigo Fogaça, 1 Penha 48058471 Ribeiro de Mendes / SC",731,True,5.0,9.73,7.76,
+388.613.430-80,Lucca Pereira,F,27,"Ladeira de Oliveira, 65 Alta Tensão 1ª Seção 25105484 Santos / TO",772,False,,7.06,8.78,6.31
+306.204.444-71,João Miguel Cunha,F,18,"Alameda Rebeca Araújo, 73 Vitoria 26190804 Oliveira de Pinto / MS",704,True,3.0,9.48,,
+672.683.127-96,Thomas Fernandes,F,25,"Distrito Silva, 37 Ipe 66711-424 Moura de Minas / ES",782,False,,9.32,6.23,8.18
+780.544.547-38,Alexia Sales,M,19,"Via Rezende, 5 Nossa Senhora Do Rosário 62105997 Barros / CE",681,True,3.0,9.96,,
+345.244.736-87,Bianca da Cruz,M,21,"Feira de Lopes, 61 Prado 72966935 Vieira / SC",724,True,5.0,8.89,5.04,
+951.877.332-40,João Lucas Nunes,M,20,"Sítio Sophie Sales, 85 Santa Rosa 31130-675 da Cunha / CE",671,False,,7.5,6.6,6.6
+068.279.220-54,Daniela Ribeiro,M,24,"Favela Stephany Cunha, 62 Petropolis 04079321 Martins do Campo / PB",670,True,1.0,,,
+929.951.014-28,Enrico Aragão,F,19,"Ladeira Giovanna Barbosa, 22 Conjunto Minas Caixa 28372769 Lopes de Goiás / DF",748,False,,7.85,9.54,9.01
+435.260.038-09,Júlia Campos,M,25,"Favela Vitor Gabriel Ramos, 611 Ventosa 94554407 Barbosa do Oeste / AC",789,False,,9.47,9.46,8.17
+277.881.737-22,Alice Oliveira,F,18,"Pátio Vieira, 49 Floramar 47564-175 Cardoso / PR",644,False,,6.24,5.52,9.92
+193.961.719-45,Brenda Aragão,F,22,"Quadra Azevedo, 672 Vila Engenho Nogueira 83298-264 Cavalcanti / MS",758,True,4.0,7.3,,
+489.486.715-94,Sra. Ana Júlia da Mota,F,22,"Largo Ana Monteiro, 58 Alto Barroca 95164-637 Cunha das Flores / MT",727,False,,9.72,5.4,6.16
+353.527.485-17,Pietro Costa,F,26,"Via Ana Viana, 164 Céu Azul 95791117 Gonçalves / RJ",767,True,4.0,8.61,,
+734.422.178-50,Maria Cecília da Cunha,F,25,"Quadra Lopes, 91 Cdi Jatoba 62238590 Vieira / GO",694,False,,7.54,6.93,9.53
+196.766.343-73,Dr. Erick Porto,M,18,"Vale Maria Alice Moraes, 81 Belvedere 52432876 Correia de Cunha / PE",711,False,,5.28,7.9,6.25
+769.825.295-26,Larissa Vieira,M,19,"Fazenda de da Mata, 28 Savassi 84939196 Barbosa de Freitas / ES",722,False,,6.3,7.81,9.69
+351.067.121-36,Luiz Gustavo da Rocha,M,18,"Quadra Fogaça, 44 Dom Cabral 15408-734 da Conceição / ES",700,False,,8.0,7.0,7.02
+018.264.427-39,Stella Pereira,M,18,"Aeroporto Vicente das Neves, 757 Nova Floresta 54351-981 Cunha / SE",655,False,,9.54,8.55,7.36
+382.767.632-18,Luiza da Mata,M,25,"Viela Guilherme Pires, 14 Flavio De Oliveira 30335-116 Oliveira / AL",653,False,,7.25,7.56,6.4
+943.787.765-46,Daniel Duarte,F,22,Trecho de Farias Novo Das Industrias 71275-289 Mendes de Martins / RJ,659,True,5.0,8.28,8.01,
+247.248.935-36,Maria da Costa,F,22,"Campo Lucas Oliveira, 1 Vila Jardim Montanhes 63962-449 das Neves da Praia / RS",785,True,5.0,5.19,6.43,
+504.311.429-99,Henrique Fernandes,F,25,Ladeira de Almeida Vila Bandeirantes 46810-779 Santos / AC,709,False,,7.39,8.81,9.18
+970.283.848-71,Pietra Sales,F,27,"Passarela Sarah Caldeira, 3 Vila Satélite 60996509 Nunes de Minas / PI",708,True,3.0,6.36,,
+217.402.355-69,Vinicius da Mata,F,25,"Feira Vitória Campos, 41 Pedreira Padro Lopes 32341060 da Mata de Gomes / RN",786,False,,8.5,8.17,6.62
+736.536.512-12,Renan Costa,M,24,"Residencial de Silva, 9 Calafate 62645149 Ferreira de da Mata / PE",642,True,3.0,7.5,,
+315.762.823-19,Sr. João Felipe Moreira,F,27,"Lago de Porto, 29 Novo Santa Cecilia 02773253 Santos / MS",708,True,3.0,8.18,,
+267.612.811-01,Maria Eduarda Farias,F,20,"Campo de Ferreira, 99 Embaúbas 85156645 da Paz / AP",698,True,3.0,6.82,,
+792.106.403-58,Maria Cecília Costela,F,21,"Travessa de Porto, 63 Dona Clara 75064-284 Cardoso do Amparo / MS",721,False,,9.92,8.58,9.18
+110.102.497-49,Raquel da Cunha,M,20,"Avenida Luiz Otávio Aragão, 64 Vila Independencia 2ª Seção 29963184 Cardoso / SC",664,True,4.0,8.88,,
+742.254.826-40,Vitória Freitas,F,24,"Setor de Santos, 53 Lagoinha Leblon 11334365 Sales / PA",732,False,,7.94,7.55,7.94
+557.951.799-76,Vitor Caldeira,M,25,"Vila Lopes, 25 Vila Jardim São José 12916-079 da Mota Alegre / RS",785,False,,5.55,9.7,6.34
+941.273.731-62,Antônio Costa,M,18,"Campo Augusto da Mata, 4 Maravilha 52789-641 Teixeira / CE",719,True,2.0,,,
+791.262.284-66,Pedro Lucas Barros,M,18,"Colônia Costa, 756 Minaslandia 07950-390 da Mota do Amparo / DF",730,False,,7.25,5.11,7.75
+895.182.038-53,Cecília Ribeiro,M,18,Núcleo de Fogaça Conjunto Capitão Eduardo 07400-097 da Costa Paulista / MT,648,False,,6.43,8.65,5.79
+112.324.773-03,Dr. Cauã Pereira,F,18,"Rua Silveira, 51 Buritis 52390334 da Mota do Campo / CE",712,True,4.0,5.61,,
+187.737.742-44,Pedro Costela,F,25,"Alameda de Moura, 10 Santana Do Cafezal 47262-312 Duarte do Norte / PA",714,False,,6.5,9.03,9.37
+481.993.303-70,Dra. Stella Duarte,F,25,"Jardim Cunha, 6 Jardim Atlântico 28851032 Porto / GO",724,True,4.0,5.33,,
+808.440.834-38,Sabrina Silveira,F,25,"Lago Pedro Miguel Barbosa, 339 Boa União 2ª Seção 41222903 da Conceição de Vieira / MS",690,True,4.0,7.06,,
+955.932.649-52,Mirella Aragão,M,26,"Morro de Pinto, 5 Nova Esperança 61858-943 Barbosa de Goiás / MA",752,False,,5.23,7.73,7.01
+967.830.995-25,Natália Castro,M,25,"Distrito Catarina da Rosa, 40 Céu Azul 89357777 Rocha / AC",722,False,,5.2,7.91,9.23
+062.356.119-48,Diego Carvalho,M,21,"Rodovia Emanuelly das Neves, 219 Vila Batik 70229-075 da Rosa / MT",773,False,,7.58,8.21,6.12
+321.175.708-79,Anthony Sales,F,27,"Trecho Davi Ferreira, 57 Garças 79151659 Teixeira do Sul / RR",766,False,,5.87,7.36,7.04
+358.223.950-95,Otávio Gonçalves,F,20,Via Almeida Palmares 69018310 Moura / AC,646,True,4.0,9.8,,
+642.113.318-90,Sr. Henrique da Costa,F,26,"Largo de Ribeiro, 2 Andiroba 27572-721 Teixeira / AM",725,True,1.0,,,
+007.278.913-75,João Felipe Barros,F,23,"Via Emanuel Costela, 738 Graça 05464-490 Monteiro do Norte / RJ",730,False,,8.38,8.12,6.83
+182.319.557-21,Clara Moraes,F,26,Aeroporto Gomes Novo São Lucas 56052333 Pereira / ES,648,False,,8.2,7.63,7.97
+740.762.308-33,Henrique Farias,F,20,"Jardim de Moraes, 9 Confisco 60618-648 Souza / MA",780,True,4.0,9.14,,
+414.755.830-50,Carolina Barbosa,M,22,"Condomínio de Barbosa, 8 Vila Piratininga Venda Nova 72518-681 Gonçalves / RR",705,True,6.0,5.53,6.72,
+845.150.384-13,Alexia Fogaça,F,24,"Favela de Fernandes, 5 Flamengo 62155001 Silveira Paulista / PE",766,False,,6.69,9.52,8.47
+318.931.973-94,Clarice Cardoso,M,19,"Colônia de Nogueira, 82 Jardim Atlântico 21391-569 Santos / AP",767,True,2.0,,,
+487.676.423-19,Pedro da Paz,M,26,"Estrada de Rodrigues, 88 Liberdade 27792-380 Alves das Pedras / RJ",779,True,8.0,9.79,6.18,9.93
+994.663.295-67,Felipe Teixeira,F,26,"Feira Nogueira, 9 Minaslandia 40059-765 da Mata / CE",741,True,4.0,8.46,,
+120.936.203-52,Heloísa Melo,F,27,"Rua Vieira, 87 Brasil Industrial 45061-717 Gonçalves das Flores / RR",644,False,,7.13,6.53,6.11
+103.774.157-25,Murilo da Paz,F,19,"Morro de da Costa, 21 Olaria 94761-214 Dias de da Cunha / CE",692,False,,7.56,5.65,6.67
+097.732.812-00,Miguel Castro,F,21,"Viaduto Lucas Farias, 25 Andiroba 30815067 Cunha / SP",740,False,,9.01,7.09,9.1
+726.198.784-82,Raquel Novaes,F,25,"Parque Bárbara Cardoso, 7 Marieta 2ª Seção 38499066 Sales / RN",683,False,,9.84,5.11,5.54
+529.362.260-27,Renan Souza,M,21,"Recanto Lima, 8 Conjunto Floramar 39593-130 Moura das Pedras / SP",784,False,,8.68,9.32,7.85
+054.408.839-60,Luna Melo,M,25,"Sítio Maria Fernanda Souza, 983 Monsenhor Messias 38285230 Barros Grande / PB",701,False,,6.36,5.74,5.08
+998.036.208-18,Matheus Pereira,F,26,"Vereda Eloah Lopes, 1 Unidas 60377357 Fogaça / AL",757,True,6.0,8.28,5.5,
+425.432.158-05,Sra. Maria Sophia Monteiro,F,23,"Trevo Correia, 29 Bonfim 71748475 da Rocha / AL",772,False,,5.83,6.3,5.95
+881.060.937-02,Maria Cecília Viana,F,19,Trevo de Silveira Conjunto Serra Verde 38029085 Mendes / MT,730,False,,6.32,8.46,6.22
+261.374.384-85,Ana Carolina Barbosa,M,26,"Favela de Freitas, 46 Vila Esplanada 22865494 Porto do Amparo / RO",762,False,,9.89,9.56,7.29
+315.645.922-29,Dra. Eduarda Novaes,M,18,"Praça de Almeida, 27 Monte São José 10174-476 Silveira / PR",666,False,,8.27,7.88,7.52
+199.343.547-20,Rodrigo das Neves,M,22,Campo Cavalcanti Nossa Senhora Aparecida 74177612 Teixeira de Moura / AC,779,True,2.0,,,
+508.837.652-20,Luiza Martins,M,19,"Jardim Farias, 57 Santa Helena 81178971 Peixoto / SE",711,False,,8.6,5.99,5.39
+764.749.712-80,Lucca Novaes,M,25,"Via de Ribeiro, 188 Vila Independencia 3ª Seção 40187-394 Moraes / RS",751,False,,5.96,8.08,9.03
+201.981.640-65,Valentina Vieira,M,22,"Trevo Marcela da Mota, 687 Liberdade 20643-173 da Costa das Flores / RS",729,True,8.0,8.23,5.0,8.25
+322.104.980-35,Elisa da Mata,M,23,"Aeroporto de Caldeira, 12 Embaúbas 32478472 Costela de Minas / ES",678,False,,9.24,6.65,9.32
+182.496.435-68,Sr. Kaique Melo,M,22,"Trevo da Rosa, 1 Buraco Quente 91507229 Novaes da Praia / PE",722,False,,9.9,7.61,8.1
+431.838.220-32,Lucas Gabriel Lopes,F,27,"Avenida de Rocha, 8 Juliana 53338-956 Rezende de Carvalho / RR",797,False,,8.32,7.54,9.95
+923.051.844-31,Laís Teixeira,M,22,"Colônia Fogaça, 94 Nova Vista 53279563 Rodrigues do Sul / RR",661,False,,8.78,5.19,5.26
+075.843.121-59,Sra. Marina Viana,M,22,"Trecho Benício da Rocha, 48 Vila Suzana Primeira Seção 56057-644 Martins / MA",737,True,1.0,,,
+592.597.711-00,Esther Ribeiro,F,21,"Conjunto de da Mota, 88 Palmares 56346114 da Costa / MA",659,False,,9.69,5.64,7.44
+385.937.849-79,Ana Luiza Ramos,M,18,"Condomínio de Oliveira, 10 Aparecida 03101037 Santos / RS",753,True,7.0,7.45,6.57,9.42
+654.762.038-39,Larissa Fernandes,M,19,"Parque Luiz Miguel da Paz, 92 Barreiro 90718254 Pinto de Ramos / MT",796,True,1.0,,,
+216.958.329-95,Sabrina Rezende,M,26,"Condomínio Lara Duarte, 59 Vila São Gabriel Jacui 78418774 Gonçalves de Moura / BA",694,False,,8.68,9.77,6.87
+672.796.775-93,Luiz Otávio da Rocha,M,20,"Via Manuela Pereira, 723 Conjunto Santa Maria 93183388 Duarte / CE",750,False,,7.76,8.69,6.26
+243.469.993-56,João Almeida,F,23,"Alameda de Almeida, 30 Sion 84545373 Aragão / PR",767,True,8.0,9.32,8.22,7.5
+440.887.386-85,Dr. Marcos Vinicius da Cunha,F,25,"Vila Benício das Neves, 56 Solar Do Barreiro 25216122 Teixeira / AP",657,True,2.0,,,
+967.133.410-99,Davi Lucas Farias,F,19,"Viela Cunha, 3 Vila Madre Gertrudes 4ª Seção 61012-617 Mendes da Mata / RO",674,False,,9.59,5.49,8.0
+024.611.935-03,Kevin da Mota,F,19,"Estrada Danilo Costa, 4 Tirol 80689-078 Teixeira do Oeste / SE",728,True,2.0,,,
+593.275.959-67,Dr. Davi Lucca Rocha,F,18,"Estação de Rezende, 86 Virgínia 75200-728 Sales do Galho / MG",658,False,,6.07,5.25,7.45
+279.031.213-08,Sr. Vitor Gabriel Costela,M,27,"Feira Arthur Monteiro, 74 Alto Vera Cruz 44921198 Nogueira / RJ",700,False,,8.44,7.57,6.93
+513.462.115-87,Daniela Rezende,M,24,"Residencial de Gomes, 1 Caetano Furquim 71206619 Souza do Oeste / MA",650,True,6.0,5.65,8.68,
+380.749.635-65,Kaique Cavalcanti,M,24,"Vale da Rosa, 14 Santana Do Cafezal 99963186 da Conceição do Oeste / MT",688,False,,5.82,8.22,5.72
+039.387.379-27,Davi Lucas Vieira,F,27,"Lagoa de Cardoso, 344 Vila Nova Cachoeirinha 1ª Seção 87259-129 Cardoso / PI",725,False,,8.09,8.34,7.53
+623.164.224-10,Nicole Cavalcanti,F,22,"Estação Costela, 9 Inconfidência 59686698 Moraes do Galho / PA",797,True,6.0,6.21,9.08,
+796.974.616-97,Sr. Vinicius Peixoto,F,24,"Morro Elisa Cardoso, 40 Vila Minaslandia 33325-080 Sales / MT",696,False,,5.93,9.4,5.16
+489.446.447-28,Isabella da Cruz,M,21,"Rodovia Moraes, 515 São João 09499-117 Porto do Norte / RJ",674,False,,8.45,8.0,7.79
+536.011.627-60,Ana Pereira,F,24,Lagoa Esther Gonçalves Cidade Nova 82821-804 Castro / PR,777,False,,7.58,8.44,8.54
+177.652.320-08,Dra. Fernanda Correia,M,27,"Travessa de Castro, 58 Vila Da Amizade 71459-959 Porto do Norte / RJ",680,True,4.0,8.62,,
+641.824.205-22,Ana Laura Costa,F,21,"Pátio de da Mota, 66 Antonio Ribeiro De Abreu 1ª Seção 31602268 Dias de da Mota / PI",780,False,,9.88,5.92,9.56
+366.214.837-02,Arthur Cavalcanti,M,19,"Travessa Souza, 59 Virgínia 70851961 da Luz / RO",669,True,7.0,7.43,5.78,5.32
+085.387.379-67,Sr. Pietro Jesus,F,27,"Largo de Correia, 47 Nossa Senhora Da Conceição 03100-593 Viana Grande / SE",686,True,7.0,5.64,8.35,8.39
+712.180.017-15,Pedro Henrique Fogaça,F,22,"Parque de Novaes, 73 Universitário 19939638 Correia de da Luz / MT",679,True,7.0,6.65,5.3,5.11
+559.291.704-25,Sra. Caroline Cardoso,M,23,"Estação de Martins, 86 Vila Nova Cachoeirinha 1ª Seção 53018679 Carvalho das Pedras / PE",750,False,,8.92,9.75,5.24
+098.180.182-49,Sr. Igor Peixoto,M,18,"Pátio Lucas Gabriel da Costa, 54 Vila Da Amizade 24194-364 Araújo de Fernandes / MG",669,True,1.0,,,
+117.307.817-44,Gustavo Lopes,F,22,"Loteamento Alice Cardoso, 54 Floresta 78029-612 Rezende do Norte / SP",782,False,,7.14,5.7,6.92
+335.787.212-63,Guilherme da Rocha,M,23,"Chácara de Rocha, 425 Coração Eucarístico 02431980 Alves Paulista / TO",689,True,5.0,6.38,9.23,
+881.827.065-31,Breno Monteiro,F,24,"Área Lavínia Souza, 32 Granja Werneck 74760385 Moreira de Moreira / CE",738,False,,9.67,7.4,7.57
+187.562.250-53,Milena Duarte,F,26,"Colônia Lopes, 7 Leticia 61001824 Lopes da Prata / AC",706,True,2.0,,,
+782.233.784-85,Stephany da Mata,F,19,"Trecho Lopes, 210 Nossa Senhora Da Conceição 61122-581 Oliveira de Araújo / MT",741,False,,7.75,6.46,6.86
+802.543.660-89,Thiago Moraes,F,23,"Rodovia de da Costa, 92 Vila Santa Monica 1ª Seção 59928814 Caldeira / MG",680,True,6.0,8.92,9.13,
+055.022.868-88,Luiz Otávio Araújo,M,23,"Estrada Viana, 18 Capitão Eduardo 29282004 da Cunha / CE",759,False,,7.55,7.88,9.45
+579.883.394-45,Cecília Rezende,M,19,"Loteamento Duarte, 275 São Jorge 2ª Seção 83187-505 Costela / ES",738,False,,9.65,5.31,8.73
+697.077.446-26,Kevin Santos,M,21,"Travessa Augusto Mendes, 91 Madri 51402-784 Monteiro da Praia / ES",710,True,5.0,8.17,5.45,
+884.348.219-03,Francisco Ferreira,M,18,"Núcleo Carlos Eduardo Melo, 69 Serra Do Curral 88342075 Campos / PB",686,True,6.0,6.29,5.94,
+294.602.756-63,Ana Vitória Souza,M,24,"Jardim de Duarte, 61 Centro 35265-459 Oliveira / SE",779,False,,8.45,8.34,6.31
+285.049.872-96,Joaquim Freitas,M,25,Campo Caldeira Dona Clara 43451653 Teixeira de Farias / MT,719,False,,8.19,5.97,6.19
+252.487.954-11,Sr. Danilo Jesus,M,20,"Parque Moraes, 14 Vila Santo Antônio 75947-532 Costela / BA",673,False,,9.86,9.67,7.4
+077.745.513-79,Bruna Porto,F,27,Campo Costa Jaqueline 82956-033 Ribeiro / PI,694,False,,7.98,9.09,8.19
+799.003.852-21,Lucas Gabriel Silveira,F,27,"Rodovia Araújo, 9 Mangabeiras 45947-137 Melo de Caldeira / PB",773,False,,6.09,6.62,7.57
+242.778.654-92,Sophia Costa,M,20,"Feira Rodrigues, 99 Glória 64485441 Duarte Grande / ES",695,True,8.0,6.22,7.44,8.37
+053.570.505-77,Matheus Melo,F,24,"Favela Enzo Gabriel Martins, 13 Bacurau 15995315 Dias Grande / PI",682,False,,7.77,7.13,9.94
+158.999.262-44,Rebeca Cunha,F,25,"Residencial de Aragão, 131 Nossa Senhora De Fátima 02952-388 Freitas / SC",757,True,5.0,5.33,7.98,
+413.716.987-81,Igor Fogaça,F,21,"Núcleo de Jesus, 9 Custodinha 49865-026 Cunha / CE",652,False,,7.6,9.17,6.29
+892.843.151-37,Vicente Cardoso,M,19,"Estação de Nogueira, 1 Parque São José 42094-715 da Rocha / PI",641,False,,8.12,8.37,8.17
+872.215.430-47,Carolina Melo,M,22,Distrito Bianca da Rosa Santa Cruz 90757-704 Cavalcanti / RN,760,False,,6.17,8.01,5.38
+787.888.803-38,Stephany Lima,M,25,"Vila de Pinto, 67 Minas Caixa 69935-381 da Rosa de Moraes / PI",657,True,7.0,7.6,9.71,7.41
+286.565.692-98,Nicolas Carvalho,M,22,"Chácara Costa, 48 Piratininga 31163-773 Nogueira de da Cunha / BA",786,False,,5.12,7.92,8.1
+241.409.738-25,Ana Luiza Fernandes,F,23,"Praia de Gonçalves, 91 Trevo 99668-921 Moraes / MT",742,False,,5.67,5.71,8.15
+930.844.423-68,Caroline Pereira,M,22,"Viaduto Barros, 894 Boa União 1ª Seção 38285-412 Gonçalves / MG",736,False,,8.97,8.18,8.43
+576.667.996-99,Letícia Correia,F,22,"Ladeira Luiz Otávio Souza, 795 Santa Lúcia 69538280 da Cruz das Pedras / TO",766,True,8.0,8.12,8.85,9.62
+171.679.815-65,Srta. Alexia Peixoto,F,20,"Ladeira Mendes, 801 Vila Nova Gameleira 2ª Seção 62216-949 da Mata de Goiás / AP",715,True,7.0,8.07,8.44,7.29
+358.554.571-26,João Felipe Cavalcanti,M,23,"Área de Caldeira, 20 Vila Santo Antônio 02714-862 Souza Alegre / SE",711,True,5.0,7.16,9.69,
+460.860.440-38,Benjamin Viana,F,27,"Conjunto Barbosa, 79 Ermelinda 34671269 Sales / RR",761,True,7.0,6.28,6.26,6.37
+630.461.908-38,Paulo Silveira,M,26,"Condomínio Moraes, 83 Cônego Pinheiro 1ª Seção 49701-354 Viana / AM",710,False,,9.17,9.47,8.94
+376.865.261-48,Carlos Eduardo Freitas,M,26,"Vereda Cunha, 12 Aeroporto 41974896 da Rosa / RJ",668,False,,6.45,8.4,7.45
+058.167.342-27,Laís Cardoso,M,18,"Praia Henrique Nunes, 30 Maravilha 76276693 Dias de Minas / AC",791,False,,8.68,8.29,5.53
+541.848.603-89,Evelyn Silva,M,25,Condomínio Sabrina Porto Tiradentes 46416237 Porto / PE,684,False,,7.17,5.56,7.06
+611.978.294-94,Bianca Martins,M,23,"Jardim Maria Silva, 91 Aeroporto 70918-480 Silveira da Serra / PA",688,False,,5.78,9.97,5.83
+216.212.425-45,Lavínia Mendes,M,25,"Viela Freitas, 44 Minas Caixa 33374-320 da Luz Alegre / AP",777,False,,8.11,8.87,8.88
+178.624.917-93,Gabriel Azevedo,M,22,"Lagoa Lima, 9 Vila De Sá 78976-858 da Conceição da Serra / RR",799,True,6.0,5.98,9.39,
+352.997.676-07,Bruna Gonçalves,M,22,"Aeroporto Heloísa Rezende, 35 Barroca 43551784 Sales / PE",758,True,1.0,,,
+196.638.745-42,Luiz Otávio Azevedo,M,18,"Feira de Vieira, 515 Grota 93081-914 Jesus / RR",694,False,,6.17,5.26,9.37
+673.335.627-82,Thiago Cunha,F,26,"Conjunto Martins, 80 Conjunto Taquaril 90826-398 Ramos Verde / AL",711,True,7.0,7.31,7.18,5.23
+755.795.985-54,Luiz Felipe Castro,F,27,Travessa de da Cruz Delta 25356265 Moraes da Prata / GO,668,True,3.0,9.84,,
+545.527.317-67,Leonardo da Mata,F,18,"Parque Cavalcanti, 51 Itaipu 39274-152 Lopes / AM",780,False,,8.71,6.8,5.09
+792.620.077-58,Pedro Lucas Ribeiro,F,20,"Alameda de Barbosa, 50 Zilah Sposito 55334025 Correia / GO",799,False,,5.85,9.23,9.44
+204.024.851-93,Dr. Augusto Pinto,M,18,"Favela Pereira, 56 Casa Branca 35983659 Lima / CE",677,False,,8.36,9.81,8.03
+345.179.399-21,Srta. Eduarda Barbosa,F,19,"Rodovia Peixoto, 50 Maria Goretti 46281-615 Ferreira de Souza / MT",660,False,,5.88,8.2,6.67
+369.238.634-05,Ana Carolina Lopes,F,18,Conjunto Gustavo Henrique Costa Marilandia 18494710 Caldeira / RN,765,True,5.0,7.99,9.32,
+236.708.358-73,Sr. Marcelo da Rosa,M,24,"Esplanada Novaes, 796 Santa Rita 12505370 Porto / AL",744,False,,9.0,5.3,8.88
+358.110.707-44,Sr. Noah Caldeira,M,19,"Vila Igor Pereira, 4 Vila Jardim Montanhes 92102-063 da Luz / PB",657,False,,7.67,5.2,8.56
+552.362.736-64,Vicente Farias,F,18,"Residencial da Luz, 9 Vila Jardim Alvorada 18700-729 Santos / PE",660,True,4.0,7.0,,
+007.793.251-02,Noah Fernandes,M,20,Campo Bryan Silveira Vila Copasa 31992516 Campos Verde / DF,716,True,8.0,9.92,8.26,9.07
+091.629.878-72,João Vitor da Rosa,M,23,"Feira de Rocha, 17 Europa 41183-963 Almeida de Cunha / PR",795,True,4.0,5.65,,
+032.199.038-22,Sr. Danilo Dias,F,20,"Praia Lopes, 91 Vila Real 2ª Seção 03730-240 Santos / MS",769,True,8.0,8.69,9.42,5.37
+345.890.284-25,Luana Rezende,M,26,"Largo de da Cruz, 9 Santa Branca 91170-063 Porto / RJ",731,True,5.0,7.2,8.47,
+521.418.621-04,Rafael Castro,F,20,"Trecho Jesus, 26 Maria Goretti 16492-701 Melo / GO",655,False,,7.05,6.38,6.97
+461.393.166-93,João Miguel Moreira,M,26,"Vila Fogaça, 25 Maria Goretti 30074759 Melo das Flores / AP",788,False,,8.72,5.16,8.93
+106.284.514-57,Alice Barbosa,F,20,Setor Araújo Santa Branca 38062-518 da Cunha da Mata / RS,654,False,,8.86,6.13,5.45
+491.368.814-18,Leonardo Peixoto,M,20,Avenida Ramos Tiradentes 33555962 Nogueira / DF,723,True,5.0,6.45,9.11,
+276.822.804-73,Joaquim da Luz,M,24,"Área Laura Costela, 12 João Pinheiro 74013721 Nogueira / SC",684,False,,9.56,8.35,9.71
+564.710.371-01,Marcela Porto,F,27,"Residencial de Porto, 850 Vila Jardim Montanhes 78457198 Cardoso / PA",661,True,8.0,8.59,7.22,9.76
+357.195.064-37,Ian Fogaça,F,23,"Condomínio Fernanda Peixoto, 740 Vila Inestan 33839343 Rezende Paulista / RS",730,True,8.0,6.89,6.18,9.69
+367.136.813-29,João Gabriel Pires,F,18,Condomínio Thomas Monteiro Tiradentes 99356013 Mendes da Prata / PR,655,False,,5.42,7.95,6.13
+728.598.436-13,Ana Vitória Pires,M,27,"Trecho de Sales, 8 Lagoa 38470-653 Ribeiro de Minas / AM",742,False,,8.11,7.89,9.01
+049.610.835-90,Bruna da Conceição,M,23,Vereda da Costa Centro 66208-975 Peixoto / PB,661,True,2.0,,,
+669.554.452-02,Gabrielly Barros,F,18,"Campo Souza, 8 Vila Esplanada 63263-318 Monteiro de Goiás / BA",749,True,8.0,7.82,5.83,5.8
+780.817.210-50,Ana Beatriz Farias,M,25,"Estação Sales, 49 Califórnia 83340-723 Vieira da Prata / AL",770,False,,6.0,8.86,7.13
+587.183.258-83,Murilo Silva,M,27,"Morro Cardoso, 71 Santa Margarida 43061-991 Fernandes / CE",685,True,6.0,8.13,5.09,
+500.080.637-02,Juan Gomes,F,26,"Esplanada da Conceição, 48 Vila Piratininga Venda Nova 91068-128 Oliveira do Amparo / RN",781,False,,9.34,5.21,9.44
+072.384.391-00,Dr. Murilo Nogueira,F,20,"Campo Luna Monteiro, 445 Monte São José 06518235 Nascimento / DF",703,False,,7.61,8.08,5.99
+816.486.323-79,Danilo Ferreira,F,23,"Alameda Murilo Novaes, 15 Vila Paquetá 05951547 Porto da Mata / CE",764,True,8.0,6.46,9.18,9.73
+681.927.205-12,Emanuella Fernandes,M,18,"Praça Almeida, 63 Jonas Veiga 25359162 Melo de Lopes / RR",706,False,,7.27,8.81,7.1
+582.271.406-77,Cecília da Mota,M,26,"Trevo Natália Porto, 59 Caiçara - Adelaide 89957531 das Neves / SC",756,True,8.0,5.74,6.33,6.03
+255.544.048-62,Srta. Isis Jesus,M,22,Praia de das Neves São Lucas 29699062 Viana / AL,766,False,,9.28,6.14,6.54
+591.817.563-26,Maria Fernanda das Neves,F,18,"Feira de Dias, 36 Califórnia 68827-447 Duarte / TO",738,True,7.0,8.06,9.77,5.55
+202.380.781-22,Lucas Nunes,F,25,"Setor Azevedo, 996 Concórdia 16094121 Duarte do Norte / AM",752,False,,9.08,5.95,9.59
+942.988.549-73,Gabriela Cardoso,M,21,Via Antônio Lopes Alto Dos Pinheiros 47190-683 Caldeira da Praia / PI,665,True,1.0,,,
+745.024.213-64,Bruno Cavalcanti,M,20,"Estrada da Mota, 159 Bernadete 75004171 Vieira / RR",711,False,,5.58,5.66,5.58
+070.570.401-05,Kevin Pinto,M,26,"Vila Stella Silveira, 8 Vila São Gabriel Jacui 90786576 da Conceição de Mendes / PA",740,True,1.0,,,
+196.280.698-78,Alexandre Carvalho,F,26,"Sítio de Cardoso, 14 Jardim Felicidade 16674159 da Mota da Praia / SE",763,False,,6.35,5.12,8.73
+292.025.762-63,Dr. Leonardo Peixoto,M,23,"Via Luna Rocha, 254 Serra 53836482 Ramos / SC",737,False,,7.62,8.55,6.32
+491.232.001-03,Olivia da Cunha,M,24,"Colônia Natália Viana, 6 Vila Independencia 3ª Seção 07044-964 Silveira Alegre / AL",723,True,2.0,,,
+508.977.021-53,Dr. Gustavo Rocha,F,20,"Trevo Teixeira, 179 Mirante 72223-963 da Paz / PE",664,False,,7.09,5.01,5.36
+655.473.901-45,Beatriz Melo,M,22,"Ladeira Campos, 1 Boa Viagem 93154684 Martins / RN",790,True,8.0,7.99,6.28,6.09
+038.849.821-02,Yasmin da Mata,F,20,"Jardim de Barros, 98 Nova Cachoeirinha 85658367 Santos do Norte / SE",702,True,3.0,9.35,,
+736.200.463-10,Sarah da Rocha,M,19,"Sítio de Nunes, 64 Suzana 98330-033 da Cruz de Castro / ES",767,True,2.0,,,
+981.911.081-61,Camila Rodrigues,M,26,"Estrada Emilly Barros, 23 Marmiteiros 71238272 Ferreira do Norte / DF",791,False,,9.44,7.49,9.63
+308.807.870-92,Daniela Pinto,F,20,"Trevo Freitas, 69 Vila Aeroporto 12108-032 Moura de da Cunha / RR",686,True,1.0,,,
+872.059.600-67,Srta. Marina Teixeira,M,20,"Vereda Pires, 525 Vila Nova 08412-995 da Paz / PI",693,False,,6.31,9.41,5.55
+119.909.117-87,Isabelly Vieira,F,19,"Viaduto Carlos Eduardo da Conceição, 99 Frei Leopoldo 17846742 Dias / AC",685,False,,8.08,9.33,5.14
+760.178.845-82,Esther Rezende,F,24,Distrito de Peixoto João Pinheiro 15324553 Rodrigues / MT,659,True,8.0,9.27,6.66,8.53
+453.702.045-47,João Felipe Fernandes,M,26,"Rodovia de Ribeiro, 88 Corumbiara 31541-168 Teixeira Verde / MG",666,True,7.0,8.28,8.85,5.46
+571.538.312-00,João Gabriel Silva,M,20,"Rua Brenda Jesus, 6 Planalto 13712269 Gonçalves das Pedras / PB",699,False,,8.18,5.9,8.09
+546.567.616-16,João Miguel Nascimento,F,25,"Jardim de Ramos, 19 Ventosa 20285269 Gonçalves / MS",660,True,8.0,7.03,7.26,5.07
+789.198.347-71,Arthur Rocha,F,19,"Estação Cardoso, 398 Vila Madre Gertrudes 3ª Seção 08588375 Barros das Pedras / PR",662,False,,8.42,9.2,5.45
+825.074.756-69,Melissa Ramos,M,24,"Via de Ribeiro, 7 Penha 24858-179 Peixoto / MS",698,False,,6.97,7.58,5.99
+532.499.764-36,Dr. Thales Silveira,F,24,"Vereda Mariana da Paz, 81 Etelvina Carneiro 25552818 Nogueira do Galho / MS",674,False,,5.31,8.04,7.56
+918.546.336-85,Ana Lívia Teixeira,M,19,"Distrito Henrique Nogueira, 22 Corumbiara 49373748 Silva / SP",640,False,,9.46,5.22,9.66
+029.161.199-46,Guilherme Nunes,F,19,"Residencial Freitas, 487 Vila Sumaré 29678-435 Mendes / RR",727,True,5.0,8.93,9.49,
+155.833.946-35,Dra. Gabrielly da Luz,M,22,"Sítio Lopes, 268 Marilandia 39191-011 Cavalcanti / AL",733,True,7.0,5.21,8.62,9.92
+651.556.441-54,Diego Barbosa,M,23,"Praça de da Costa, 39 Vila Nova Cachoeirinha 1ª Seção 61254418 Duarte / CE",706,False,,9.05,7.77,7.82
+659.868.947-63,Eloah Sales,F,26,"Rua de das Neves, 40 Itatiaia 67479-495 Farias / CE",787,False,,6.99,6.78,5.81
+571.582.126-60,Evelyn Martins,F,25,"Residencial Alves, 879 Santa Inês 51972-988 das Neves / AP",670,False,,8.28,6.43,6.86
+744.564.074-18,Isabella Mendes,F,20,Campo Nogueira Zilah Sposito 77139541 Lima / AM,734,False,,5.21,9.64,6.85
+248.856.852-43,Srta. Alexia Souza,F,19,"Rodovia Oliveira, 67 João Paulo Ii 00909429 Araújo / RR",689,False,,5.06,7.41,7.66
+774.489.368-50,Thomas Costa,F,26,"Fazenda Bruna Lima, 71 Vila Minaslandia 72705-201 Vieira Verde / MS",712,False,,5.79,7.59,5.85
+601.831.803-85,Giovanna Vieira,M,26,Ladeira de Pinto Vila Nova Gameleira 2ª Seção 20998-803 Campos de Cardoso / SP,690,False,,5.55,7.12,7.47
+194.621.581-59,Dr. Pedro das Neves,M,18,"Esplanada da Mata, 3 Pompéia 40359-744 Fogaça das Pedras / RN",680,True,8.0,6.24,7.32,5.51
+976.041.528-98,Paulo Moraes,M,18,"Favela de Porto, 730 Itatiaia 52274-673 Moura / AC",647,True,6.0,7.81,6.91,
+719.239.419-02,Eduarda Moura,M,21,"Núcleo de Freitas, 9 São Paulo 98717852 Porto / PB",653,True,8.0,9.51,9.07,5.05
+357.247.404-61,Gabriel Rezende,F,25,"Largo de Viana, 2 Casa Branca 42711-338 Dias de Goiás / RN",696,False,,5.73,8.84,9.09
+150.570.411-38,Caroline da Mata,M,18,"Lagoa João Vitor da Mota, 4 Nova Esperança 93084-120 Nascimento / BA",794,False,,5.04,9.48,9.23
+495.611.004-97,Miguel Moura,M,26,"Distrito Duarte, 84 União 11878-379 Silva / TO",794,True,2.0,,,
+720.668.051-57,Srta. Ana Carolina Cardoso,F,27,"Largo de da Rosa, 68 Petropolis 24231830 Lopes da Serra / AM",725,True,7.0,8.97,6.54,7.97
+447.981.790-08,Dra. Yasmin Moraes,M,26,"Vila Heitor Lopes, 96 Castanheira 57102-226 Caldeira / PR",678,False,,8.87,9.99,8.71
+483.812.382-12,Isabelly das Neves,F,24,"Jardim de Viana, 28 Satelite 02385-234 Pinto de Castro / ES",791,False,,7.17,8.35,9.31
+009.656.183-85,Dr. Isaac Barbosa,M,23,"Vale de Jesus, 5 Vila Antena Montanhês 18741534 Castro do Amparo / SP",651,False,,8.19,6.17,9.42
+406.465.002-56,Alana Cardoso,M,21,"Estrada Luana Pereira, 589 Aparecida 27240-611 Melo / RO",735,False,,9.36,7.85,9.96
+989.300.592-91,Ana Fogaça,M,22,Travessa de Moraes Santa Maria 10184941 Oliveira / CE,686,True,6.0,7.66,8.01,
+264.005.197-34,Cecília Ferreira,M,23,"Alameda Nunes, 40 Novo Tupi 23549-644 Ribeiro / SE",744,False,,6.07,7.16,8.34
+539.482.103-06,Ana Julia Sales,M,27,"Residencial de Vieira, 30 Barão Homem De Melo 1ª Seção 98494-310 Barbosa / SP",676,True,1.0,,,
+547.436.184-86,Sarah da Cruz,M,27,"Largo Stephany das Neves, 68 Túnel De Ibirité 12240701 Fernandes de Costa / DF",797,True,8.0,5.78,6.59,5.19
+686.628.228-03,Manuela da Rocha,F,27,"Praia de Alves, 46 Parque São José 17731136 Sales de Minas / MT",640,True,7.0,9.28,7.32,9.23
+533.494.514-05,Luna Caldeira,M,24,"Lago de Rocha, 55 Estrela 45517480 Correia / ES",712,True,7.0,5.77,6.91,6.19
+749.382.171-55,Bárbara Lopes,F,25,"Área de Lima, 786 Jonas Veiga 61369-393 Lopes / PR",641,False,,8.2,5.6,7.85
+780.501.615-28,Cauê Cardoso,F,26,Lago de Moraes Dom Bosco 26960329 Gonçalves de Oliveira / PA,670,False,,7.02,9.03,9.18
+546.395.598-54,João Felipe Campos,M,22,"Condomínio da Rosa, 954 Vila Da Paz 67879-058 Cunha / MT",712,True,4.0,5.2,,
+755.011.961-83,Alana Nogueira,F,19,"Condomínio Isadora Rezende, 93 Nova Cintra 55717-172 Ribeiro de Viana / AC",742,True,8.0,7.68,5.35,9.62
+000.516.242-49,Maysa Vieira,M,21,Vereda Breno Porto Vila Piratininga Venda Nova 65595-356 Ramos de Campos / TO,726,True,4.0,9.53,,
+033.447.213-39,Eduardo Novaes,M,22,"Setor de da Mota, 3 Varzea Da Palma 16775-104 da Mota / AP",713,True,2.0,,,
+620.924.983-14,Pietra da Paz,F,22,"Trecho Cavalcanti, 41 Olaria 37739-059 da Paz de Almeida / ES",704,False,,8.41,8.13,7.82
+792.637.546-01,Maria Fernanda Caldeira,F,25,"Jardim Silva, 8 Custodinha 14551-091 Barros Verde / PI",724,False,,5.94,9.35,6.14
+704.669.598-42,Kaique Azevedo,F,24,"Favela Moraes, 83 Nova America 15849-820 Jesus do Campo / SE",714,False,,6.24,9.61,5.68
+830.322.238-34,Luiz Henrique Monteiro,M,19,Lago de Silveira Delta 52245-268 Silveira / PB,790,True,2.0,,,
+658.099.511-25,Gustavo Henrique Rocha,F,21,"Pátio Alana Moraes, 53 Vila Mangueiras 26751-697 da Conceição / RO",757,False,,6.08,8.54,9.34
+352.705.648-85,Levi Souza,F,24,"Morro Pietro Gonçalves, 48 São Pedro 90745-764 Castro do Amparo / PE",766,False,,6.94,6.85,6.21
+774.412.888-22,Esther Aragão,M,24,"Rodovia Freitas, 21 Manacas 45030-787 Dias da Praia / RJ",690,False,,6.59,9.51,5.82
+532.000.023-00,Amanda Cardoso,M,22,"Trecho Francisco Nunes, 8 Parque São Pedro 71070-971 Oliveira / RO",660,True,7.0,5.29,8.68,7.65
+573.211.807-03,Fernanda Duarte,M,22,Chácara da Luz Vila Madre Gertrudes 3ª Seção 06660-102 Costa de Goiás / AL,707,True,5.0,5.15,5.93,
+649.180.550-83,Bárbara Moreira,F,19,"Estação Farias, 3 Pilar 24016979 Rezende / RO",762,False,,6.5,5.96,8.7
+903.032.742-50,João Felipe Monteiro,M,26,"Pátio de da Mata, 70 Pirineus 68661-369 Oliveira / AM",714,False,,9.34,10.0,5.45
+357.585.332-76,Renan Duarte,F,26,"Passarela de Monteiro, 40 Pousada Santo Antonio 70884-571 Rezende da Mata / MG",738,True,3.0,8.24,,
+757.752.427-03,André Costa,F,19,"Jardim Viana, 62 Virgínia 36064736 Porto de Pereira / PE",671,True,7.0,5.39,6.68,9.17
+111.420.447-20,Giovanna da Costa,F,21,"Feira Monteiro, 2 Aeroporto 80279128 Oliveira / CE",647,True,7.0,8.59,8.66,5.06
+929.419.191-80,Emanuella Sales,F,21,"Rua Letícia Cardoso, 54 Mirante 25864895 Novaes de Minas / MA",642,False,,6.75,7.2,7.92
+748.607.192-83,Luigi Lopes,M,26,"Viela de Correia, 5 Mirtes 68948585 Farias / RR",668,True,2.0,,,
+239.851.863-60,Vitor Gabriel Moreira,M,23,"Alameda Carolina Pinto, 549 Venda Nova 18863-632 Caldeira / RS",734,False,,7.14,9.36,6.74
+546.007.343-06,Catarina da Luz,F,25,"Distrito Araújo, 71 Vila Aeroporto 29282706 Alves das Flores / DF",751,True,7.0,6.58,8.57,5.46
+426.324.857-86,Alexandre Fernandes,M,18,"Passarela Yuri Barbosa, 58 Paulo Vi 77537-774 Silveira da Mata / RO",790,False,,6.09,8.63,6.33
+635.278.187-71,Sr. João Felipe da Costa,M,24,"Chácara Clarice da Conceição, 29 Vila Copacabana 64337-458 Ribeiro / GO",755,True,8.0,7.88,7.37,6.38
+703.702.920-83,Luiz Henrique Cavalcanti,F,24,"Via de da Paz, 255 Urca 25906-989 da Mata / RS",752,False,,8.66,6.63,5.61
+887.021.850-23,Marina Rodrigues,F,26,"Campo de Novaes, 62 Jardim Vitoria 80484957 Monteiro de Goiás / RN",715,True,7.0,8.47,9.5,8.37
+843.266.114-36,Gustavo Henrique Freitas,F,19,"Residencial de Martins, 553 Maria Virgínia 62852-267 Mendes / SC",791,False,,7.97,6.98,9.47
+345.488.449-86,Emanuel Ferreira,M,21,"Aeroporto de Gomes, 2 Dona Clara 27423845 Cardoso de Viana / AC",754,False,,6.06,5.67,6.03
+204.755.530-21,João Gabriel Cardoso,M,27,"Morro Cunha, 54 Cardoso 97474600 Gomes do Oeste / MT",680,True,4.0,8.18,,
+832.865.826-77,Dr. Davi da Cunha,F,22,"Área Correia, 11 Leticia 75652-453 Santos das Flores / MT",727,False,,6.46,9.2,7.91
+280.345.968-42,Gabriela Nogueira,F,23,"Viaduto Bárbara Peixoto, 69 Ernesto Nascimento 13178003 Araújo da Mata / AM",662,False,,9.69,5.56,5.56
+246.787.051-64,Joana Pires,M,20,"Trecho de Silva, 27 Boa União 1ª Seção 59580-030 Nogueira de da Paz / RJ",698,True,3.0,9.73,,
+497.002.963-20,Samuel Fogaça,F,19,"Campo Esther Dias, 9 Santo André 81279149 Pereira / PI",666,False,,6.58,6.71,9.58
+360.755.351-76,Thiago Rocha,F,23,"Pátio Caroline Fogaça, 36 Andiroba 74148650 Castro / PR",797,True,7.0,7.84,7.35,7.05
+252.503.446-52,Paulo Pereira,F,20,"Chácara Olivia Alves, 69 Aguas Claras 25598-361 da Costa / CE",657,False,,9.4,5.82,9.0
+264.381.596-66,Dr. Heitor Carvalho,M,20,"Ladeira Gonçalves, 96 Vila Fumec 01127806 Silveira / MA",782,False,,6.74,9.88,6.2
+926.177.813-62,Ana Beatriz Cunha,F,18,Lagoa de Aragão Jardim Felicidade 65755937 Jesus / RR,800,True,4.0,5.69,,
+127.696.312-26,Amanda da Conceição,F,24,Jardim Fernandes Varzea Da Palma 26437-883 da Luz Paulista / AL,677,True,3.0,9.33,,
+336.166.861-34,Pedro Miguel Viana,F,20,"Área Vitória Campos, 20 Ouro Minas 57734313 da Conceição do Oeste / RS",711,True,4.0,9.18,,
+437.568.588-49,Pedro Henrique Sales,M,24,Rodovia Marina Rodrigues São Francisco Das Chagas 14175-685 Sales do Norte / AM,747,True,5.0,5.91,8.77,
+685.475.228-50,Luiz Felipe da Conceição,M,19,"Residencial de Moraes, 50 Barão Homem De Melo 2ª Seção 43863-456 Moraes de Minas / RO",691,True,3.0,5.23,,
+244.349.703-16,Henrique Almeida,F,21,"Praça Pinto, 42 Grajaú 82630-694 Rezende / AL",670,False,,5.41,8.83,8.12
+122.082.990-50,Maria Vitória Caldeira,M,22,Morro Costela Cinquentenário 23949-677 da Mata de da Rocha / MG,780,True,3.0,5.24,,
+014.155.562-58,Dr. Kaique Silveira,F,26,"Rodovia Viana, 57 Jardim Montanhês 19356-754 Castro / AP",684,True,4.0,8.95,,
+628.022.633-72,Maria Cecília Sales,F,23,"Feira Melo, 60 Funcionários 74566999 Monteiro Grande / RS",721,False,,7.35,6.41,8.04
+526.675.995-40,Sra. Gabriela Costela,M,23,"Chácara Aragão, 46 Céu Azul 96398632 Silva / TO",725,False,,6.16,8.38,7.65
+206.025.978-33,Emanuelly da Conceição,M,25,"Área de Rodrigues, 96 São Bernardo 70046-461 Peixoto de Moraes / MS",770,True,3.0,8.4,,
+043.134.398-33,Ana Vitória das Neves,F,23,"Trevo Pereira, 81 Pirineus 51072997 Lima / RS",798,False,,7.01,7.11,5.36
+297.791.727-67,Maysa Melo,F,25,Parque de Rezende Maria Tereza 36664-415 Pires do Oeste / TO,756,False,,6.15,5.96,5.88
+500.691.109-22,Nina Araújo,F,26,"Condomínio de Rodrigues, 7 Custodinha 86896823 Pinto / PA",768,True,4.0,8.43,,
+960.016.031-11,Lorenzo Campos,F,27,"Lagoa Diogo da Mata, 9 Cidade Jardim Taquaril 33452-206 da Cunha / DF",753,False,,7.55,7.04,8.26
+649.132.881-27,Sr. Eduardo Castro,M,20,Vale Luana da Mata Vila Da Paz 95890947 Costa de Monteiro / PI,786,True,6.0,8.49,6.87,
+510.374.443-58,André da Luz,M,19,"Alameda de Aragão, 146 Vila Madre Gertrudes 4ª Seção 49218-831 Dias Paulista / AM",648,True,1.0,,,
+065.646.869-07,Eloah Nunes,M,20,"Esplanada Silveira, 415 Alto Caiçaras 39683136 Rezende do Oeste / RR",643,False,,8.99,7.28,7.57
+872.083.107-48,Ana Lívia Lopes,F,26,"Fazenda de Duarte, 797 Vila Paraíso 90754835 Monteiro / MT",665,False,,8.51,5.39,7.48
+414.645.470-31,Ana Laura Rocha,F,26,"Vale da Mata, 92 Jardinópolis 18163-582 Nascimento Alegre / PB",793,True,7.0,8.11,5.72,7.48
+620.622.100-93,Lorenzo Nascimento,M,23,"Área Gabriel Teixeira, 656 Vila Pilar 37715-065 da Cruz / BA",792,True,6.0,8.37,6.98,
+569.754.489-79,Stephany Rocha,F,18,Via Gustavo da Paz Conjunto Providencia 86932264 Dias do Galho / RJ,727,False,,8.22,5.62,5.55
+303.387.622-37,Bruna da Cruz,M,27,"Viela de Barbosa, 8 Caiçaras 66696-991 Silveira / GO",731,False,,7.2,5.57,9.6
+561.238.750-53,Evelyn Nogueira,F,19,"Chácara de Martins, 41 Horto 79568-600 Duarte / RS",720,False,,6.45,7.12,6.36
+125.697.371-07,Ryan Peixoto,M,21,"Feira de Farias, 66 Maria Tereza 95235-625 Azevedo / RR",736,False,,6.2,8.27,5.6
+473.389.909-19,João Lucas da Cruz,F,23,Morro Enzo Gabriel Almeida Santa Cecilia 70871-679 da Conceição / RO,727,True,1.0,,,
+317.579.529-34,Maria Julia Santos,F,22,"Loteamento Teixeira, 53 Piraja 48184-792 Gomes de Jesus / AM",705,False,,6.44,5.09,6.55
+687.354.035-44,Isadora Caldeira,F,21,"Vila Pires, 30 Vila Betânia 07350-176 Souza / GO",768,True,4.0,5.63,,
+850.134.619-20,Nicolas Nogueira,F,20,"Setor Lívia Duarte, 44 Canadá 28762407 Araújo de da Luz / SP",656,False,,7.61,8.34,7.47
+466.788.614-51,Sra. Yasmin da Rosa,F,20,"Vale Amanda Cavalcanti, 1 Acaba Mundo 69328-613 Martins / RS",780,True,4.0,9.24,,
+029.978.712-84,Sarah Santos,F,23,"Feira de Cardoso, 1 Tirol 14181-429 Azevedo Verde / MS",758,False,,6.05,8.8,9.57
+869.388.766-54,Sra. Sabrina Barros,F,21,"Aeroporto de Ramos, 55 Mariquinhas 38561469 Nascimento / PE",772,False,,9.73,6.0,9.65
+069.130.892-69,Giovanna Pires,M,23,Via Antônio Gomes Vila Nova Paraíso 84185362 Martins / PA,676,False,,6.71,7.21,6.1
+336.211.757-87,Nina Gomes,M,21,Largo Almeida Nova Suíça 64947-787 Costela / AP,782,False,,6.26,8.41,6.23
+941.135.128-65,Kamilly Mendes,M,25,"Ladeira de Mendes, 7 Castanheira 31873-963 Farias Alegre / CE",727,False,,8.02,6.51,7.53
+075.653.832-03,Maria Luiza da Cruz,F,23,Praça Isis da Rosa Vila Aeroporto 63501304 Dias / RN,734,False,,9.83,8.51,7.69
+005.838.953-76,Felipe Moura,F,24,"Vereda Pires, 756 Santa Lúcia 93478290 Souza / AL",747,False,,7.61,7.1,6.02
+177.373.420-09,Dra. Sophia Pires,F,27,"Vila Lara Rocha, 60 Braúnas 26847382 Almeida / SE",752,True,3.0,5.82,,
+437.297.562-04,André Araújo,M,25,"Favela Pinto, 98 Lagoinha 42448225 da Paz do Campo / MG",677,True,8.0,9.17,7.38,6.94
+143.313.647-14,Pedro Henrique Porto,M,20,"Conjunto Eduarda Carvalho, 73 Conjunto Serra Verde 54188732 Silveira da Serra / SP",725,False,,8.99,7.61,8.28
+089.889.749-23,Miguel Aragão,F,24,"Esplanada Sales, 1 Bom Jesus 93035-536 Campos / ES",700,False,,7.55,9.3,9.27
+400.469.493-51,Olivia Gonçalves,M,24,"Distrito Kaique Rezende, 76 Vila Ouro Minas 42950-143 Silva / BA",779,False,,8.11,8.11,9.73
+245.053.036-40,Sr. Luiz Miguel Barros,F,18,"Núcleo de Oliveira, 382 Conjunto Califórnia I 73217-444 Gonçalves / RR",761,False,,7.76,8.47,5.97
+259.322.248-00,Dra. Maria Alice Duarte,M,23,"Núcleo Maria Clara Duarte, 92 Vila Jardim São José 45042895 da Rocha / DF",764,True,8.0,5.25,8.83,7.55
+697.719.692-52,Ana Júlia da Cunha,M,24,Quadra Enrico Pires Barroca 91733-534 Alves de Santos / AP,717,True,5.0,7.61,9.33,
+157.438.372-37,Henrique Freitas,F,19,"Estação Moraes, 22 Boa União 1ª Seção 18404947 Castro / MT",662,True,3.0,6.12,,
+090.143.121-18,Larissa Nunes,M,24,"Colônia Luigi Costela, 60 Vista Do Sol 55628-044 Ramos / RJ",745,True,7.0,5.31,8.62,5.98
+472.812.624-06,Igor Freitas,M,27,"Vila Alves, 378 Minaslandia 60338-394 Rezende de Goiás / PI",700,False,,9.37,6.91,8.72
+011.141.467-02,Diego Rezende,M,26,"Recanto de Gomes, 4 Lagoinha 04193-294 Teixeira do Norte / PE",789,False,,7.34,9.3,9.72
+888.613.459-46,Kaique da Cruz,M,20,"Sítio Rafaela Fernandes, 18 Vila Independencia 2ª Seção 45805608 Viana de Almeida / SE",786,False,,5.4,6.2,8.28
+158.588.958-68,Maria Alice Oliveira,M,22,"Condomínio de Rodrigues, 1 Das Industrias I 15311158 Cavalcanti / AM",751,True,1.0,,,
+447.296.156-20,Maria Sophia Gonçalves,F,26,"Campo de Gomes, 8 Alto Dos Pinheiros 99832697 Vieira Grande / AL",790,True,6.0,8.15,9.27,
+663.552.023-04,Sra. Bruna Sales,M,27,"Quadra Thiago Farias, 28 Liberdade 89401618 Aragão de Goiás / SE",705,True,3.0,6.87,,
+376.951.087-00,Luiz Fernando Nascimento,M,24,"Quadra João Pedro Vieira, 8 Grotinha 03691364 Lima / MA",722,False,,5.62,6.05,8.35
+861.567.478-40,Camila Alves,F,24,"Rua Danilo Lopes, 148 Parque São José 04777-573 Pinto / GO",671,True,7.0,9.15,7.53,6.99
+393.392.900-10,Ana Laura Cardoso,F,24,"Feira de da Cunha, 6 Milionario 51602477 Peixoto / GO",701,True,6.0,9.43,7.38,
+389.144.211-35,Pedro Miguel Gomes,F,23,"Morro Lucas Cunha, 46 Vila Santa Monica 1ª Seção 60147-653 Pinto da Prata / PB",642,True,8.0,5.85,5.81,5.89
+810.640.329-91,Sr. Anthony Monteiro,M,19,"Chácara de Castro, 65 São Paulo 46688427 Moura / SE",693,False,,9.86,9.62,5.34
+622.788.366-07,Renan Duarte,F,18,"Travessa de Aragão, 908 Jardinópolis 35347-817 Rezende / RS",756,False,,6.01,7.65,5.51
+385.048.379-02,Sabrina Silveira,M,27,"Esplanada de da Cunha, 10 Novo São Lucas 49130-171 Nascimento do Oeste / RR",766,False,,8.77,6.44,7.12
+769.528.216-57,Carlos Eduardo Viana,F,18,"Estação Campos, 20 Vila Oeste 72069596 Costa / RS",754,False,,7.19,8.95,9.07
+195.435.472-65,Anthony Monteiro,M,25,"Travessa Luigi Rezende, 50 Alto Caiçaras 30168324 da Mota / BA",702,True,7.0,9.42,7.91,6.9
+801.849.007-97,Giovanna da Luz,M,24,"Área Pires, 94 Nossa Senhora Da Conceição 02178019 Santos de Minas / AL",758,True,2.0,,,
+629.653.414-57,Ana Julia Rezende,M,25,"Feira Pedro Cunha, 87 Serra Verde 58308611 Ramos / AL",659,False,,7.25,5.33,7.49
+279.561.209-48,Ana Luiza Barbosa,F,23,"Loteamento de Ferreira, 13 Santa Rita De Cássia 17510987 Teixeira / AL",701,True,7.0,5.86,7.33,9.36
+224.970.399-99,Srta. Natália Correia,M,23,"Morro Cardoso, 142 Novo São Lucas 51904-508 Correia / RR",706,False,,7.17,8.25,6.34
+503.913.250-24,Joaquim Nascimento,F,25,Passarela Davi Lucca da Costa Marmiteiros 28357318 Costela / SE,673,True,4.0,7.11,,
+668.665.841-51,Igor Teixeira,F,18,"Rua de das Neves, 86 Conjunto Celso Machado 39817-567 Fogaça de Costa / SE",780,True,2.0,,,
+612.227.540-64,Maria Moura,F,23,"Vereda de Rodrigues, 43 Parque São José 16603999 Moreira do Sul / AL",682,True,6.0,6.42,7.83,
+762.711.322-27,Davi Pereira,M,26,"Residencial Caroline Rocha, 5 Castelo 25471352 Mendes da Praia / AM",688,False,,8.26,6.17,8.51
+085.951.376-49,Thiago Caldeira,F,26,"Trevo Silva, 421 Buritis 05399020 Lopes do Amparo / BA",738,True,7.0,6.12,5.17,6.31
+399.825.554-84,Sophia Farias,F,18,Condomínio Ribeiro Padre Eustáquio 05969958 Souza do Galho / GO,791,False,,8.98,7.91,9.66
+883.645.180-23,Danilo Fogaça,F,26,"Parque da Conceição, 997 Jardim Dos Comerciarios 07692-591 Fernandes Grande / DF",675,False,,6.85,9.27,7.94
+191.887.901-61,Nathan Teixeira,M,25,"Área Bernardo Pinto, 865 Granja De Freitas 95876-070 Dias dos Dourados / BA",741,True,5.0,7.73,9.72,
+019.822.294-80,Theo Lopes,M,22,"Condomínio de Porto, 329 Vila Santo Antônio Barroquinha 89974760 Nascimento do Oeste / AC",670,False,,6.38,5.85,6.43
+216.611.767-37,Carlos Eduardo Cunha,M,26,"Trecho Oliveira, 60 Lindéia 07495-025 Pires da Serra / ES",658,False,,9.93,8.76,5.67
+044.769.688-56,Dr. Pietro Pinto,F,20,"Trevo da Cunha, 792 Vila Primeiro De Maio 45614-776 Nogueira / RR",755,False,,9.22,6.35,7.31
+145.516.302-98,Sra. Ana Laura Cardoso,F,27,"Ladeira Luigi Nogueira, 413 São Luiz 61623-716 Farias da Mata / PI",748,True,4.0,8.55,,
+707.824.986-75,Julia Aragão,M,27,"Vereda Laura Campos, 86 Cônego Pinheiro 1ª Seção 64175-731 Barros de da Rocha / CE",799,True,5.0,9.87,9.12,
+060.845.016-75,Maria Cecília Campos,M,21,Área Gustavo Gomes Araguaia 09425394 da Rocha / MS,772,False,,6.7,9.55,9.67
+080.408.186-32,Ana Carolina da Costa,M,22,"Esplanada Rodrigues, 47 Leonina 83179-612 Correia Grande / DF",681,False,,9.11,5.23,7.03
+577.145.338-02,Cauê da Rosa,F,25,"Lagoa Yago Ribeiro, 974 Universitário 73172-670 Cardoso / MG",655,True,1.0,,,
+986.490.449-66,Evelyn Moreira,M,26,Sítio Carvalho Vila Esplanada 63885453 Gomes / SP,696,False,,6.83,9.47,5.07
+783.241.845-06,Luiz Miguel Nogueira,M,22,"Estação Costa, 42 Vila Dos Anjos 68539772 Novaes Alegre / SC",695,True,6.0,6.49,6.33,
+384.181.818-40,Luiz Miguel Castro,M,23,"Viela de da Cunha, 74 Camargos 89019-520 Ramos / GO",648,True,2.0,,,
+207.508.511-28,Thomas Gomes,F,23,"Conjunto de Fogaça, 5 Alta Tensão 2ª Seção 63764737 Freitas / BA",753,True,3.0,8.66,,
+779.479.988-81,Sr. Bryan da Cunha,M,24,"Conjunto das Neves, 6 Vila Trinta E Um De Março 06204-545 Freitas de Goiás / TO",707,False,,7.29,9.64,6.21
+296.063.851-26,Calebe Cardoso,F,27,Alameda Benjamin Ribeiro Ouro Preto 46655-752 Farias Grande / PI,722,True,2.0,,,
+369.917.824-64,Gabriel Duarte,M,18,"Alameda de Ramos, 4 Vila Santa Monica 1ª Seção 64677891 Ferreira / GO",758,True,5.0,8.15,7.21,
+399.019.481-61,Laís Castro,M,23,"Pátio Rezende, 11 Vila Nova Cachoeirinha 2ª Seção 40678-847 Cardoso / SE",642,True,3.0,9.05,,
+925.700.490-57,Pietro Pereira,M,23,"Lago Sophie Barbosa, 90 Olhos D'água 06575-274 da Mota das Flores / CE",705,False,,6.25,9.39,5.73
+326.765.343-83,Dr. Bernardo Silveira,F,25,"Residencial de Fernandes, 117 Alto Barroca 01171659 Monteiro / SC",756,False,,6.24,7.6,8.26
+847.577.464-82,Dr. Davi Lucca Almeida,M,21,"Aeroporto da Mata, 46 São Jorge 3ª Seção 48987-643 da Costa de Rodrigues / PA",710,True,1.0,,,
+988.612.931-98,Noah da Conceição,F,20,"Praia Carvalho, 842 Gutierrez 08558736 Nascimento de Lopes / SE",785,True,2.0,,,
+196.282.492-82,Augusto Duarte,M,20,"Distrito das Neves, 1 Boa União 1ª Seção 78822810 Gonçalves / PB",731,False,,6.26,5.68,8.84
+224.345.289-59,Carolina Dias,M,25,Estação Ribeiro Vila Atila De Paiva 80230534 Novaes do Sul / MA,708,False,,6.87,8.15,9.47
+167.433.322-55,Maria Sophia Almeida,M,27,"Passarela Felipe Sales, 1 Vila Santa Monica 1ª Seção 02554723 Rodrigues de Ferreira / ES",664,True,6.0,5.5,6.83,
+380.012.623-50,Marcelo Melo,F,26,"Residencial de Barbosa, 26 Madri 67351764 da Mota dos Dourados / AM",711,False,,8.91,6.27,9.45
+245.142.085-06,Beatriz Caldeira,M,27,Conjunto Sabrina Cunha Marilandia 46338-228 Alves / RN,689,True,7.0,9.85,8.46,9.06
+001.549.218-95,Sra. Elisa Castro,F,24,"Parque de Peixoto, 62 Buraco Quente 64773971 Campos / PR",766,True,3.0,9.65,,
+967.251.926-83,Isaac das Neves,M,23,"Quadra de Alves, 83 Conjunto Celso Machado 75111-074 Caldeira da Serra / RN",656,True,2.0,,,
+542.586.991-08,Maria Alice Fogaça,M,27,"Recanto Rodrigo Santos, 35 Leticia 95295002 Teixeira do Campo / AC",666,True,5.0,5.33,5.51,
+035.283.427-42,Renan Martins,F,23,"Colônia de Ribeiro, 48 Tirol 70572170 Moreira da Serra / PI",684,True,8.0,9.13,5.55,6.78
+924.447.368-60,Dr. Bryan Sales,M,27,"Aeroporto Pinto, 79 Vila Copacabana 51987131 Azevedo Alegre / TO",746,False,,5.69,5.62,6.67
+578.977.057-30,Gabriela Rodrigues,F,24,"Alameda Maria Fernanda Nunes, 30 Itatiaia 57204720 Oliveira do Campo / RS",674,False,,6.64,6.23,5.72
+463.400.619-28,Sra. Stella Duarte,F,21,"Setor Teixeira, 623 Bairro Das Indústrias Ii 72223716 Carvalho Alegre / DF",669,True,1.0,,,
+252.871.121-55,Nina Cunha,F,18,"Travessa Cardoso, 2 Comiteco 77540-065 Cardoso de Goiás / ES",669,True,5.0,9.64,5.75,
+786.697.254-74,Beatriz Moraes,F,24,"Jardim Martins, 9 Vila Bandeirantes 51068347 Lima / SE",742,False,,5.39,5.21,6.52
+495.328.654-33,Alana Porto,M,25,Trecho Cauã Dias Pindura Saia 34603-669 Monteiro de Viana / AM,664,True,6.0,6.58,6.24,
+075.198.384-25,Cauã Lima,M,20,"Esplanada de Mendes, 66 Nova Esperança 46011175 Cardoso do Campo / RO",729,True,6.0,8.95,6.12,
+525.222.661-24,Eduardo Aragão,M,24,"Jardim Mariane Azevedo, 98 Embaúbas 59732-536 Teixeira / RN",647,True,4.0,6.99,,
+935.454.990-60,Dr. João da Rocha,F,19,"Recanto Breno da Mota, 250 Vila Batik 18187377 Pinto / BA",645,False,,6.92,8.1,9.96
+839.801.500-79,João Pedro Castro,F,20,"Estação Dias, 25 São Vicente 22584559 Caldeira de Novaes / RO",703,False,,9.39,5.43,5.81
+742.471.217-16,Letícia Moura,F,19,"Núcleo Alice Rocha, 7 São Salvador 39056-283 Correia / MT",681,False,,9.76,8.44,9.39
+906.207.813-94,Cauê Costa,M,22,"Esplanada de Farias, 67 Santa Efigênia 36303-130 Azevedo do Campo / RJ",750,False,,9.29,8.46,5.99
+456.636.735-93,Carolina Sales,F,24,Viela Lima João Pinheiro 99156272 Pereira da Prata / MA,649,True,5.0,9.66,8.83,
+589.647.816-97,Sr. Nathan Ramos,M,24,"Lagoa de Nogueira, 4 Prado 33796-772 Cardoso / RS",671,False,,8.25,5.24,8.81
+400.405.417-27,Lucas Gabriel Barros,M,19,Pátio Fogaça Vila Independencia 2ª Seção 09222-277 Azevedo de Goiás / RN,783,False,,8.2,8.64,7.08
+864.022.657-29,Benjamin Alves,F,27,"Praia Maria Sophia Pires, 265 Paquetá 80472-767 Moura / MG",777,True,7.0,6.35,7.18,9.75
+241.507.031-00,Gabriel Aragão,M,18,"Trevo Heitor Dias, 23 Conjunto Bonsucesso 50063-473 Moura das Pedras / BA",788,False,,6.45,7.56,8.65
+506.794.378-24,Juan Dias,M,27,"Vila de Silva, 84 Santo André 10106-719 Costela do Campo / PI",669,True,5.0,9.92,8.14,
+575.195.849-64,João Guilherme Melo,M,23,"Lago de Lima, 6 Jardim Leblon 27222-056 Santos de Minas / SP",765,False,,6.39,8.46,6.38
+709.830.415-76,Matheus Alves,M,22,"Loteamento Ribeiro, 58 Nova Cachoeirinha 66599-260 Lima / SE",658,False,,8.83,9.6,8.19
+033.884.187-16,Joaquim Costela,M,18,"Alameda de Jesus, 11 Dom Cabral 67828090 Fogaça / PR",744,True,5.0,9.09,7.41,
+110.353.140-47,Luiz Fernando Castro,F,27,"Avenida de Nogueira, 83 Nossa Senhora Da Aparecida 92904-373 Jesus / PB",761,True,2.0,,,
+250.747.381-97,Larissa Araújo,F,20,"Estrada de Campos, 8 Alto Caiçaras 15028-173 Alves de Barros / RJ",768,True,8.0,9.13,7.15,8.94
+667.478.670-77,Maria Julia Rezende,M,21,"Estação Teixeira, 307 Grota 07766579 da Cruz / PE",665,True,8.0,8.24,6.76,6.75
+514.000.087-44,Ana Laura Mendes,F,24,"Vereda de Oliveira, 473 Vila Tirol 76916-086 Almeida / TO",758,False,,9.8,7.53,8.44
+108.418.293-13,Srta. Maria Luiza Alves,F,22,"Travessa Novaes, 52 Bela Vitoria 84160-116 Melo / ES",760,True,5.0,7.05,7.29,
+731.760.298-29,Alice Fernandes,M,26,"Via de da Rosa, 9 Mangueiras 09333085 Farias / SP",746,False,,8.84,7.24,8.13
+153.076.562-41,Ana Júlia da Luz,F,19,"Feira Enrico Carvalho, 6 Santa Rita 16620-104 Silva do Amparo / RR",657,True,8.0,9.14,9.13,9.86
+767.457.588-77,Marcela Moreira,M,24,"Núcleo da Mata, 17 Lindéia 02815201 Cunha / RN",645,False,,6.7,8.64,10.0
+193.350.996-54,Benício Rezende,M,22,"Quadra Fernando Teixeira, 138 Vale Do Jatoba 20964988 Moreira / RR",691,False,,7.05,8.62,6.64
+124.174.865-13,Henrique Correia,M,22,Vila Castro São Luiz 32612-338 Silva de Porto / SC,791,False,,7.29,6.99,8.85
+375.625.447-18,Benício da Luz,F,23,"Pátio de Porto, 67 Aparecida 7ª Seção 98700502 Melo / DF",739,True,2.0,,,
+510.065.366-51,Emilly Monteiro,M,23,Conjunto de Pinto Camponesa 1ª Seção 12708-884 Fogaça do Campo / BA,721,True,1.0,,,
+486.573.236-68,André Nascimento,F,21,"Parque Emanuella Oliveira, 8 Vila Puc 35122-539 da Cunha Paulista / SE",712,False,,8.77,9.51,6.68
+718.741.724-36,Ana Sophia Sales,M,22,"Estrada Barros, 49 Vila Santa Monica 2ª Seção 66787-514 Dias dos Dourados / MT",671,False,,5.03,6.56,5.56
+199.070.054-67,Enrico Lopes,M,24,"Vale da Cunha, 7 Boa Esperança 29594486 Martins / DF",752,True,1.0,,,
+084.562.478-06,Juliana Campos,M,19,Condomínio Bernardo Souza Vila Nossa Senhora Do Rosário 45438-049 Dias / PB,695,True,5.0,7.33,8.0,
+501.003.710-05,Maria Sophia Fernandes,M,24,"Loteamento de Souza, 34 Urca 21876833 Oliveira das Flores / AC",751,True,2.0,,,
+030.335.244-54,Henrique Campos,F,19,Travessa de Alves Corumbiara 76482158 Farias do Sul / CE,727,False,,8.51,9.68,8.53
+391.593.281-41,Sr. Heitor Costela,M,25,"Quadra Caldeira, 76 Gutierrez 57967-127 Caldeira / PR",685,False,,9.49,8.57,5.47
+582.429.301-58,Dr. Vitor Castro,F,26,"Viela Teixeira, 45 Jardim Dos Comerciarios 80465-239 Moreira / RJ",770,False,,5.39,6.05,5.61
+484.101.970-19,Ana Luiza Jesus,M,26,"Rua de Correia, 781 Outro 30214-521 Ferreira / AM",736,False,,6.89,6.93,5.52
+697.800.169-79,Nina Gonçalves,M,21,"Praia da Paz, 90 Vila Madre Gertrudes 4ª Seção 95284-598 Farias / RJ",719,False,,5.62,5.28,6.69
+576.674.719-35,Srta. Esther Peixoto,M,19,"Recanto Farias, 96 Vila Sumaré 91030862 Araújo de Fernandes / BA",644,False,,8.52,6.99,9.69
+979.749.377-98,Lorena Pires,M,23,"Quadra de Moura, 8 Vila Inestan 39276521 Pinto / MS",694,False,,6.01,5.11,6.41
+848.579.127-18,Sr. Nicolas Moreira,F,18,Distrito Rafael Nunes Vila Ipiranga 99047490 da Mota / RR,701,False,,5.19,7.02,9.6
+894.357.086-66,Enzo Sales,M,19,"Distrito de Rocha, 6 Teixeira Dias 60924295 Jesus do Sul / SP",752,False,,9.13,8.09,5.7
+101.838.818-74,Lara Ferreira,F,27,"Vereda Gabrielly Ramos, 5 Vila Barragem Santa Lúcia 61934687 Jesus de Silveira / RR",692,True,4.0,6.03,,
+798.787.323-69,Lavínia Moreira,M,18,"Setor Yuri Correia, 311 Corumbiara 54159264 Pereira de Minas / RJ",665,False,,5.52,8.14,8.41
+782.048.865-66,Dra. Lara Carvalho,F,25,"Pátio de Aragão, 30 Solar Do Barreiro 67582-417 Mendes / AM",728,False,,6.8,7.63,8.65
+961.699.245-26,Dra. Alice da Rosa,M,27,"Aeroporto Rezende, 68 Glória 01115183 Jesus do Norte / MS",690,False,,9.31,7.5,7.12
+707.415.354-44,Dr. Renan Vieira,F,23,"Chácara de Lima, 26 Vila Jardim Leblon 66327112 Barbosa de Minas / PI",693,True,2.0,,,
+851.216.115-84,Rebeca Santos,M,23,Lagoa Yuri Santos Nossa Senhora Da Conceição 66609-674 Lopes de Ramos / AC,654,False,,9.73,9.62,6.41
+512.658.180-74,Srta. Carolina Farias,F,24,"Jardim da Rocha, 68 Santa Amelia 61847165 Barros / RN",742,False,,9.69,8.0,5.0
+530.093.361-61,Helena Porto,F,21,Largo de da Costa Fazendinha 89914601 Silveira / PR,757,False,,6.89,6.86,5.12
+597.067.610-98,Julia Ferreira,F,18,"Condomínio Luiz Henrique Melo, 86 Vila Da Amizade 42259-671 da Cruz / AP",667,True,8.0,9.23,7.57,6.22
+661.921.886-54,Milena Castro,F,19,"Jardim de Pereira, 23 São Geraldo 51057807 Viana / MG",646,False,,6.35,5.0,7.16
+309.371.301-38,Sr. Breno da Costa,M,26,"Núcleo de da Rosa, 7 Marilandia 17189-843 Martins do Galho / RR",782,True,2.0,,,
+628.107.511-54,Carolina Melo,M,20,"Parque Pedro Henrique da Mata, 16 Acaiaca 20720148 Cavalcanti / RO",731,True,7.0,8.47,9.89,7.98
+601.524.404-89,Ana Carolina Jesus,M,23,Morro de Monteiro Sion 82883-685 Silva de Rocha / MS,657,True,5.0,5.99,6.71,
+134.984.896-24,Thales Aragão,M,24,"Vale Felipe Correia, 89 Túnel De Ibirité 13429487 Novaes da Prata / TO",696,True,6.0,8.48,6.7,
+833.706.013-08,Marina Gomes,F,25,"Recanto Correia, 57 São Luiz 42866-592 Viana / RS",705,False,,8.1,8.85,7.24
+565.538.697-69,Heitor Lima,F,20,"Núcleo Bianca da Cunha, 78 Campo Alegre 66991038 Fernandes dos Dourados / AP",692,False,,9.92,9.46,6.72
+917.550.626-39,Calebe Castro,F,18,"Pátio João Guilherme Correia, 978 Grotinha 29975-282 da Luz / ES",656,True,8.0,5.23,9.74,8.69
+028.084.560-91,Melissa Viana,M,26,"Lagoa Luigi Fogaça, 8 Novo Ouro Preto 72356866 Gomes / AL",720,False,,9.54,9.55,8.78
+108.225.023-96,Luiz Fernando Fogaça,F,18,"Praça da Costa, 19 Vale Do Jatoba 32681-316 Ribeiro Paulista / RS",701,False,,6.56,5.36,9.9
+907.968.864-30,Joana Cunha,F,26,"Feira Moura, 586 Vila Piratininga Venda Nova 59815560 Ribeiro / RN",650,False,,6.34,8.7,5.35
+588.670.420-80,Emilly Costa,F,20,Jardim Duarte Alta Tensão 2ª Seção 47230174 Farias / DF,745,True,2.0,,,
+885.075.287-91,Alana Alves,F,24,"Vale de Araújo, 65 Pindura Saia 29554960 Rezende / RR",647,False,,6.76,6.41,8.55
+774.361.785-24,Francisco Sales,M,26,"Loteamento Caldeira, 32 Vila Rica 66385-401 Ribeiro do Galho / AP",641,False,,8.76,5.23,6.46
+371.429.543-95,Amanda Porto,M,23,"Viaduto Guilherme das Neves, 76 Vila Nova Gameleira 1ª Seção 12325341 Silveira / BA",710,False,,8.29,8.77,9.03
+346.212.881-16,Helena da Paz,M,19,"Campo João Miguel das Neves, 2 Nova Gameleira 32605-009 Carvalho / PB",691,False,,5.34,6.88,9.45
+196.151.281-67,Enrico Ferreira,F,24,"Feira das Neves, 1 Ernesto Nascimento 86677-599 Campos / PR",699,True,8.0,5.57,8.45,5.3
+492.480.723-15,Ana Beatriz Moraes,F,22,"Estação Raquel Aragão, 9 São Bernardo 72923602 Castro da Serra / RS",656,True,1.0,,,
+477.875.331-80,Clarice Azevedo,M,21,"Vila Costela, 912 Vila Copacabana 14716625 Gomes / MA",675,False,,6.97,6.8,9.92
+303.375.736-71,Dr. Pedro da Cunha,M,26,Sítio Farias Vila Independencia 1ª Seção 36286275 Sales / BA,647,False,,5.51,7.71,7.71
+562.549.413-81,Maria Clara Rodrigues,F,23,"Largo Peixoto, 80 Carlos Prates 15851079 Cardoso / AL",741,True,1.0,,,
+851.415.501-39,Thales Gonçalves,M,25,"Sítio de Costela, 92 Vila Havaí 14734-372 Fernandes / RO",771,True,2.0,,,
+162.984.085-53,Maria Cecília Moreira,F,20,"Trecho Emanuella Moraes, 91 Cinquentenário 76095-137 Costela / SC",759,False,,8.22,6.05,5.84
+878.262.829-93,Ryan Aragão,F,27,"Fazenda de da Mota, 7 Oeste 81308-049 Rocha / MT",765,True,2.0,,,
+175.585.941-32,Yuri Nunes,M,27,"Aeroporto Luiz Henrique Ramos, 44 Vila Tirol 90669-948 Costela / PB",708,True,6.0,6.85,6.59,
+909.757.558-49,Júlia Oliveira,F,24,"Trevo Ferreira, 76 Capitão Eduardo 82175-998 da Rosa / RN",672,True,4.0,9.52,,
+311.824.554-98,Mariane Costa,F,21,"Fazenda de Lima, 445 Capitão Eduardo 88117-634 Sales / RJ",702,True,5.0,9.05,5.56,
+982.530.183-26,Dr. Renan Caldeira,F,23,Travessa Júlia Mendes Frei Leopoldo 21852143 Rodrigues de Moreira / GO,700,False,,9.54,9.89,6.79
+685.499.749-83,Sra. Natália da Cruz,M,22,"Vale Nascimento, 4 Santa Margarida 49611-616 Alves de da Rocha / RS",784,False,,6.5,6.01,7.52
+857.539.731-89,Cauê Nunes,M,21,"Vila Silva, 95 Oeste 40620098 Campos / RJ",752,True,8.0,5.52,7.06,7.91
+757.238.189-37,Giovanna Rodrigues,F,26,"Praça Correia, 9 Nossa Senhora Aparecida 25428-414 Moura da Serra / AP",680,False,,7.71,5.63,7.25
+231.075.053-02,Maria Alice da Mota,M,25,"Passarela da Mota, 35 Castanheira 43823-485 Porto / PB",714,False,,9.59,6.65,8.76
+124.893.750-51,Levi Aragão,M,20,Loteamento Davi Nogueira Novo Ouro Preto 90205850 Rocha do Amparo / RR,799,False,,8.39,6.15,5.83
+790.700.958-14,Davi Nunes,M,20,Estação Antônio da Paz Morro Dos Macacos 27600948 da Luz do Oeste / RO,719,False,,7.69,9.85,5.97
+858.459.077-47,Stella da Mata,M,24,"Vale Vieira, 76 São Salvador 06216040 Rocha / MS",659,False,,8.01,9.8,6.46
+101.265.871-64,Isadora Melo,F,21,"Rua Porto, 82 Guarani 40729661 Farias da Mata / ES",707,False,,8.26,9.08,7.16
+984.952.391-80,Vitor Gabriel Cardoso,F,20,"Travessa Sarah Almeida, 30 Jardim São José 83059902 Novaes / CE",738,True,1.0,,,
+729.369.769-83,Sr. Thomas Peixoto,F,21,"Vale Alves, 76 Conjunto Bonsucesso 73698-725 da Rocha de Goiás / CE",676,False,,9.27,8.25,5.78
+943.087.869-13,Dra. Laís Nunes,M,23,Avenida da Luz Varzea Da Palma 10094-364 Duarte / MG,730,False,,7.51,9.75,5.56
+672.557.868-68,Sofia Barbosa,F,22,"Morro Cauê Moraes, 19 Jardim Alvorada 28935815 Farias Alegre / BA",663,False,,5.42,9.88,7.03
+352.833.129-83,Marcela Vieira,F,19,"Trecho Ana Vitória Barbosa, 186 Vila Suzana Primeira Seção 87213-381 Lima / RS",687,True,4.0,6.63,,
+338.445.071-09,Enzo Gabriel Aragão,M,18,"Distrito de Ribeiro, 41 Vila Santa Monica 1ª Seção 13472-735 Mendes de Fernandes / CE",714,True,4.0,8.57,,
+166.066.483-27,Pedro Lucas Aragão,M,24,"Aeroporto Sarah Ramos, 73 Santo André 85136653 Nunes / AC",764,False,,5.23,7.86,7.31
+129.659.420-14,Ana Luiza Campos,F,21,"Viela Gustavo Costela, 60 Vila Independencia 3ª Seção 09013444 Azevedo de Monteiro / TO",704,True,6.0,6.23,6.07,
+287.856.132-29,Dra. Maria Eduarda Moraes,F,23,"Avenida Vitor da Luz, 47 Solar Do Barreiro 81987-020 Carvalho / AP",722,False,,9.97,5.42,6.13
+321.791.023-27,Sra. Heloísa Mendes,F,26,"Vereda Cunha, 663 Caiçara - Adelaide 18674-675 da Costa Paulista / BA",722,True,1.0,,,
+325.337.800-29,Marcos Vinicius da Cruz,M,27,"Distrito Barbosa, 23 Jardim Montanhês 89461569 Cardoso / MS",721,False,,7.9,9.92,6.5
+885.098.736-32,Vitor Nogueira,F,23,"Viaduto Caldeira, 51 Vila Paquetá 96988590 Rezende / MA",775,True,5.0,6.75,8.41,
+741.346.179-83,Bruna Dias,M,20,"Pátio de da Costa, 7 Barão Homem De Melo 2ª Seção 33540621 da Mata dos Dourados / SC",733,False,,8.7,5.31,8.53
+267.375.611-94,Pietra da Conceição,M,24,"Lago Anthony Campos, 24 Cardoso 53441934 Caldeira do Campo / CE",705,False,,5.16,9.5,5.45
+036.740.691-62,Dr. Levi Correia,F,27,"Rua de Moura, 93 Conjunto Califórnia Ii 75059245 da Paz Grande / SE",683,True,5.0,8.42,9.58,
+262.776.390-95,Sr. Luigi da Luz,M,18,"Largo Gomes, 15 Bacurau 07071558 Moura / MT",660,False,,8.88,5.39,7.84
+036.412.785-58,Pedro Silveira,F,24,"Loteamento Costela, 461 Planalto 16503-787 Castro / SE",722,False,,5.1,5.26,7.69
+320.569.584-21,Gabriela Moreira,M,24,Esplanada de da Luz Camponesa 1ª Seção 65482-964 Gomes / CE,648,True,3.0,6.9,,
+404.550.153-96,Sophie Viana,M,22,"Ladeira de Peixoto, 33 Vila Nova Paraíso 77230-051 Nogueira / SE",720,False,,8.34,5.35,9.54
+924.134.060-92,Amanda Sales,M,20,"Favela Mendes, 81 Sagrada Família 25224346 da Mota / AM",739,False,,6.48,6.21,6.45
+524.747.358-17,Sr. Diego Nogueira,M,18,Setor Rodrigo Lima Leonina 48120-782 Carvalho das Pedras / PA,686,True,6.0,8.55,8.45,
+433.634.499-25,Yasmin Aragão,F,18,Área Cardoso Vila Trinta E Um De Março 34561-695 Ribeiro / SP,687,False,,9.77,8.69,7.99
+545.949.028-09,Samuel Mendes,F,21,Rodovia de Pinto Corumbiara 60010-455 Silveira / MS,763,True,5.0,6.85,6.2,
+329.521.140-72,Dra. Beatriz Ramos,F,20,Alameda de Lima Camponesa 1ª Seção 14282225 Sales / CE,761,False,,9.81,9.05,6.86
+088.194.240-49,Sra. Lorena Moraes,F,22,"Avenida de Pereira, 5 Santa Efigênia 85894015 Nogueira / RO",677,True,7.0,6.04,8.76,7.8
+965.746.800-89,Raquel Pires,F,26,"Colônia Cardoso, 11 São Gonçalo 22781-267 Silva / BA",750,False,,9.76,5.32,9.87
+749.662.857-67,Srta. Maria Oliveira,M,20,"Colônia da Rosa, 42 Santa Terezinha 54452784 Cavalcanti de Santos / SP",647,False,,6.45,9.96,6.73
+944.664.145-64,Julia Oliveira,M,18,"Morro Duarte, 485 Mariano De Abreu 43509898 da Cruz / RO",688,False,,5.17,5.99,9.07
+130.923.872-60,Larissa Lima,F,26,"Aeroporto Oliveira, 40 Araguaia 42242374 Carvalho de Ferreira / DF",704,False,,8.11,9.21,8.91
+858.479.423-10,Laís da Costa,F,24,"Setor Souza, 99 Vila Ecológica 50364962 Moraes de Minas / AL",662,True,1.0,,,
+271.496.686-44,Sr. Igor da Costa,M,18,"Sítio de Alves, 8 Vila Califórnia 14547-739 Almeida / RN",742,False,,6.91,6.99,5.2
+884.972.481-97,Juan Carvalho,M,23,"Recanto da Mota, 6 Vila Dos Anjos 73308-129 Dias / PA",762,False,,6.43,8.24,6.54
+862.103.284-69,Nicolas Cavalcanti,M,21,"Campo de Gonçalves, 95 Boa Vista 39067128 Ribeiro / MA",670,True,6.0,6.46,9.83,
+213.715.136-58,Sra. Rafaela Rezende,M,19,Sítio Pedro Miguel Peixoto Aeroporto 90120416 Santos / RO,700,False,,9.66,5.65,9.88
+114.414.291-12,Esther Silva,M,23,"Vale Marcelo Dias, 50 Cônego Pinheiro 1ª Seção 23434596 Moraes / AM",741,False,,6.1,7.58,8.85
+225.953.626-64,Arthur Dias,F,19,"Loteamento Novaes, 30 Tirol 12528781 Moreira de Nunes / RJ",730,False,,6.33,6.56,6.16
+366.026.445-74,Ryan Fernandes,F,24,Travessa Sales Coração Eucarístico 97090-146 Correia / TO,791,False,,8.78,9.88,9.82
+083.284.905-67,Rafael Moraes,M,24,"Alameda de Sales, 8 Boa União 1ª Seção 86132960 Gomes da Praia / PA",759,True,4.0,9.52,,
+865.020.533-63,Nicolas Ferreira,F,25,"Praia Enzo da Paz, 8 Madre Gertrudes 23079863 Teixeira / SE",669,False,,9.17,7.59,7.06
+044.381.963-64,Lorenzo Pinto,F,25,"Área Yasmin Fernandes, 46 Goiania 22704094 da Rocha do Norte / GO",797,True,5.0,6.0,9.14,
+549.228.812-06,Dr. Pedro Santos,F,24,"Jardim Viana, 775 Vila São Paulo 73150268 Nascimento Alegre / GO",775,True,8.0,5.82,7.63,7.04
+648.098.073-06,Raquel da Paz,M,24,"Passarela Lorenzo Lopes, 893 Novo Ouro Preto 29914-930 Cavalcanti / SP",771,True,4.0,6.07,,
+950.620.757-37,Sr. Davi Lucca Rocha,F,27,"Recanto da Rocha, 87 Lagoinha Leblon 96100995 da Conceição do Norte / PB",730,False,,6.71,9.65,6.13
+753.452.659-89,Pietro Melo,M,25,"Parque Clarice da Mota, 45 Cônego Pinheiro 2ª Seção 39538605 Almeida / SP",699,False,,7.98,5.05,8.91
+242.483.880-20,Dra. Camila Porto,M,24,Esplanada de Alves Dom Joaquim 01793505 Duarte de Caldeira / AC,745,False,,6.96,5.54,7.06
+665.613.861-13,Rafaela Gomes,M,25,"Setor de Moreira, 7 Havaí 44945277 da Costa do Campo / MA",767,False,,7.07,6.22,9.45
+101.012.871-37,Bryan Almeida,F,18,"Vereda João Lucas Pereira, 32 São Cristóvão 45011-838 Monteiro / RS",790,True,7.0,6.03,6.58,5.27
+476.947.544-89,Dra. Maria Cecília Porto,M,21,"Fazenda Monteiro, 40 Cachoeirinha 15967-428 Oliveira do Campo / MT",724,False,,8.05,9.96,6.6
+703.063.649-24,Vitor Gabriel Cardoso,F,25,"Vereda Jesus, 20 São Benedito 48193475 Ribeiro da Serra / RO",666,False,,5.14,6.69,5.57
+000.680.834-43,Lucas Gabriel Moreira,F,25,"Sítio Maysa Vieira, 18 Conjunto Califórnia I 23067810 Campos do Norte / RO",766,False,,5.38,9.66,7.54
+627.775.884-70,Sra. Amanda Campos,F,25,"Pátio Igor Moraes, 59 Lagoa 49693-032 Cunha de Goiás / AL",676,True,7.0,6.36,8.18,6.53
+276.696.202-96,Raul Mendes,M,19,"Setor de Campos, 39 Paulo Vi 81110745 Araújo de Sales / RN",717,False,,7.53,5.2,6.14
+573.535.559-45,Júlia Correia,F,27,"Condomínio Gonçalves, 95 Conjunto Paulo Vi 29214-680 Moreira / AP",689,True,3.0,9.15,,
+639.169.642-97,Pedro Miguel Santos,M,26,"Recanto Enzo Barbosa, 8 São Francisco 22403407 Barros do Norte / BA",677,False,,5.1,9.3,9.91
+422.267.845-20,Yuri Nascimento,M,21,"Pátio Pires, 89 Boa União 1ª Seção 20173372 da Mata de da Luz / AP",796,False,,6.1,9.43,8.21
+659.028.909-68,Isaac Gonçalves,F,25,"Loteamento Felipe Cardoso, 672 Vila Nova Cachoeirinha 2ª Seção 03121-944 Peixoto / AL",724,True,3.0,7.6,,
+283.489.712-79,Danilo Barbosa,M,18,"Rua de Sales, 4 São Marcos 28768-894 da Rosa / MS",751,False,,7.74,8.03,6.9
+036.514.770-20,Thiago Lima,M,25,Lago Lívia Moura Ernesto Nascimento 76961-891 Rocha / MT,664,True,7.0,7.27,5.02,7.76
+853.623.983-08,Cecília Barbosa,F,22,"Jardim Thiago Rodrigues, 90 Conjunto Serra Verde 19434181 Lopes / ES",792,False,,5.18,8.88,5.12
+483.327.573-68,Levi Viana,M,26,"Fazenda Murilo Correia, 17 Gutierrez 86836-343 Aragão da Prata / ES",694,False,,8.26,5.8,9.84
+940.908.650-73,Heitor Duarte,M,23,"Conjunto Alana Santos, 25 Barreiro 77205-090 Moura dos Dourados / RS",768,False,,9.52,7.24,8.5
+301.010.918-83,Anthony Cardoso,F,24,"Condomínio João Melo, 4 Marajó 40226401 Pinto de da Cunha / AM",642,True,1.0,,,
+910.943.901-86,Dr. Luigi Aragão,M,24,"Passarela de Lima, 6 Nova Cachoeirinha 46240435 Correia / PI",770,True,4.0,9.65,,
+568.651.549-50,Benjamin Mendes,M,18,"Vila Murilo Rezende, 9 Barreiro 42142-716 Cunha / PE",683,True,1.0,,,
+515.538.583-48,Ana Clara da Rosa,F,27,"Estrada de Pinto, 31 Indaiá 48915220 Pereira de Azevedo / PI",701,True,4.0,7.96,,
+301.334.815-62,Sabrina Araújo,M,26,"Pátio Jesus, 85 Vila Puc 86847452 Barbosa Grande / MG",728,True,6.0,9.2,7.98,
+655.312.539-50,Luiz Felipe Nunes,M,25,"Trevo Camila das Neves, 351 Conjunto Jatoba 73447-308 Melo das Pedras / MT",654,False,,9.99,8.71,7.96
+330.072.889-01,Raquel Souza,F,20,Aeroporto de Pinto Pindorama 68219853 Lima / PA,770,False,,5.65,5.48,6.15
+314.872.458-95,Gustavo Henrique Nunes,F,26,"Residencial Dias, 81 Corumbiara 41887-855 Alves de Pinto / DF",755,True,4.0,5.83,,
+572.152.950-72,Paulo Moraes,F,21,"Pátio de Silveira, 86 Capitão Eduardo 40411779 Viana / MS",763,False,,6.65,9.91,8.6
+244.174.589-59,Sr. Enzo Gabriel Ferreira,M,21,"Rua Heitor Moreira, 52 Vila Oeste 50505004 da Conceição / SC",690,True,2.0,,,
+752.267.632-31,Arthur Rezende,F,25,"Quadra Silveira, 11 Conjunto Serra Verde 14192346 da Mata / RS",741,False,,5.68,8.3,9.99
+508.714.443-14,Joana Teixeira,F,23,"Praia Fernandes, 95 São João Batista 64344-596 Pinto das Pedras / RR",796,False,,7.58,6.14,8.73
+111.491.667-02,Benício Gomes,F,27,"Parque de Costela, 56 Mala E Cuia 93200156 Farias do Campo / SP",689,True,5.0,6.13,5.15,
+900.938.487-10,Fernando da Rocha,M,18,"Esplanada de Mendes, 84 São Francisco 42629-210 Ramos de da Rocha / CE",767,False,,7.83,7.82,7.41
+383.364.247-91,Rafaela Cardoso,M,27,Residencial Porto Estrela 66887721 Barbosa / DF,757,False,,8.63,9.57,7.02
+574.464.405-63,Vitor Pires,F,18,"Avenida de Moraes, 40 Marieta 2ª Seção 95078-985 Lima de Peixoto / BA",655,True,4.0,9.44,,
+541.957.918-67,Igor Rodrigues,F,24,"Colônia Gonçalves, 61 Serrano 30309-872 Souza das Flores / TO",756,False,,8.79,6.15,6.12
+053.233.146-06,Sr. Breno Vieira,F,26,Fazenda Daniela Almeida Lourdes 60369616 Costela / RR,701,True,5.0,7.06,6.34,
+610.510.511-57,Beatriz da Cunha,F,21,"Lago Júlia Santos, 5 Madri 10239562 Cardoso / MT",780,False,,6.43,9.44,5.81
+052.472.359-25,Sabrina Rodrigues,F,27,"Viela da Mota, 4 Piraja 13634289 Souza / TO",771,False,,7.9,8.96,5.46
+649.628.498-14,Dra. Gabriela Ramos,F,19,Via Freitas Bacurau 46009102 Azevedo do Sul / TO,752,False,,7.63,8.22,8.55
+498.883.284-86,Sabrina da Cunha,F,25,"Fazenda de Novaes, 81 Alto Dos Pinheiros 95355661 Dias / PR",650,False,,7.71,6.69,9.28
+697.710.993-87,Sr. Davi Luiz Cardoso,M,20,"Praça Teixeira, 77 Trevo 69179584 Costa de Moraes / MA",780,False,,8.82,5.51,8.03
+494.869.934-44,Eduarda Lopes,F,23,"Lago Jesus, 266 Lagoa 50860-703 Cardoso de Vieira / RJ",792,True,6.0,8.92,6.06,
+917.332.127-93,Dra. Amanda Gonçalves,M,24,"Colônia de Monteiro, 48 Santa Tereza 85988847 Rodrigues / PR",662,True,1.0,,,
+274.155.617-85,Dra. Melissa da Paz,F,24,"Favela Davi Luiz Araújo, 85 Lagoinha Leblon 85249463 Pereira / PE",707,True,6.0,7.45,9.68,
+927.672.762-91,Gustavo Gomes,F,20,"Rodovia Augusto Vieira, 522 Eymard 37095097 Alves / GO",746,False,,9.94,6.08,9.03
+241.849.469-38,Carolina Carvalho,F,23,Área Davi Lucca Oliveira Vila Ouro Minas 45607878 Rocha / PR,776,False,,6.51,6.95,9.12
+532.750.944-33,Luiz Otávio Ribeiro,F,27,"Residencial Luiz Fernando da Cunha, 69 Brasil Industrial 41012222 Correia de Gonçalves / MT",713,False,,8.69,5.93,7.35
+015.732.006-12,Isaac Araújo,M,23,"Travessa de da Paz, 53 Universitário 06085-611 Lima Alegre / BA",756,False,,7.6,7.03,6.9
+735.595.753-80,Valentina Cardoso,F,25,"Trecho Bruno Peixoto, 323 Miramar 44022-164 Nascimento / RN",682,True,4.0,8.9,,
+661.963.170-71,Rafael Caldeira,M,19,"Residencial da Paz, 226 Alpes 16598572 Cunha / SP",697,False,,7.34,8.39,5.3
+395.831.137-63,Ana Luiza Lima,M,19,"Fazenda Oliveira, 231 Vila Nova Cachoeirinha 2ª Seção 20865785 Costa de Ferreira / AC",712,False,,9.74,9.9,6.54
+386.149.468-83,Srta. Alice da Cunha,M,23,"Trevo de Correia, 69 Jardim Leblon 74598-926 Duarte de Minas / PR",658,False,,7.42,8.34,6.66
+274.042.161-44,Luiz Fernando Porto,F,26,"Rua Amanda Silva, 347 Belmonte 97216347 Freitas dos Dourados / AL",699,True,1.0,,,
+878.407.233-18,Laís Campos,F,23,"Conjunto Farias, 6 Pantanal 33247671 Dias / DF",731,False,,9.19,7.78,6.74
+653.239.710-69,Amanda da Cruz,M,22,"Loteamento Luiz Miguel Dias, 55 Conjunto Capitão Eduardo 56201569 Pires de Freitas / RS",700,False,,8.3,6.3,9.39
+751.233.983-86,Nathan Silva,M,22,"Vereda de Gomes, 955 Tupi A 12163-007 Farias / DF",774,False,,6.27,7.24,6.02
+602.513.783-90,Vitor Hugo Monteiro,M,25,"Praia Augusto Martins, 1 Vila Fumec 00187651 Teixeira / MS",763,False,,8.6,6.57,7.46
+807.218.468-20,Caroline Moreira,M,20,"Praia Alexia Fernandes, 73 Vila Santa Monica 1ª Seção 87071-675 Araújo de Araújo / SC",692,True,1.0,,,
+954.188.494-31,Enzo da Cruz,F,21,"Via Ana Luiza da Mata, 809 Universo 95413-411 da Mota dos Dourados / PA",692,True,4.0,7.24,,
+804.251.555-17,Carlos Eduardo Cardoso,M,19,Largo Clara Gonçalves Santo Antônio 66154-545 da Costa de Pires / MT,706,False,,8.38,9.01,6.25
+121.074.482-39,Isis Porto,M,23,"Jardim Silveira, 77 Vitoria 84337408 Caldeira das Pedras / MG",655,False,,9.33,8.14,8.13
+726.006.830-74,Renan Ribeiro,M,18,"Vila Costela, 145 Pirineus 43687-144 Almeida da Prata / BA",776,False,,5.26,5.45,5.97
+899.450.572-50,Ana Lívia Silveira,F,25,"Estação Barros, 52 Santa Rosa 31594406 Alves do Amparo / PA",748,False,,6.1,8.59,8.42
+245.518.116-94,Alícia Azevedo,M,24,"Recanto Castro, 31 Caetano Furquim 85523-359 da Rosa Grande / MS",799,False,,5.31,6.11,7.52
+304.567.068-42,Otávio Farias,F,18,"Estrada Barros, 701 Conjunto Providencia 84652421 Cardoso / AP",740,False,,5.16,9.41,6.94
+885.800.308-41,Igor Campos,M,26,"Lagoa Evelyn da Rosa, 9 Concórdia 72039035 da Rosa das Flores / PE",783,True,8.0,9.12,9.15,8.86
+150.706.044-69,João Lucas Carvalho,M,24,"Passarela de Silveira, 44 Conjunto Novo Dom Bosco 90684-707 da Cruz das Flores / RJ",698,True,4.0,8.45,,
+993.354.187-56,Cauã Fogaça,M,21,"Vila Emilly Costa, 2 Nossa Senhora Da Aparecida 85415-401 Caldeira / AP",723,False,,7.86,5.28,5.06
+397.103.978-46,Mirella Pinto,F,21,"Esplanada de Cunha, 727 Castelo 24668-494 Aragão / PA",714,False,,7.63,7.83,7.37
+976.550.401-64,Fernanda Dias,F,25,"Fazenda Luiza Souza, 30 Vila Nova 02880177 da Paz das Flores / PE",665,False,,7.72,9.7,5.0
+122.466.560-51,Benjamin Barbosa,M,27,"Feira Theo Fernandes, 84 Alto Vera Cruz 31064615 Sales / PB",716,False,,8.48,8.84,6.12
+198.087.103-05,Benjamin Cardoso,F,24,"Loteamento Ferreira, 15 Vila Betânia 38468-651 Monteiro das Pedras / PE",704,False,,5.18,7.29,6.45
+964.899.473-62,Sr. Daniel Fernandes,M,20,Esplanada de Aragão Ermelinda 57480-228 Porto / MT,732,True,3.0,8.08,,
+301.287.510-38,Kaique Vieira,F,24,"Praia Juliana da Conceição, 27 Vila Nova Cachoeirinha 2ª Seção 80272542 Souza da Serra / RS",776,True,7.0,6.82,7.66,8.78
+598.630.996-65,Srta. Lívia da Luz,F,22,"Recanto Enrico Farias, 92 Vila Mangueiras 76911400 Fogaça da Praia / RO",696,True,7.0,5.97,9.04,7.39
+603.747.740-23,Carlos Eduardo Monteiro,M,22,"Aeroporto Fogaça, 85 Jardim América 17898440 Costela / MT",782,False,,9.75,7.37,5.0
+967.212.134-50,João Guilherme Santos,M,22,Chácara Moraes Primeiro De Maio 66692629 Rezende / MS,764,False,,8.75,9.85,5.48
+850.053.553-15,Rafael Duarte,M,27,"Praça Melo, 8 Nossa Senhora Da Aparecida 27193930 Caldeira / DF",709,False,,5.51,7.3,7.22
+854.105.683-43,Valentina Campos,M,19,"Vale Carvalho, 28 Morro Dos Macacos 83685609 Nascimento / MG",785,False,,7.38,9.62,5.96
+210.895.465-77,Isaac Oliveira,F,22,"Recanto Davi Lucas Pereira, 74 Miramar 49723782 Moreira do Oeste / PB",743,True,5.0,6.62,5.23,
+897.409.274-60,Stephany da Rocha,M,23,"Lagoa Enzo Gabriel Almeida, 8 Jardim Alvorada 16947-148 Moraes / AC",766,True,1.0,,,
+173.035.347-48,Ana da Cruz,F,23,"Feira de Alves, 50 Biquinhas 66894759 das Neves da Praia / BA",765,True,3.0,6.84,,
+596.664.436-83,Leonardo Barros,M,23,"Área de Novaes, 86 Gutierrez 64703-595 Melo / PA",694,False,,8.11,5.1,7.75
+272.365.811-33,Luiz Miguel Barbosa,F,24,"Favela de Carvalho, 3 São Benedito 86403735 Costela / AP",696,False,,8.0,7.6,5.7
+334.153.043-80,Dr. Heitor Moreira,F,21,"Parque Maria Pinto, 81 Santana Do Cafezal 49637-557 da Rocha / PB",649,False,,9.28,5.57,5.12
+291.942.235-79,Emanuel Rocha,F,23,"Viela de Farias, 6 Boa União 2ª Seção 19248-349 Aragão / DF",720,True,5.0,5.74,7.1,
+475.119.298-58,Henrique Fogaça,M,26,"Chácara Sofia Moura, 67 Pantanal 41800096 da Cruz de Costa / MS",766,True,6.0,6.78,9.13,
+656.625.389-33,Gabriel Duarte,M,20,Ladeira de Correia Alto Dos Pinheiros 48689-527 Jesus / MT,778,True,5.0,5.06,9.92,
+038.747.901-66,Caio Cunha,F,20,"Aeroporto Alves, 21 Nova Suíça 45261-464 Barros da Praia / SP",760,False,,5.44,9.59,7.2
+243.989.663-05,Luiz Felipe Monteiro,M,21,"Viaduto Pedro Rezende, 66 Coqueiros 51405-243 Nunes do Oeste / AM",740,False,,8.82,8.6,7.94
+833.875.300-68,Maria Alice Rocha,M,26,"Viaduto Silveira, 96 Jaraguá 42294857 Barros do Oeste / CE",744,False,,5.94,6.07,5.17
+878.633.244-28,Juliana Campos,F,23,"Área da Costa, 76 Jaraguá 33693388 Lima de Porto / ES",655,False,,5.93,6.73,5.13
+109.008.576-65,Catarina Monteiro,F,25,"Avenida Sofia Lima, 13 Miramar 43203-198 Moura / RO",693,False,,5.23,7.05,7.1
+848.930.417-90,Alexandre Duarte,M,26,"Núcleo de da Conceição, 220 Jardim Alvorada 05950895 da Mata de Ramos / PE",676,True,2.0,,,
+595.568.029-61,Lucas Gabriel Cavalcanti,M,25,"Quadra Calebe Martins, 674 Guaratã 24633-894 Souza / DF",703,True,2.0,,,
+150.954.834-43,Pedro Porto,M,20,"Área de da Rocha, 86 Canaa 83532581 Costa de Nascimento / SP",756,True,4.0,8.76,,
+744.435.953-28,Letícia Melo,F,22,"Trevo Aragão, 2 Santa Branca 12037937 Viana Grande / CE",680,True,7.0,6.64,6.57,6.84
+618.458.931-95,Stephany da Rocha,M,21,"Campo Paulo Nunes, 89 Bela Vitoria 09923-911 Correia de Silveira / BA",678,True,5.0,9.98,9.01,
+911.216.015-48,Luiz Gustavo Pereira,F,23,"Chácara de Duarte, 668 Marieta 2ª Seção 47214690 Cavalcanti Grande / MA",718,False,,7.24,9.25,9.28
+318.169.462-06,Rebeca da Luz,F,25,"Núcleo Rebeca Gomes, 86 Manacas 33590577 Almeida / CE",667,True,5.0,8.18,8.81,
+844.990.432-99,Sophie Silveira,F,22,"Área de Ribeiro, 63 Túnel De Ibirité 76593344 Nogueira Alegre / PR",686,True,1.0,,,
+067.392.286-59,Kaique da Rocha,F,19,"Vale de Jesus, 49 Vila Santa Rosa 89446-527 da Mota / AL",706,False,,7.07,7.9,6.69
+048.474.784-41,Maria Julia Ferreira,F,21,"Recanto de da Mota, 62 Vila Nova Cachoeirinha 1ª Seção 20615488 Nunes / SC",776,False,,7.99,9.07,7.82
+345.548.271-83,Laís Castro,M,22,Núcleo Correia Europa 21150-154 Silva / RR,782,False,,6.15,9.97,6.82
+729.159.281-95,Maitê Barros,F,24,"Praia Anthony Pereira, 61 Dom Joaquim 61520-070 Lima Grande / SP",731,False,,9.18,8.79,6.75
+357.043.728-29,Dr. Felipe Cardoso,F,20,"Trevo Nicolas Fernandes, 4 Jardim Alvorada 13399438 da Mata / AP",673,False,,9.25,6.43,6.2
+328.235.511-94,Luigi Freitas,F,22,"Viela Moraes, 56 Vila Nova Dos Milionarios 84019780 Rodrigues do Norte / SE",788,False,,5.75,9.17,8.01
+436.362.204-53,Lucas Fernandes,F,19,Chácara Ana Beatriz Almeida Sport Club 64763789 Gomes Alegre / TO,793,True,3.0,9.68,,
+575.480.305-92,Ryan da Mata,F,19,"Chácara Ana Luiza Porto, 90 Santo André 38936391 Vieira da Mata / RS",718,False,,7.73,7.53,5.77
+824.866.229-78,Lucas da Mota,F,20,"Condomínio de Sales, 32 Fazendinha 33863-792 da Luz da Serra / AC",709,True,2.0,,,
+560.488.010-99,Cecília Alves,F,21,"Residencial Laís Caldeira, 98 Cruzeiro 58722337 Barbosa / SC",699,True,6.0,9.61,5.56,
+358.309.597-07,Sarah Vieira,M,24,"Esplanada de Rodrigues, 5 Vila São Rafael 02540-991 Vieira da Praia / RR",657,False,,5.33,7.21,5.55
+080.244.865-49,Maria Clara Pinto,M,26,"Morro Barbosa, 80 Nossa Senhora Aparecida 37069-170 Porto / GO",727,False,,6.63,8.15,5.33
+161.675.766-57,Gustavo Moura,F,19,"Quadra Alves, 42 Dom Bosco 92513608 Duarte / RS",780,False,,5.46,7.02,5.88
+888.666.212-99,Fernando Peixoto,M,27,"Rua Carvalho, 457 Mala E Cuia 99341235 Monteiro / RO",694,True,2.0,,,
+213.836.853-12,Sr. Kevin da Mota,M,26,"Favela Caldeira, 35 Eymard 91113654 da Rosa / ES",662,True,5.0,9.88,7.91,
+676.957.221-76,Ana Lívia Costela,F,20,"Sítio Cauã Gonçalves, 4 Vila Copasa 39461480 Cardoso / AC",687,False,,6.05,7.92,5.2
+884.710.513-41,Maria Vitória Duarte,F,18,"Largo Peixoto, 73 Aeroporto 05513171 Barbosa / PI",755,False,,8.1,7.95,9.57
+885.089.419-26,Sophie Correia,M,21,"Vila de Teixeira, 59 Vila Nossa Senhora Do Rosário 13631-006 Moreira / MG",774,True,1.0,,,
+609.082.384-16,Dra. Emilly Rocha,M,23,Fazenda de Nunes Frei Leopoldo 37190165 Costa / RS,772,False,,8.37,5.34,6.55
+615.229.625-76,Sr. Enzo Gabriel Viana,M,24,"Passarela Joaquim da Rosa, 91 Leticia 86489782 Ramos / RN",791,False,,9.18,7.07,5.9
+394.956.930-66,Enrico Fogaça,F,23,"Alameda Duarte, 20 Fernão Dias 69588707 Ribeiro / PA",791,True,3.0,8.85,,
+789.957.396-60,Davi Lucca da Luz,F,23,"Rua Kaique Rezende, 3 Laranjeiras 96373767 da Costa / PA",643,False,,9.09,5.02,6.79
+322.819.901-90,Helena Gonçalves,F,23,"Vila de Rezende, 28 São Salvador 48541532 Viana / MS",759,False,,9.58,6.6,6.47
+308.937.528-37,Sra. Ana Vitória Moreira,F,23,"Núcleo Mendes, 42 Vila Minaslandia 47666068 Mendes / ES",682,True,2.0,,,
+826.813.765-44,Diogo Barros,M,27,"Largo Novaes, 85 Nazare 04840-771 Duarte / SE",744,False,,9.54,8.09,5.33
+451.943.252-22,Dr. Bruno Freitas,F,25,"Lagoa Ana Lívia Santos, 24 Nova Granada 56843-198 Jesus do Oeste / PI",669,False,,8.2,9.34,5.52
+983.407.074-22,Renan Pires,M,23,"Largo João Lucas Ferreira, 182 Mariano De Abreu 83343319 Viana de Almeida / BA",679,True,6.0,5.74,7.71,
+343.142.368-41,Ryan Costa,M,23,"Campo Caldeira, 26 Ernesto Nascimento 77584-002 Gonçalves de Azevedo / RJ",744,False,,7.94,8.23,8.47
+669.541.498-09,Eduardo Moraes,F,20,"Sítio Silveira, 97 Ventosa 80334-995 Araújo / PB",688,True,5.0,6.19,6.36,
+099.663.455-73,Danilo Novaes,F,19,"Trevo de Farias, 3 Vila Tirol 29262-235 Mendes do Norte / RR",724,False,,7.93,5.99,7.27
+082.377.145-79,Manuela Porto,M,20,"Trevo Júlia da Mota, 46 Nova Cintra 51662270 Oliveira Grande / PB",693,True,8.0,5.77,9.48,9.58
+919.264.225-61,Sophia Alves,M,19,"Vale Erick da Rosa, 90 Diamante 24709-576 Martins de Minas / AC",797,False,,5.93,8.28,6.67
+392.210.813-97,Paulo Rezende,M,25,"Viaduto Peixoto, 700 Buritis 99889-312 Cardoso de da Conceição / AL",711,False,,7.49,9.0,8.03
+392.305.527-03,Thales da Mota,F,27,Fazenda Letícia Nogueira Leticia 89383142 da Costa / PB,724,True,5.0,5.96,5.6,
+200.957.671-71,Vinicius Alves,F,26,"Aeroporto Santos, 98 Varzea Da Palma 67426620 Cardoso / PI",653,False,,5.49,8.21,7.99
+338.849.091-88,Ana Clara Mendes,M,24,"Sítio de Gonçalves, 85 Monsenhor Messias 41079-114 da Rosa / BA",653,False,,8.15,5.58,5.4
+357.714.701-51,Maria Cecília Rezende,F,25,Fazenda de da Costa João Pinheiro 54702-655 Dias / ES,722,False,,6.75,8.57,7.97
+087.786.706-53,Pedro Moreira,F,27,"Avenida de da Conceição, 96 Conjunto Lagoa 21723-042 Fernandes / PE",648,False,,5.75,6.57,9.72
+179.280.502-04,Samuel Melo,M,24,"Colônia Renan Nunes, 751 Esperança 11469-822 Ramos / PA",657,False,,7.98,5.99,5.8
+689.066.811-80,Lucas Martins,M,24,"Recanto Moura, 31 Dom Cabral 90811-565 Correia / SE",647,False,,6.76,6.73,9.39
+155.539.475-53,Maria Luiza Campos,F,19,"Feira Maria Eduarda Silveira, 62 Santa Terezinha 04546-863 Peixoto / RS",778,True,1.0,,,
+214.002.093-29,Manuela Melo,F,24,"Avenida Antônio Moreira, 785 Conjunto Lagoa 16788-988 Teixeira Alegre / PB",658,False,,7.45,7.84,5.3
+227.391.553-34,Antônio Gomes,F,26,"Setor Caldeira, 210 Solar Do Barreiro 54408-612 das Neves do Campo / PE",681,False,,8.77,6.58,5.42
+047.710.327-23,Srta. Maria Fernanda Pires,M,20,Vila Costa Belmonte 99854290 Oliveira / RO,692,True,5.0,7.27,8.37,
+259.664.215-20,Davi da Paz,M,18,"Pátio de Nunes, 5 Vila Batik 11427-141 Freitas do Campo / PR",693,False,,9.47,9.15,7.14
+831.579.008-86,Vitória da Luz,F,18,"Fazenda de da Conceição, 71 Cachoeirinha 36455198 da Conceição da Praia / SE",756,True,2.0,,,
+442.919.765-70,Yasmin Souza,M,21,"Esplanada de Cunha, 33 Tiradentes 67934-858 Cunha / BA",723,True,5.0,5.2,7.66,
+810.387.347-92,Brenda Barbosa,F,24,"Largo de Vieira, 3 Vila Olhos D'água 90791264 Santos / PB",681,False,,7.47,6.32,5.35
+633.344.623-70,Eduarda Novaes,M,19,"Recanto Rezende, 5 Itaipu 99945111 Monteiro / TO",734,True,5.0,6.68,8.44,
+774.070.466-90,Sr. Levi Lima,M,18,"Loteamento de Monteiro, 7 João Pinheiro 54098071 Araújo / RO",678,False,,8.65,8.5,5.67
+235.171.917-77,Maria Vitória Lima,F,19,"Sítio Laura Fogaça, 53 Nova Pampulha 73188189 da Conceição de das Neves / MG",747,False,,8.96,6.79,7.89
+662.523.207-62,Dra. Lavínia da Luz,F,23,"Fazenda Giovanna Peixoto, 52 Das Industrias I 01038673 Silveira do Amparo / CE",675,True,3.0,7.36,,
+311.291.914-07,Laura Dias,F,22,"Área Pietra Lima, 65 Itapoa 17084-953 Pereira / PE",757,True,8.0,5.57,9.99,9.87
+872.887.341-56,Davi Luiz Alves,F,27,"Estrada Pinto, 30 Ermelinda 51647-251 Azevedo do Galho / MT",775,True,7.0,7.95,7.27,7.98
+125.642.727-66,Thiago Castro,M,27,"Conjunto Sophia Azevedo, 753 Vila Formosa 67184-870 Rocha do Amparo / RS",736,False,,7.27,7.68,7.62
+423.979.342-60,Bianca Rodrigues,M,27,"Estrada Stella Santos, 98 Floramar 90627683 Farias do Oeste / SE",689,False,,6.12,5.48,8.49
+079.159.939-38,Enrico Porto,F,20,"Avenida de Vieira, 81 Santa Margarida 87028662 Alves / MT",780,False,,9.75,8.71,9.55
+273.422.988-43,Manuela Mendes,F,25,"Residencial da Paz, 20 Serra 88876-026 Souza Paulista / SE",676,False,,6.69,8.83,7.11
+619.210.346-48,Davi Lucca Dias,M,19,"Feira Fogaça, 61 Vila Puc 12668-440 Castro / RS",682,True,5.0,6.53,6.33,
+269.410.131-37,Sra. Helena Azevedo,M,27,"Fazenda Cunha, 25 Distrito Industrial Do Jatoba 27183-178 Cavalcanti das Pedras / RR",770,True,7.0,8.48,9.85,5.88
+162.403.780-16,Thales da Cruz,M,19,Lago Jesus Luxemburgo 26748-803 Cardoso / RO,728,False,,5.37,5.63,7.75
+914.056.795-02,Ana Laura Lopes,F,26,Quadra de Mendes Santa Rita 58830772 Ribeiro da Prata / ES,747,False,,9.2,7.94,7.05
+935.028.268-84,Sra. Maitê Dias,M,20,"Residencial Stephany Dias, 136 Belmonte 57434-119 da Cruz / RS",682,True,4.0,6.22,,
+704.694.872-24,Lorena Barros,F,24,Praia Lima Nova Floresta 73296637 Pires / MG,722,False,,8.24,7.73,6.73
+393.357.480-85,Thomas Freitas,M,22,"Área Julia Ferreira, 80 Grotinha 18048989 Almeida Paulista / MS",660,False,,5.49,6.07,8.07
+429.280.615-17,Srta. Isabella Oliveira,F,22,"Rua Ferreira, 69 Pongelupe 09520-656 Aragão da Prata / RJ",728,True,5.0,5.79,7.03,
+393.875.568-20,Srta. Mariane Dias,M,22,"Conjunto de Teixeira, 73 Gutierrez 28072356 Moura do Amparo / PB",752,False,,5.44,9.93,6.18
+203.263.809-47,Lucas Gabriel Rezende,F,21,"Feira Porto, 19 Olaria 16912-612 Martins de Cunha / MT",759,True,2.0,,,
+211.417.983-77,Dr. Davi Silva,M,23,"Alameda Bruna Castro, 839 Venda Nova 99508-582 Santos / ES",661,False,,9.08,5.63,6.3
+263.009.495-98,Nicolas Moura,F,23,"Fazenda Sales, 3 Camponesa 2ª Seção 29408838 Nascimento de Costela / RN",651,True,6.0,6.14,5.67,
+932.684.154-29,Emanuel da Cruz,F,24,"Vereda Isabel Barros, 17 Castelo 69852343 Monteiro das Flores / RJ",789,False,,7.46,9.0,9.53
+215.425.134-39,Mariana Vieira,M,26,"Vila de da Cruz, 529 Vila Sumaré 91079813 Moura / SE",751,False,,8.66,8.47,6.5
+778.985.867-06,Luigi Correia,M,19,"Trecho de Monteiro, 99 Marmiteiros 43202-060 Barros Verde / BA",775,False,,8.09,5.65,5.28
+028.516.112-75,Luiz Gustavo Alves,F,26,"Morro de Pereira, 38 Bacurau 15317282 da Cruz de Aragão / RJ",780,True,4.0,9.14,,
+539.429.132-68,Leandro Sales,F,25,"Colônia Pedro Duarte, 69 Novo Das Industrias 53711-581 Azevedo do Norte / SE",717,False,,6.17,5.91,8.14
+705.544.850-29,Dra. Pietra Rezende,M,27,"Campo Ribeiro, 1 Estoril 38998-396 da Luz de Jesus / ES",681,False,,9.25,7.8,8.84
+811.063.510-13,Dra. Cecília Gomes,M,20,"Área Rezende, 50 Jardim Leblon 65570159 Dias de Rodrigues / MA",760,False,,7.56,8.2,7.67
+569.475.692-88,Yasmin Cardoso,M,27,"Pátio de Lopes, 25 Vila São Gabriel Jacui 76374-646 Santos / GO",740,False,,6.96,8.5,9.3
+214.494.733-25,Vinicius Oliveira,F,18,"Lago de Cunha, 915 Conjunto Jardim Filadélfia 95098-508 Sales / PR",683,True,6.0,9.96,8.31,
+778.644.893-48,Helena Mendes,F,18,"Passarela Porto, 68 Ademar Maldonado 27692-422 Lima / RR",778,True,7.0,8.75,9.51,7.91
+283.864.261-40,Luiza Ramos,M,26,"Jardim Maria Alice Lopes, 7 Acaba Mundo 44897517 Cavalcanti / SP",782,True,1.0,,,
+070.028.315-05,Lavínia Castro,M,20,"Rodovia de Silveira, 178 Araguaia 58660986 Araújo dos Dourados / RO",747,True,7.0,5.14,6.93,5.95
+942.781.347-63,Lavínia das Neves,M,21,Sítio de Barros Vila Independencia 2ª Seção 18534201 Lopes do Sul / MA,767,True,1.0,,,
+530.678.562-21,Alícia Cardoso,F,18,"Avenida Lucca da Mata, 895 Vista Alegre 71399104 Porto de Castro / PI",693,True,7.0,8.76,6.52,5.53
+660.577.347-14,Eduarda Cardoso,M,19,"Recanto Eloah Carvalho, 47 Cidade Jardim Taquaril 98981613 Martins / DF",799,True,6.0,7.42,9.63,
+590.496.778-89,Ana Luiza Nunes,M,20,"Sítio Ana Júlia da Paz, 3 Indaiá 84528-083 Dias do Amparo / PB",718,False,,6.11,8.95,8.43
+537.211.944-44,Clarice Peixoto,M,25,"Chácara Carvalho, 81 Vila São Geraldo 73609241 Santos / SP",734,True,4.0,5.2,,
+373.259.234-52,Marcelo Castro,F,24,"Viaduto Porto, 55 Vila Da Amizade 13523-744 Cardoso / PB",651,False,,7.48,8.57,6.17
+744.904.468-95,Dr. Guilherme da Mata,F,22,"Conjunto de Cunha, 58 Vila Vista Alegre 49720461 da Paz / MA",778,False,,9.55,6.16,7.27
+044.948.141-28,Sabrina Mendes,M,18,Feira Porto Vila Nova 34071-481 Freitas Verde / PE,787,False,,7.21,8.13,7.13
+228.142.881-51,Dr. Rafael Carvalho,M,23,"Vereda Barbosa, 8 Horto 59241350 Sales / PB",740,True,8.0,5.74,6.94,9.07
+590.510.488-63,Paulo Gomes,M,25,"Estrada Anthony Alves, 3 Jardim Felicidade 27521-171 Jesus / ES",640,False,,7.67,6.31,8.01
+636.137.904-74,Marina Alves,M,25,Parque Ribeiro São Cristóvão 42575-345 da Cruz das Pedras / PB,680,False,,9.25,6.19,7.33
+651.715.966-10,João Felipe da Rocha,M,20,"Colônia Beatriz Ramos, 99 Copacabana 36650-493 Lopes / MS",656,True,2.0,,,
+345.118.992-33,Dra. Luna Lopes,M,23,"Distrito Samuel Barbosa, 20 Vila União 62028756 Ferreira do Oeste / AC",701,False,,5.07,6.8,6.83
+055.156.397-57,Maria Pires,M,25,"Núcleo Lucca Nunes, 98 Vila Da Ária 42123455 Nunes / RO",790,True,4.0,6.47,,
+757.666.537-51,João Gabriel Novaes,M,27,"Avenida de Dias, 6 Padre Eustáquio 07044-068 Nogueira das Pedras / AC",737,True,2.0,,,
+663.335.948-64,Yuri Freitas,F,23,"Colônia Carolina Teixeira, 8 Bonsucesso 02265-581 Fernandes / RJ",667,False,,6.84,5.4,8.82
+662.588.541-92,Ana Júlia Moura,F,21,"Lago de da Mata, 73 Ernesto Nascimento 22458-515 Duarte do Campo / RR",675,False,,7.53,9.6,6.14
+883.366.840-50,Dra. Fernanda Vieira,M,25,"Colônia Cardoso, 24 Prado 67241-920 Freitas / PR",730,False,,8.5,5.79,7.95
+493.341.347-82,Leonardo Viana,F,23,"Ladeira Isaac Souza, 93 Vila Santa Rosa 34341-179 Moreira de Correia / BA",793,False,,8.74,7.63,9.68
+399.524.317-61,Sabrina Freitas,M,22,"Avenida Clara Monteiro, 25 Vila Calafate 41563-210 Costa da Praia / CE",653,True,3.0,6.7,,
+346.559.034-42,Erick Melo,M,18,"Parque Emanuelly Castro, 63 Esplanada 71455-106 Rodrigues / PB",677,False,,7.4,5.44,7.78
+347.031.601-88,Vicente da Rosa,M,24,Campo Pedro Lucas da Mata Pindorama 35941112 da Costa / CE,700,False,,8.67,6.25,5.9
+477.115.176-64,Pedro Lucas da Costa,F,18,"Lago Lara Lopes, 131 Conjunto Jardim Filadélfia 45833-764 Carvalho / PA",702,True,2.0,,,
+381.683.745-39,Fernando Silva,M,21,"Recanto Nicolas Ferreira, 9 Frei Leopoldo 91874-526 Porto Verde / RS",776,True,3.0,7.55,,
+758.134.482-23,Lorena da Rocha,M,22,"Esplanada de Rodrigues, 380 Marieta 3ª Seção 16266646 Souza / TO",778,True,2.0,,,
+081.231.262-51,Dr. João Vitor Mendes,F,26,Fazenda Almeida União 49826-731 Porto da Prata / PB,734,True,3.0,5.65,,
+383.241.282-18,João Alves,M,23,"Feira Rafael Viana, 546 Alto Caiçaras 45745409 Farias de Aragão / SC",734,True,1.0,,,
+238.958.889-01,Vitória Santos,F,25,"Morro de Teixeira, 3 Esplanada 29446325 Souza / ES",677,False,,7.02,9.12,9.73
+797.044.630-55,Gustavo Pinto,F,23,"Residencial Cecília Vieira, 36 Candelaria 63764-454 Vieira / MG",788,True,5.0,9.39,7.04,
+425.135.674-09,Ana Julia Monteiro,M,20,"Estação Joaquim Alves, 93 Dom Silverio 58599-936 Cardoso do Amparo / AM",688,False,,5.44,9.34,8.28
+989.419.663-63,Larissa Mendes,F,22,"Condomínio Yasmin Dias, 55 São Jorge 3ª Seção 49189-736 Peixoto / PA",692,False,,8.66,6.98,9.19
+189.362.606-69,Clarice Oliveira,F,24,"Loteamento de Moreira, 68 Vila Sesc 10097-564 Cavalcanti do Galho / MG",751,False,,9.69,8.06,7.64
+934.292.052-05,Lucca Monteiro,F,24,"Ladeira de Freitas, 472 Xodo-Marize 34668177 Cardoso do Campo / RO",707,False,,7.43,7.01,7.65
+435.846.059-50,Heloísa Costa,F,18,"Pátio Leonardo Gonçalves, 62 Lagoinha Leblon 27861243 Peixoto / RR",660,False,,8.6,5.03,5.19
+592.592.118-27,Davi da Rocha,F,27,Avenida Heitor Oliveira Independência 07350-975 da Rosa / SE,653,False,,5.48,5.77,6.67
+555.917.214-22,Caroline Gonçalves,M,19,"Trevo de Nogueira, 98 Jardim Leblon 21396519 da Paz / RS",756,False,,9.75,9.23,9.44
+191.342.267-58,Thomas Silva,F,23,"Estrada de Silveira, 911 Vila Califórnia 68170-226 da Mata / PI",673,True,3.0,7.54,,
+479.068.623-12,Srta. Sarah Sales,F,22,"Loteamento Azevedo, 26 Distrito Industrial Do Jatoba 54726-193 Oliveira Grande / MG",700,True,8.0,6.84,5.69,6.27
+222.508.948-35,Nicolas da Rocha,M,21,"Feira de da Mata, 31 Cidade Nova 25970-707 Duarte / SP",790,True,1.0,,,
+928.012.565-91,Pietro da Cruz,M,18,"Lago de Moura, 92 Vila Ouro Minas 56221275 da Mata do Amparo / MS",656,True,7.0,6.46,5.27,6.08
+791.874.788-46,Eloah Silveira,F,27,"Estação Luiz Henrique Barbosa, 57 Palmeiras 09145-958 Santos / GO",655,False,,6.29,6.26,5.36
+910.544.545-11,Sra. Stephany da Conceição,M,21,"Favela de Duarte, 3 Casa Branca 55631-097 Fernandes / SE",796,True,6.0,9.78,7.83,
+563.750.678-65,Yuri Caldeira,F,18,"Vereda Martins, 46 Zilah Sposito 16766088 Mendes Paulista / RJ",731,True,3.0,5.49,,
+424.097.312-55,Isabelly Araújo,F,23,"Vila Farias, 9 Ouro Preto 01051-923 Martins dos Dourados / CE",686,False,,7.11,5.43,9.63
+137.712.208-25,Mirella Teixeira,M,25,"Trecho Pires, 2 Barreiro 17887-291 Oliveira da Serra / MS",709,False,,8.71,7.6,6.74
+490.818.156-22,Eloah da Mota,F,24,"Ladeira Almeida, 690 Jardinópolis 80303147 Pereira / RJ",657,True,4.0,6.26,,
+541.386.271-37,Pedro Cardoso,F,22,"Lagoa Martins, 77 Vila Nova Gameleira 2ª Seção 05935-927 Barbosa / RJ",750,True,5.0,6.49,8.13,
+793.784.775-41,Sr. Ryan Lopes,F,24,"Fazenda de Azevedo, 51 Bacurau 00691-506 Fogaça do Sul / RR",752,False,,8.5,9.05,9.53
+762.945.146-03,Alícia Pinto,M,21,Favela João Guilherme Novaes Atila De Paiva 64454-315 Correia do Galho / DF,701,True,2.0,,,
+677.667.183-23,Anthony Teixeira,F,20,"Vereda Lucas Silveira, 929 Universitário 55154-113 Correia Alegre / RJ",705,False,,7.29,5.48,8.96
+341.924.063-18,Luigi Nascimento,F,27,"Condomínio Bianca Rezende, 11 Xangri-Lá 38225-880 Peixoto do Amparo / GO",696,False,,8.01,9.17,9.9
+125.114.083-34,Benício Carvalho,F,23,"Loteamento Camila Alves, 41 Vila Rica 18456113 Ramos das Flores / AM",759,False,,7.29,8.55,7.15
+769.015.767-05,Sra. Bárbara Rocha,M,22,"Lagoa de Oliveira, 15 Maria Goretti 49214604 Pires / CE",762,False,,5.36,7.34,8.18
+280.644.647-21,Leandro Carvalho,F,18,"Pátio Gabriel Viana, 70 Jardim Dos Comerciarios 07574-823 da Conceição / SC",653,True,4.0,9.55,,
+193.551.838-80,João Miguel da Paz,M,20,Travessa da Cruz Ribeiro De Abreu 75168-945 Melo / AL,790,True,3.0,9.17,,
+690.641.141-11,Eduarda Barros,F,26,"Núcleo Costa, 2 Vila Cloris 55298178 Costa de Pires / RO",649,True,6.0,5.03,9.66,
+719.302.290-93,Sra. Maria Vitória Porto,F,19,Quadra de Nogueira Dom Joaquim 17907-858 da Rocha de Farias / AM,691,False,,6.6,7.28,7.57
+673.559.069-56,Igor Martins,M,23,"Jardim Bruno Souza, 1 Vila Da Paz 12625401 Rodrigues de Peixoto / PR",662,False,,6.11,5.92,6.67
+853.395.150-52,Paulo Nogueira,F,22,"Pátio Rezende, 90 Vila Barragem Santa Lúcia 59712855 Souza das Flores / BA",774,False,,5.55,6.82,9.19
+462.384.142-59,Cecília Santos,M,27,"Estrada Dias, 609 Vila Trinta E Um De Março 87501392 Fernandes do Sul / DF",675,True,8.0,9.34,8.72,8.48
+343.824.407-05,Agatha Gomes,F,19,"Área de Ferreira, 5 Conjunto Califórnia Ii 39970-983 Ferreira de Moura / AP",771,True,3.0,5.11,,
+025.696.858-27,Isaac Viana,F,25,"Recanto de Rocha, 68 Caetano Furquim 51732-205 Duarte / TO",718,True,3.0,9.09,,
+505.711.012-51,Luiz Felipe da Rosa,F,27,"Avenida Silveira, 17 Vila Satélite 64507041 Sales / SP",779,False,,9.99,7.05,8.58
+092.624.319-85,Ana Carolina Souza,M,21,"Fazenda da Mota, 37 Pedreira Padro Lopes 84298655 Mendes Verde / RS",650,True,7.0,9.04,7.02,6.46
+275.142.483-17,Laura Pereira,M,19,"Viela de Porto, 310 Planalto 59664-376 Monteiro do Sul / MG",781,True,2.0,,,
+112.273.354-67,Enzo Gabriel Ramos,M,21,"Viaduto de Duarte, 68 Vila Satélite 15671-375 Araújo do Norte / PB",665,True,3.0,6.95,,
+800.751.436-71,Lívia Rocha,F,22,"Recanto Stella das Neves, 596 São Salvador 30695-798 Fernandes Verde / PB",797,True,5.0,7.04,7.41,
+955.413.018-44,Gabrielly Nascimento,F,18,Favela Raul Moreira Jatobá 96042-436 Rodrigues / RR,796,True,6.0,5.44,8.46,
+952.201.572-84,Danilo da Mata,F,19,"Trevo Cardoso, 784 Camponesa 1ª Seção 16110276 Silveira da Prata / RO",737,False,,6.46,5.69,7.87
+042.874.964-03,Davi Luiz Barros,M,19,"Vereda Davi Lucca Barbosa, 94 Pantanal 94614-730 Araújo Verde / SC",755,False,,6.86,5.95,8.96
+411.321.300-05,Raquel Gonçalves,F,21,Avenida Emanuella Melo Nova Esperança 00993966 Lima / ES,728,True,2.0,,,
+969.074.856-99,Nathan Santos,F,25,"Travessa de Pinto, 91 Santa Helena 61083190 da Cruz de da Cruz / PA",710,False,,5.32,9.87,8.23
+631.421.400-50,Pedro Miguel Pereira,F,18,Vereda Azevedo Providencia 79154-031 da Luz / SP,661,False,,5.97,6.39,7.77
+026.887.567-83,Julia Costa,M,25,"Setor Luiz Henrique da Cunha, 27 Túnel De Ibirité 70686559 Vieira / PR",740,False,,8.71,7.76,9.62
+492.854.915-22,Alexia Novaes,M,23,"Conjunto de Rodrigues, 611 Canaa 42430376 Sales de Carvalho / PB",727,True,2.0,,,
+311.083.762-80,Alexia Farias,F,19,"Praça de Ramos, 40 Vila Maria 31602967 Oliveira / MA",754,True,8.0,6.99,9.91,7.92
+624.222.644-86,Dra. Bárbara Carvalho,M,25,"Feira Marcelo Ramos, 80 Mirante 48118406 Moura / RR",741,True,5.0,8.92,9.89,
+234.162.428-52,Vicente Aragão,M,27,"Esplanada de Moraes, 42 Vila Nova Paraíso 68206-780 Rodrigues de da Costa / RN",754,False,,8.42,8.18,7.4
+815.927.519-11,Isaac Silveira,M,21,Esplanada Ana Sophia da Paz Bonfim 07400916 Azevedo / RN,770,False,,6.95,5.06,5.63
+653.941.915-22,Sr. Henrique Viana,M,19,"Vila de Freitas, 1 Vila São Dimas 27644-634 da Costa / AM",798,False,,8.79,6.95,8.01
+692.762.876-11,Dr. Miguel da Costa,F,18,"Vila Lorenzo Cardoso, 93 Vila Fumec 27426970 Porto de Minas / AP",667,True,7.0,5.01,5.37,8.09
+351.714.636-24,Davi Lucas Viana,F,24,"Fazenda Martins, 11 Vila Jardim Leblon 54693-929 Barros do Galho / AC",793,True,6.0,5.77,9.53,
+304.164.306-16,Maria Vitória da Luz,F,19,"Avenida Carlos Eduardo Melo, 3 Lagoinha 68520964 Lima Paulista / AL",695,False,,6.25,8.9,9.72
+622.741.530-39,Srta. Sofia Mendes,F,19,"Vale Sales, 807 Graça 34774818 da Rocha / AL",710,True,6.0,9.88,7.04,
+739.177.209-47,Vicente Gomes,F,22,"Quadra de da Mata, 75 Álvaro Camargos 15744120 Costela da Praia / RR",741,True,7.0,9.85,7.67,5.1
+256.349.059-64,Dr. Bruno da Mata,M,26,"Estrada da Rosa, 656 Taquaril 81504-482 da Cunha do Norte / CE",758,False,,6.41,8.53,7.07
+995.059.334-52,Luiz Felipe da Luz,F,20,"Feira de Ribeiro, 79 Marieta 2ª Seção 77680-414 Alves de Fernandes / PA",739,False,,5.47,6.55,5.07
+247.123.946-66,Levi Farias,F,23,"Morro da Paz, 68 Nova Suíça 35084-760 Ribeiro dos Dourados / PR",797,False,,8.61,9.41,8.02
+232.417.557-33,Ana da Costa,M,20,"Vila de Moura, 77 Jardim Alvorada 73315-517 Gomes de Sales / MT",759,False,,8.62,9.4,8.79
+599.339.519-35,Sra. Sabrina Rocha,F,21,"Trecho Juliana Moraes, 45 Santa Tereza 67348-986 Moreira / AL",760,False,,9.92,7.44,9.13
+346.913.081-42,Lucas Gabriel Moreira,F,19,"Esplanada Pietra Peixoto, 76 Vila De Sá 64622555 Jesus dos Dourados / PB",717,False,,9.7,7.65,5.38
+867.768.770-86,Sr. Gustavo Nascimento,M,25,"Conjunto de Fernandes, 602 Vila Nova Cachoeirinha 3ª Seção 43534807 Almeida de Souza / MS",768,True,7.0,7.68,5.8,8.29
+819.710.313-72,Manuela Moraes,M,18,Distrito Lima Vila Paquetá 40682442 Jesus do Campo / MS,773,True,4.0,5.36,,
+401.812.351-30,Lucas Moura,F,23,"Vereda Dias, 2 Vila Santa Rosa 79353730 Cavalcanti / PA",707,True,5.0,9.72,5.55,
+320.303.343-28,Marcela Nascimento,F,26,"Residencial de Rezende, 748 Minas Brasil 26107-874 da Mata de da Paz / SC",759,True,1.0,,,
+881.127.983-56,Vitor da Costa,M,24,"Via de Correia, 58 Vila Independencia 3ª Seção 04233859 Oliveira / RJ",701,False,,7.39,5.17,6.54
+057.021.842-81,Antônio Farias,M,21,"Morro Lopes, 6 Barroca 16130267 Sales da Prata / SC",706,True,8.0,9.77,9.04,8.75
+951.557.275-44,Rafael Moreira,F,27,"Setor de Nogueira, 46 Nova Granada 22961621 Martins / DF",686,True,3.0,9.04,,
+609.452.182-06,Dr. Emanuel Campos,F,21,"Viela de Aragão, 77 Lagoinha Leblon 05962483 Monteiro do Campo / MT",692,True,4.0,8.92,,
+981.872.559-42,Júlia da Cruz,F,25,"Residencial de Cunha, 24 Alto Barroca 16729-967 Gomes / MS",684,False,,8.73,6.45,8.53
+472.407.699-93,Samuel Pinto,F,21,"Residencial Dias, 3 Conjunto Jatoba 90607805 Pinto de Goiás / BA",764,True,1.0,,,
+759.006.106-96,Sra. Isadora Duarte,F,20,"Feira Miguel Pinto, 98 São Jorge 3ª Seção 18809-911 Dias / MA",663,True,1.0,,,
+705.815.751-12,Gabriel Fogaça,M,20,"Ladeira de Gonçalves, 4 Virgínia 30210139 Souza / SE",712,True,7.0,8.69,7.32,6.75
+702.628.962-57,Lívia Viana,M,21,"Estrada Gustavo Henrique Dias, 54 São Vicente 30969304 Ramos / TO",672,True,4.0,6.01,,
+693.495.791-14,Gustavo Henrique Lima,F,24,"Distrito da Cunha, 5 Vila Santa Monica 2ª Seção 43660847 Vieira de Correia / BA",704,False,,9.57,8.07,9.08
+709.852.664-14,Esther Silveira,F,23,"Quadra Vieira, 71 Candelaria 92419-141 Gonçalves de Gomes / PA",750,True,5.0,5.0,8.02,
+188.374.075-90,Sr. Kevin Rocha,M,27,"Passarela Cauê Gomes, 8 Alto Dos Pinheiros 62687735 da Mata / DF",674,True,3.0,9.91,,
+007.520.977-26,Mariane Moreira,M,25,Chácara Miguel Almeida Vila Vista Alegre 12294393 Peixoto / AM,786,False,,8.92,5.79,8.4
+655.629.640-72,Maria Clara Rocha,F,21,"Parque de Teixeira, 36 Maria Tereza 20956-803 Nascimento Alegre / SE",739,False,,7.83,9.57,5.85
+271.124.297-06,Isis Moura,F,20,"Lago Leandro Alves, 428 Vila Antena 31410-342 Teixeira / PA",716,False,,8.37,6.4,8.11
+814.391.282-56,João Felipe Nascimento,F,23,"Praça de Dias, 86 Conjunto Califórnia I 47543-012 Pinto Paulista / CE",781,False,,5.52,7.05,9.58
+999.890.952-58,João Gabriel Jesus,F,26,"Residencial Cunha, 825 Vila Santo Antônio Barroquinha 77139-207 Rezende de Barbosa / PI",678,True,7.0,7.83,8.35,7.02
+153.443.550-94,Isis Ribeiro,M,20,"Vereda de da Cruz, 567 Grajaú 61776-646 Almeida de Araújo / TO",754,False,,9.81,7.01,9.17
+895.387.826-08,Joana da Cunha,F,19,"Lagoa Beatriz Cardoso, 65 Olhos D'água 51352035 Melo / CE",685,True,2.0,,,
+962.138.681-16,Sra. Maria Alice Dias,M,20,"Avenida de Moura, 4 Glória 86010922 Pinto / PR",721,True,2.0,,,
+696.618.922-45,Giovanna Melo,M,27,"Setor da Mota, 82 Mariano De Abreu 69029120 Azevedo de da Cruz / RJ",737,False,,8.43,9.77,8.1
+750.056.838-75,Leandro da Mota,M,18,"Distrito de Souza, 24 Belvedere 79411420 Nunes / GO",692,False,,6.18,8.34,5.84
+424.122.728-74,Stephany Cavalcanti,F,22,"Via da Conceição, 394 São João Batista 65173-982 Pereira das Pedras / SP",792,True,5.0,5.78,6.62,
+213.592.930-22,Paulo Gomes,M,23,"Área Ana Laura da Luz, 91 Barroca 61404392 Nunes do Campo / SP",657,True,3.0,9.11,,
+239.911.223-86,Luna Rodrigues,F,27,"Residencial de Castro, 94 Vila Nova Dos Milionarios 03078277 Vieira de da Cunha / PB",789,True,3.0,7.65,,
+665.755.619-93,Daniela Cardoso,F,23,"Rua Mendes, 6 Dom Silverio 49996-240 Nunes da Mata / MG",696,False,,6.82,8.65,5.2
+197.518.941-42,Isaac Cardoso,M,23,"Pátio Ferreira, 16 Nossa Senhora Aparecida 24596562 Silva do Sul / PB",794,True,7.0,9.98,6.38,6.25
+636.368.985-68,Stella Lima,M,25,"Estrada Dias, 55 Liberdade 75625917 da Mota Paulista / PA",681,True,8.0,8.44,9.77,6.44
+854.927.939-97,Vicente Silva,M,22,Viaduto de da Cruz São Bento 18585-414 Rezende / PA,715,True,6.0,9.05,9.04,
+998.225.416-45,Bernardo Carvalho,F,26,"Jardim de Nogueira, 32 Santa Isabel 96521-053 da Cunha / MA",744,True,6.0,9.03,5.53,
+032.190.991-54,Samuel Oliveira,M,22,"Condomínio Moura, 30 Vila Independencia 3ª Seção 44524-330 Rodrigues dos Dourados / DF",766,True,7.0,9.44,8.09,5.3
+165.571.194-80,Amanda Vieira,F,21,"Trecho de Nunes, 230 Mantiqueira 68170180 Costela / RJ",714,True,7.0,7.24,5.96,5.2
+565.540.506-96,Dr. Pedro Lucas Castro,F,18,Campo Melo Conjunto Taquaril 87815-624 Pinto Alegre / SC,700,True,4.0,6.58,,
+308.513.121-26,Sr. João Aragão,M,25,"Rodovia da Rosa, 62 Unidas 70655898 Rodrigues da Prata / ES",685,True,8.0,9.31,8.84,6.26
+053.469.825-82,Luiz Henrique Duarte,F,18,"Área de Carvalho, 59 Alto Vera Cruz 80594-585 Moreira / MS",766,False,,7.94,7.69,5.18
+415.156.626-13,Ana Sophia Santos,F,19,"Conjunto Murilo Lopes, 664 Vera Cruz 10813087 Cardoso / RR",686,False,,9.53,7.38,7.41
+113.192.123-18,Mariane da Cunha,M,20,Viela de Costa Vila São Dimas 23234275 Rocha de Goiás / AC,691,True,7.0,8.74,9.24,7.13
+154.206.833-11,Arthur da Luz,F,24,Jardim Moura Vila Real 1ª Seção 64255-779 Sales dos Dourados / ES,773,False,,7.48,7.41,8.82
+730.660.306-11,Sr. Arthur Moraes,M,23,"Esplanada Heitor Barbosa, 80 Graça 65239-519 Barros do Campo / SC",682,True,5.0,8.34,7.87,
+835.461.259-98,Thales Ramos,F,23,"Trecho Cavalcanti, 62 Granja De Freitas 81154465 Ribeiro do Galho / AC",770,False,,8.75,8.67,8.57
+156.028.960-20,Dr. Vitor Hugo Moura,F,24,"Núcleo Aragão, 3 Estrela 36776737 Sales do Sul / AP",773,False,,8.14,9.58,5.38
+844.889.237-73,Sr. Paulo Oliveira,M,19,"Sítio Novaes, 30 Ribeiro De Abreu 13454-357 da Conceição / AC",798,False,,5.7,7.26,7.27
+345.800.722-52,Dr. André Viana,M,21,"Trecho Gomes, 11 Palmares 14511-151 Freitas / CE",798,False,,9.4,8.32,6.79
+677.980.791-54,Otávio Viana,F,20,"Largo Milena Ramos, 5 Santa Branca 93295865 das Neves / ES",775,True,3.0,7.71,,
+992.424.577-14,Eduardo Alves,M,25,Travessa Nascimento Estrela 61526322 Fernandes / GO,720,True,3.0,9.01,,
+388.115.492-75,Camila Santos,F,26,"Esplanada de Melo, 27 Santo André 56201-482 Alves / RJ",683,True,7.0,6.04,5.67,6.21
+067.698.168-61,Diego da Cunha,M,25,"Avenida Isabella Moura, 6 Aeroporto 07402-150 Teixeira das Flores / AP",703,False,,6.8,9.07,6.68
+702.572.428-60,Maria Alice da Costa,F,24,"Estrada de Ramos, 35 Leonina 87586-387 Moura / PB",744,False,,9.34,5.2,6.7
+368.590.048-04,Agatha Farias,M,21,"Estação Cardoso, 356 Granja De Freitas 75567923 da Costa / PB",647,False,,8.37,5.01,5.69
+718.615.956-57,Sra. Alexia Cardoso,F,21,"Recanto Vitória Oliveira, 31 Dona Clara 18659-063 da Cunha / RO",684,True,1.0,,,
+532.540.139-73,Maria Luiza da Rocha,M,19,"Viela Almeida, 546 Planalto 92218-450 Mendes / MG",769,False,,8.8,9.06,5.65
+720.006.724-97,Felipe Freitas,M,25,"Favela Ferreira, 23 Novo Santa Cecilia 68687-744 Sales / AM",702,False,,9.24,7.97,8.46
+176.225.382-51,Davi Cardoso,F,18,Colônia Carvalho Vila Novo São Lucas 97223-777 Moraes do Oeste / SE,797,False,,9.72,5.82,5.37
+474.094.342-58,Davi Lucas Nascimento,M,19,"Residencial Laura Oliveira, 219 Piratininga 39555-709 Ribeiro das Flores / GO",664,False,,7.71,7.9,9.12
+440.530.936-46,Gabrielly Lima,F,21,"Feira de Vieira, 25 Túnel De Ibirité 07105049 Rezende / RS",682,False,,8.31,8.54,7.49
+039.796.818-32,Danilo Martins,F,18,Aeroporto de Cardoso Capitão Eduardo 60332-821 Silva do Sul / RO,730,False,,6.83,9.68,8.21
+003.913.876-42,João Miguel Teixeira,M,22,"Estação de Costela, 279 Vila São Paulo 57673-813 da Cunha / GO",662,True,8.0,7.56,9.55,6.77
+958.490.165-95,Srta. Lívia Barbosa,F,25,"Condomínio Araújo, 387 Indaiá 50401-732 Nogueira / MA",687,False,,5.51,6.31,7.65
+568.769.374-44,Alexandre Teixeira,F,24,"Campo Barros, 904 Aeroporto 21950510 Nascimento de Minas / PR",644,True,4.0,5.82,,
+520.331.566-17,Ana Luiza Lima,F,25,"Pátio de Souza, 6 Outro 90388590 da Costa / AP",656,False,,6.34,5.57,5.58
+880.459.854-48,Evelyn das Neves,M,21,"Condomínio Porto, 556 São Bento 51509-624 Rocha de Alves / AM",746,True,3.0,9.08,,
+044.356.509-10,Matheus Cardoso,F,25,"Favela Carvalho, 7 Miramar 91498195 Cardoso de da Costa / SE",746,False,,9.06,9.78,7.85
+897.998.826-85,Srta. Ana Julia Rocha,M,27,"Favela Raquel da Cunha, 66 Pilar 29364418 Cardoso do Norte / PR",756,False,,8.77,5.74,8.89
+794.994.077-00,Isabella das Neves,F,18,"Residencial Pinto, 44 Vila Atila De Paiva 35923805 Peixoto da Prata / ES",676,False,,5.91,9.9,7.96
+145.214.273-77,Breno Silva,F,18,"Viela de Barros, 2 Capitão Eduardo 82154-349 da Mata do Galho / RR",733,False,,5.58,7.18,6.06
+932.195.177-79,Cauã Santos,M,27,Praia Fernandes Vila Da Ária 49929-914 Pinto de Cavalcanti / MA,665,False,,6.03,5.64,6.93
+839.363.904-20,Caroline Silveira,F,22,"Viela Fernandes, 48 Vera Cruz 44977358 Ribeiro / TO",660,False,,9.87,6.37,7.45
+095.435.415-70,Júlia Cunha,F,18,"Área Silva, 3 Mirtes 99594346 Oliveira / CE",679,False,,9.96,9.93,8.59
+482.247.835-86,Kevin Cavalcanti,M,21,Vereda Teixeira Mala E Cuia 99827912 Cavalcanti / PE,727,False,,9.01,9.88,8.69
+792.334.586-53,Gabrielly da Mata,F,21,"Residencial Bianca Jesus, 55 Beira Linha 93040-020 da Mota da Prata / TO",758,True,5.0,9.2,7.42,
+132.943.786-98,Pedro Miguel Lima,M,23,"Favela Gabriel Freitas, 7 Vila Das Oliveiras 02078090 Pereira de Lima / RO",771,True,8.0,7.0,9.62,7.08
+257.845.866-96,Felipe Novaes,F,23,"Passarela Luiz Gustavo Martins, 46 Jardim Vitoria 55138-714 Azevedo / RJ",710,True,6.0,9.84,6.27,
+560.650.732-94,Dra. Luiza da Mota,F,23,"Avenida da Cruz, 68 Estoril 99314-223 Pereira de Moreira / RS",676,True,3.0,7.58,,
+692.137.067-08,Yasmin Ramos,M,22,"Jardim da Conceição, 72 Laranjeiras 30722416 Costela / AM",702,False,,9.18,7.16,9.34
+801.683.013-71,Alice Aragão,M,20,"Fazenda Laís Santos, 79 Alto Dos Pinheiros 08454-606 da Luz / MS",718,False,,9.26,5.6,5.76
+751.589.289-64,Sra. Letícia Lopes,F,22,"Viaduto Laura Araújo, 61 Bairro Das Indústrias Ii 14995916 Correia / RR",706,False,,7.67,6.31,5.38
+476.576.482-03,Kaique Farias,F,24,"Vereda Maria Vitória Santos, 898 Mantiqueira 66012846 da Mata / PA",743,True,5.0,6.26,6.78,
+585.508.798-95,Nicole da Luz,F,25,"Largo Breno Rodrigues, 8 Barro Preto 69076-288 Caldeira / PR",711,True,6.0,8.58,5.23,
+935.613.423-95,Clarice Carvalho,F,24,"Passarela Eduarda Fogaça, 978 Gameleira 41647-844 Melo / AM",685,True,5.0,5.37,9.47,
+857.857.771-95,Maria Clara Gonçalves,F,25,"Feira Renan Fogaça, 84 Vila Suzana Primeira Seção 84453-784 Cavalcanti / SC",650,False,,6.04,9.6,7.9
+196.733.311-92,Isadora Alves,F,22,"Núcleo Davi Lucca Freitas, 1 Nova Suíça 23664457 Aragão das Pedras / PE",667,True,6.0,6.33,7.48,
+178.147.487-56,Dr. Vitor Hugo Moura,M,24,"Aeroporto Maria Clara Fogaça, 84 Aeroporto 78482108 Almeida de Carvalho / PR",706,False,,8.07,8.67,9.31
+038.093.687-91,Davi Lucca da Rosa,F,20,"Aeroporto Araújo, 424 Glória 01477-789 Pires do Galho / DF",704,True,2.0,,,
+030.394.986-64,Pietra Cavalcanti,M,20,"Morro Samuel Dias, 36 São Jorge 1ª Seção 20294119 Aragão do Sul / SC",739,False,,6.99,8.82,6.28
+445.605.089-85,Marcelo Jesus,F,21,"Avenida de Cavalcanti, 184 Apolonia 68126801 Dias / PI",666,False,,5.04,9.89,7.18
+417.129.668-42,Ana Lívia Moreira,F,25,"Rodovia de Nunes, 36 Capitão Eduardo 80291-407 Farias Paulista / SE",650,True,6.0,5.75,6.8,
+340.902.510-13,Raul Barbosa,F,20,"Jardim Martins, 15 Santa Inês 32302-628 Fogaça da Praia / AC",761,False,,9.65,6.95,9.7
+199.895.327-87,Maria Alice Mendes,M,24,"Núcleo de Mendes, 488 Estrela 23990-660 Silva do Norte / PA",795,False,,9.94,8.39,5.98
+257.113.713-72,Brenda Ferreira,M,24,"Passarela de Moreira, 175 Eymard 24308-081 Barros dos Dourados / RO",733,True,8.0,9.19,7.92,6.68
+195.669.904-45,Rebeca da Paz,F,20,"Setor de Moraes, 68 Alto Barroca 80637-803 da Costa de Nogueira / PB",771,False,,8.62,5.57,7.44
+126.646.807-52,Davi Luiz Lima,F,27,"Praça de Moura, 33 Varzea Da Palma 00886445 da Costa / PR",653,False,,5.25,8.55,7.97
+715.382.296-41,Emanuella Pinto,F,27,"Avenida da Paz, 24 Lagoinha 30328000 da Paz de Minas / AM",792,False,,6.96,6.37,7.17
+082.808.674-19,Natália Fogaça,F,22,"Núcleo Cavalcanti, 49 Zilah Sposito 49863265 Nunes / SE",710,True,2.0,,,
+025.897.205-16,Lara Moreira,F,18,"Praia de Costela, 89 Padre Eustáquio 24853827 Duarte dos Dourados / AM",782,False,,6.46,9.63,5.84
+468.994.593-55,Cecília Ferreira,F,27,"Colônia de Moura, 86 Vila Paquetá 48453128 Pires da Praia / RJ",758,True,3.0,5.82,,
+948.742.200-81,Brenda Rocha,F,20,Trevo de Porto Vila Aeroporto 49896283 Fogaça de da Mata / MA,652,True,8.0,7.75,9.78,5.13
+318.159.027-05,Emanuel Teixeira,F,24,"Vereda da Paz, 7 Monte Azul 11080-698 Oliveira de Viana / AL",640,True,7.0,8.81,5.08,6.85
+508.488.700-35,Matheus Barros,M,18,"Trevo Correia, 9 Maria Tereza 21813130 da Cunha do Galho / PR",705,True,7.0,8.21,9.64,7.48
+748.114.345-42,Amanda Duarte,M,21,"Ladeira Lucca Costa, 61 Conjunto São Francisco De Assis 60355-283 Correia / SP",689,True,5.0,9.88,8.24,
+694.521.997-63,Caio Gonçalves,M,24,Parque da Costa Suzana 45081-395 Ferreira / RR,724,True,1.0,,,
+757.007.440-55,Sarah Ramos,F,19,Passarela Cavalcanti Das Industrias I 40071-119 da Luz / SC,665,False,,9.06,5.65,5.46
+146.782.817-82,Srta. Ana Júlia Santos,F,26,"Passarela Ana Clara Araújo, 305 Leticia 40777324 Nogueira / RJ",794,False,,5.08,5.94,7.63
+136.201.758-10,Sra. Cecília Novaes,M,25,"Via Maria Alice Farias, 7 Heliopolis 78319-384 Duarte das Pedras / MT",792,True,4.0,6.4,,
+128.743.568-03,Anthony Fernandes,F,26,"Vereda de Melo, 37 São Francisco 76998988 Cardoso / DF",710,False,,8.24,8.77,5.43
+900.523.062-44,Sabrina Farias,M,18,"Estrada de da Cruz, 54 Vila São Francisco 76184677 Peixoto dos Dourados / MG",679,False,,9.98,6.72,7.45
+105.337.748-32,Matheus Souza,M,18,"Sítio de Castro, 53 Conjunto Celso Machado 99608-332 Gonçalves de Santos / MA",687,True,4.0,7.24,,
+207.022.947-93,Raul Martins,F,24,"Vila Pedro Henrique Moura, 3 Cachoeirinha 07650736 Barros do Galho / MS",769,True,3.0,5.72,,
+002.435.164-36,Luigi Farias,M,19,"Esplanada Maria Alice Costela, 877 Vila Piratininga 38094-577 das Neves do Amparo / ES",651,False,,8.14,9.18,6.09
+175.915.643-71,Maria Fernanda Moraes,F,20,"Vereda Letícia Oliveira, 89 Pedreira Padro Lopes 99534408 Correia / SE",675,False,,6.84,6.85,8.25
+657.707.543-76,Arthur Oliveira,M,21,"Campo Lopes, 762 Conjunto Califórnia I 78670102 Cunha do Norte / PB",763,True,8.0,8.2,8.29,6.92
+716.948.397-52,Dr. Bernardo Gonçalves,F,24,"Setor Dias, 732 Vila Jardim Leblon 72799506 Santos / DF",678,True,7.0,9.75,9.81,7.46
+319.690.169-97,Maysa Cardoso,M,27,"Travessa Nunes, 3 Jaraguá 04000-417 Nogueira / SP",657,True,6.0,6.51,6.65,
+234.645.880-07,Lucca Cardoso,F,25,"Ladeira Vieira, 80 Vale Do Jatoba 62087816 Santos Grande / RS",768,True,7.0,7.15,6.98,9.41
+265.287.069-02,Dr. Thomas da Luz,M,24,"Pátio Enzo Ramos, 63 Providencia 62708-457 Dias Verde / TO",664,True,7.0,5.06,5.81,6.36
+983.780.572-77,Heloísa Pires,F,25,"Lago Ribeiro, 44 Vila Santa Rosa 73618158 Viana / AL",685,True,3.0,7.67,,
+427.380.142-07,Laís Nogueira,M,26,"Fazenda de Rezende, 83 Vila Novo São Lucas 95790853 da Costa de Minas / MA",745,False,,5.52,8.46,7.93
+916.739.417-53,Gustavo Henrique Cardoso,F,18,"Sítio Yasmin Barbosa, 3 Anchieta 49098-959 Jesus das Flores / PB",730,True,2.0,,,
+733.943.711-89,Beatriz Silva,M,24,"Jardim Moraes, 1 Mirtes 80739-976 Ramos / MG",738,False,,6.39,9.51,8.39
+694.268.054-40,Agatha Fogaça,F,27,"Praia Clara Ribeiro, 10 Estoril 47021-567 Duarte de da Paz / MT",725,False,,6.88,5.56,8.35
+092.220.008-52,Luigi Cardoso,M,24,Lago Joaquim da Costa Marieta 3ª Seção 56509-600 Vieira / ES,753,True,4.0,8.41,,
+668.852.413-34,Sr. Felipe Pires,F,24,"Alameda de Costela, 582 Marieta 3ª Seção 19596627 Sales / PR",661,False,,9.89,5.08,9.34
+682.523.932-80,Esther Campos,F,19,"Chácara de Freitas, 528 Minaslandia 94100-996 Nogueira / RN",688,True,3.0,9.93,,
+413.211.711-42,Murilo Alves,F,19,"Alameda Fogaça, 43 Biquinhas 08243-446 Oliveira de Goiás / AP",755,True,5.0,6.92,6.58,
+741.432.499-90,Isis Correia,M,24,"Colônia Juan das Neves, 4 Pompéia 55274692 Teixeira / AM",734,True,1.0,,,
+683.467.298-09,Ana Vitória Alves,M,27,"Rua de Silva, 34 Glória 38373265 Lopes / SC",692,False,,9.76,5.71,7.68
+793.276.208-55,Raquel da Cunha,F,25,"Favela de Santos, 91 Vila Independencia 3ª Seção 33701-064 Costa da Serra / PR",753,True,1.0,,,
+296.100.519-14,Gabriela Lima,M,25,"Lago Kaique Ribeiro, 3 Lagoinha Leblon 98251-890 Azevedo / PA",692,False,,5.3,7.92,7.52
+158.153.126-76,Dr. Felipe Fogaça,M,23,"Residencial de Araújo, 60 Vila Engenho Nogueira 22255-827 Fogaça do Oeste / CE",756,False,,9.52,6.66,5.57
+905.560.133-67,Vitor Barbosa,F,23,"Fazenda de Caldeira, 580 Camponesa 2ª Seção 85712619 Moreira Alegre / AP",653,False,,8.63,8.02,9.41
+150.176.398-09,João Vitor da Luz,M,23,"Vale de Cardoso, 87 Barão Homem De Melo 1ª Seção 94546-492 Cavalcanti / MT",651,False,,8.12,5.79,7.87
+131.288.407-50,Francisco Araújo,M,18,"Feira Alves, 96 Minas Caixa 01216-071 Carvalho / PI",692,True,6.0,8.73,7.52,
+995.016.950-90,Esther Campos,F,24,"Trevo da Cunha, 86 Centro 40622-253 Barbosa / SE",745,False,,7.11,7.31,5.06
+685.153.365-96,Pietra Viana,M,18,"Sítio de Santos, 92 Independência 89883866 Duarte / AC",791,True,3.0,9.74,,
+821.940.889-69,Isadora Cardoso,F,22,"Passarela Benício Nogueira, 916 Vila Da Ária 86403-036 Melo / MG",756,False,,7.27,7.12,6.51
+492.724.160-05,Sr. Luiz Gustavo Farias,F,25,"Parque de Vieira, 69 Dona Clara 50303-704 Correia / MS",740,False,,5.98,6.48,6.13
+091.380.820-65,Fernanda Azevedo,M,23,"Chácara de Cardoso, 784 Vila Vista Alegre 16222167 Silveira / PE",796,True,1.0,,,
+050.094.910-56,Lívia Barbosa,M,22,"Praça de Lopes, 58 São Bernardo 12245-251 das Neves de Minas / RO",714,False,,8.0,5.14,7.47
+314.368.418-12,Theo Teixeira,M,26,"Estação de Farias, 58 Tres Marias 16778499 Oliveira / AL",771,True,6.0,7.46,9.35,
+393.702.426-67,Amanda Martins,F,22,"Conjunto Gonçalves, 4 Horto Florestal 63699269 das Neves da Praia / SP",753,False,,8.64,6.17,8.67
+312.546.614-55,Marcela da Rocha,M,24,"Aeroporto de Ramos, 276 Novo Glória 72830788 Porto da Praia / PA",650,False,,8.37,6.38,7.63
+680.549.850-68,João Guilherme Rezende,F,25,"Largo Yago Melo, 956 Flavio De Oliveira 88049-739 Peixoto da Prata / AL",743,False,,9.48,5.66,9.64
+267.233.658-81,Gustavo Araújo,F,27,"Área Costela, 9 Ademar Maldonado 31866650 Carvalho de Goiás / MA",653,False,,5.55,5.77,8.62
+742.645.946-37,Gustavo Henrique Rezende,M,20,"Lago Freitas, 342 Conjunto Novo Dom Bosco 60295427 Nogueira do Sul / MS",699,False,,9.4,7.83,5.19
+122.437.789-16,Danilo Fogaça,F,20,"Colônia de Lima, 88 Calafate 34768-727 Silva de Gomes / PI",768,True,2.0,,,
+032.926.758-60,Dr. João Gabriel Jesus,F,26,"Travessa Correia, 54 Alto Vera Cruz 39633858 das Neves de Oliveira / CE",761,False,,7.18,8.81,8.04
+330.085.767-63,Thales Martins,F,19,"Praça de Castro, 111 Heliopolis 74970-051 Nunes Alegre / PE",746,False,,6.17,8.63,8.75
+631.681.818-01,Sarah Duarte,F,22,"Quadra Alícia Campos, 65 Vila Trinta E Um De Março 32757-775 da Cunha do Amparo / PE",672,True,2.0,,,
+707.594.664-28,Srta. Ana Sophia Peixoto,F,25,"Trecho de Campos, 90 Piratininga 70806021 Caldeira / RR",646,True,5.0,5.31,5.29,
+422.062.052-82,Cecília Nogueira,M,20,"Morro Almeida, 86 Grota 88544035 Viana / CE",775,True,8.0,5.89,6.48,6.98
+636.721.962-66,Miguel Peixoto,F,21,"Chácara Mendes, 3 Vila Independencia 1ª Seção 37054485 da Costa / SE",762,True,5.0,8.58,8.9,
+711.174.529-48,Lavínia Rodrigues,F,26,"Feira Emanuel Santos, 63 São Benedito 53450383 Araújo / CE",785,False,,7.12,9.55,5.23
+629.784.439-65,Srta. Luana da Luz,M,21,"Viaduto Azevedo, 79 Vitoria 83238-249 Fernandes / PB",755,True,8.0,6.86,8.62,5.33
+436.548.942-91,Gustavo Henrique Caldeira,F,26,"Estação Maria Nascimento, 80 Santa Lúcia 89264-494 da Rocha / PR",741,True,5.0,8.29,8.77,
+526.184.423-40,Yago Moreira,M,19,"Sítio de Ribeiro, 55 Santa Monica 11518556 Lima de Barros / RN",786,True,6.0,8.08,7.11,
+985.571.634-30,Laís Duarte,M,19,Morro de Pinto Vila Olhos D'água 23994-380 Almeida / MG,746,True,8.0,9.26,9.59,6.31
+144.249.437-47,Ana Beatriz Melo,M,26,"Rodovia Cunha, 3 Santa Inês 07593-843 Carvalho / SE",793,False,,6.96,6.97,8.81
