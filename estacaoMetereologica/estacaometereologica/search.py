@@ -47,4 +47,4 @@ class Search:
                 raise Exception('Erro ao salvar o arquivo')
             
             with zipfile.ZipFile(nome, 'r') as zip_ref:
-                zip_ref.extractall()
+                zip_ref.extractall(nome[:-4])
