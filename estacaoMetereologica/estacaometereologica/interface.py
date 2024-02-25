@@ -77,8 +77,8 @@ class Interface(tk.Tk):
             
             self.estacoes = self.pesquisa.get_estacoes()
             
-            self.frameEstacao.inpEstacoes['values'] = self.estacoes
-
+            self.frameEstacao.inpEstacoes['values'] = list(self.estacoes.keys())
+    
     def seleciona_estacao(self, event):
         pass
     

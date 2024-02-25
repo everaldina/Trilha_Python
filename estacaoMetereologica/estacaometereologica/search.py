@@ -4,6 +4,8 @@ import zipfile
 import shutil
 import re
 import os
+import matplotlib.pyplot as plt
+import pandas as pd
 
 class Search:
     def __init__(self):
@@ -36,6 +38,22 @@ class Search:
         else:
             raise Exception('Requisição não foi bem sucedida')
     
+    def get_estacoes(self):
+        if self.resposta:
+            estacoes={}
+
+            if not os.path.exists(self.pasta_ano):
+                raise Exception('Pasta não existe')
+
+            for root, dirs, files in os.walk(f'{self.pasta_ano}'):
+                for file in files:
+                    if file.endswith('.CSV') or file.endswith('.csv'):
+                        estacoes[file.split('_')[4]] = os.path.join(root, file)
+            
+            return estacoes
+        else:
+            raise Exception('Requisição não foi bem sucedida')
+        
     def carregar_estacoes(self, link_ano):
         if self.resposta:
             nome = link_ano.split('/')[-1]
@@ -52,24 +70,7 @@ class Search:
                 zip_ref.extractall(self.pasta_ano)
             
             os.remove(nome)
-
-    def get_estacoes(self):
-        if self.resposta:
-            estacoes=[]
-
-            if not os.path.exists(self.pasta_ano):
-                raise Exception('Pasta não existe')
-
-            for root, dirs, files in os.walk(f'{self.pasta_ano}'):
-                for file in files:
-                    if file.endswith('.CSV') or file.endswith('.csv'):
-                        estacao = file.split('_')[4]
-                        estacaoes.append(estacao)
             
-            return estacoes
-        else:
-            raise Exception('Erro!')
-
     def apagar_dados(self):
         if os.path.exists(self.pasta_ano):
             shutil.rmtree(self.pasta_ano)
