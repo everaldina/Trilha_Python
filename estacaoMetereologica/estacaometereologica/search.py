@@ -52,3 +52,20 @@ class Search:
                 zip_ref.extractall(self.pasta_ano)
             
             os.remove(nome)
+
+    def get_estacoes(self):
+        if self.resposta:
+            estacoes=[]
+
+            if not os.path.exists(self.pasta_ano):
+                raise Exception('Pasta não existe')
+
+            for root, dirs, files in os.walk(f'{self.pasta_ano}'):
+                for file in files:
+                    if file.endswith('.CSV') or file.endswith('.csv'):
+                        estacao = file.split('_')[4]
+                        estacaoes.append(estacao)
+            
+            return estacoes
+        else:
+            raise Exception('Erro!')
