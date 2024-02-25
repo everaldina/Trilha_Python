@@ -21,7 +21,8 @@ class Search:
             self.resposta = bs4.BeautifulSoup(self.requisicao.text, 'html.parser')
         else:
             self.resposta = None
-    
+            
+        self.pasta_ano = None
     
     def get_anos(self):
         if self.resposta:
@@ -47,4 +48,7 @@ class Search:
                 raise Exception('Erro ao salvar o arquivo')
             
             with zipfile.ZipFile(nome, 'r') as zip_ref:
-                zip_ref.extractall(nome[:-4])
+                self.pasta_ano = nome[:-4]
+                zip_ref.extractall(self.pasta_ano)
+            
+            os.remove(nome)

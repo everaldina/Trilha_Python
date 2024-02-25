@@ -69,11 +69,17 @@ class Interface(tk.Tk):
             messagebox.showerror('Erro', e)
 
     def seleciona_ano(self, event):
-        self.pesquisa.carregar_estacoes(self.anos[self.anoSelecionado.get()])
-        
-        # self.estacoes = self.pesquisa.get_estacoes()
+        if self.anoSelecionado.get() == '':
+            self.frameEstacao.inpEstacoes['values'] = ['']
+            
+        else:
+            self.pesquisa.carregar_estacoes(self.anos[self.anoSelecionado.get()])
+            
+            self.estacoes = self.pesquisa.get_estacoes()
+            
+            self.frameEstacao.inpEstacoes['values'] = self.estacoes
 
-    def seleciona_estacao(self):
+    def seleciona_estacao(self, event):
         pass
     
     def carregar(self):
