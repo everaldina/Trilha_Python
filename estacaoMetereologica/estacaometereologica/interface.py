@@ -23,7 +23,7 @@ class Interface(tk.Tk):
         self.frameEstacao.grid_rowconfigure([1,2,3,4,5], weight=1)
         self.frameEstacao.grid_columnconfigure([1,2], weight=1)
 
-        self.frameEstacao.lblAnos = tk.Label(self, text='Escollha a estação: ')
+        self.frameEstacao.lblAnos = tk.Label(self, text='Escollha o ano: ')
         self.frameEstacao.lblAnos.grid(row=2, column=1)
 
         self.frameEstacao.inpAnos = ttk.Combobox(self, values=[],
@@ -34,7 +34,7 @@ class Interface(tk.Tk):
         self.frameEstacao.btnCarregar = tk.Button(self, text='Carregar', command=self.carregar)
         self.frameEstacao.btnCarregar.grid(row=3, column=2, padx=5, pady=5)
 
-        self.frameEstacao.lblEstacao = tk.Label(self, text='Escollha o ano: ')
+        self.frameEstacao.lblEstacao = tk.Label(self, text='Escollha a estação: ')
         self.frameEstacao.lblEstacao.grid(row=4, column=1, padx=5, pady=5)
 
         self.frameEstacao.inpEstacoes = ttk.Combobox(self, values=[], 
@@ -69,7 +69,9 @@ class Interface(tk.Tk):
             messagebox.showerror('Erro', e)
 
     def seleciona_ano(self, event):
-        pass
+        self.pesquisa.carregar_estacoes(self.anos[self.anoSelecionado.get()])
+        
+        # self.estacoes = self.pesquisa.get_estacoes()
 
     def seleciona_estacao(self):
         pass

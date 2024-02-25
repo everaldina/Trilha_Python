@@ -1,5 +1,9 @@
 import requests
 import bs4
+import zipfile
+import shutil
+import re
+import os
 
 class Search:
     def __init__(self):
@@ -18,6 +22,7 @@ class Search:
         else:
             self.resposta = None
     
+    
     def get_anos(self):
         if self.resposta:
             lista_anos = {}
@@ -29,3 +34,17 @@ class Search:
             return lista_anos
         else:
             raise Exception('Requisição não foi bem sucedida')
+    
+    def carregar_estacoes(self, link_ano):
+        if self.resposta:
+            nome = link_ano.split('/')[-1]
+            requisicao = requests.get(link_ano, headers=self.headers)
+            
+            if requisicao.status_code == 200:
+                with open(link_ano.split('/')[-1], 'wb') as f:
+                    f.write(requisicao.content)
+            else:
+                raise Exception('Erro ao salvar o arquivo')
+            
+            with zipfile.ZipFile(nome, 'r') as zip_ref:
+                zip_ref.extractall()
