@@ -4,7 +4,6 @@ import zipfile
 import shutil
 import re
 import os
-import matplotlib.pyplot as plt
 import pandas as pd
 
 class Search:
