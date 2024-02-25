@@ -69,3 +69,9 @@ class Search:
             return estacoes
         else:
             raise Exception('Erro!')
+
+    def apagar_dados(self):
+        if os.path.exists(self.pasta_ano):
+            shutil.rmtree(self.pasta_ano)
+        else:
+            raise Exception('Pasta não existe')
