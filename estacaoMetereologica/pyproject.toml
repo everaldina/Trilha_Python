@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "estacaometereologica"
-version = "0.1.11"
+version = "0.1.12"
 description = ""
 authors = ["Everaldina G. Barbosa <everaldinag@gmail.com>"]
 readme = "README.md"
@@ -11,6 +11,7 @@ matplotlib = "^3.8.3"
 pandas = "^2.2.0"
 requests = "^2.31.0"
 bs4 = "^0.0.2"
+pyarrow = "^15.0.0"
 
 [tool.poetry.scripts]
 estacao = "estacaometereologica.__main__:main"
