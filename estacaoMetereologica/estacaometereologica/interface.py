@@ -1,15 +1,19 @@
-import tkinter as tk
-from tkinter import messagebox, ttk
+from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg)
 from estacaometereologica.search import Search
+from estacaometereologica.plot import get_plot
+from tkinter import messagebox, ttk
+import tkinter as tk
+import threading
 import requests
-import webbrowser
 
 class Interface(tk.Tk):
-    def __init__(self, anos = None):
+    def __init__(self):
         super().__init__()
 
         self.title('Estação Metereológica')
         self.resizable(False, False)
+        
+        self.protocol("WM_DELETE_WINDOW", self.on_closing)
 
         self.anoSelecionado = tk.StringVar()
         self.estacaoSelecionada = tk.StringVar()
@@ -31,18 +35,14 @@ class Interface(tk.Tk):
         self.frameEstacao.inpAnos.bind('<<ComboboxSelected>>', self.seleciona_ano)
         self.frameEstacao.inpAnos.grid(row=2, column=2, padx=5, pady=5)
 
-        self.frameEstacao.btnCarregar = tk.Button(self, text='Carregar', command=self.carregar)
-        self.frameEstacao.btnCarregar.grid(row=3, column=2, padx=5, pady=5)
-
         self.frameEstacao.lblEstacao = tk.Label(self, text='Escollha a estação: ')
         self.frameEstacao.lblEstacao.grid(row=4, column=1, padx=5, pady=5)
 
         self.frameEstacao.inpEstacoes = ttk.Combobox(self, values=[], 
                                                      state='readonly', textvariable=self.estacaoSelecionada)
-        self.frameEstacao.inpEstacoes.bind('<<ComboboxSelected>>', self.seleciona_estacao)
         self.frameEstacao.inpEstacoes.grid(row=4, column=2, padx=5, pady=5)
 
-        self.frameEstacao.btnMostarGrafico = tk.Button(self, text='Mostar grafico', command=None)
+        self.frameEstacao.btnMostarGrafico = tk.Button(self, text='Mostar grafico', command=self.mostrar_grafico)
         self.frameEstacao.btnMostarGrafico.grid(row=5, column=2, padx=5, pady=5)
 
         self.carregar_anos()
@@ -69,6 +69,14 @@ class Interface(tk.Tk):
             messagebox.showerror('Erro', e)
 
     def seleciona_ano(self, event):
+        loading_popup = tk.Toplevel(self)
+        loading_popup.title("Downloading...")
+        label = tk.Label(loading_popup, text="Baixando dados...")
+        label.pack()
+        
+        threading.Thread(target=self.download, args=(loading_popup,)).start()
+    
+    def download(self, loading_popup):
         if self.anoSelecionado.get() == '':
             self.frameEstacao.inpEstacoes['values'] = ['']
             
@@ -76,19 +84,28 @@ class Interface(tk.Tk):
             self.pesquisa.carregar_estacoes(self.anos[self.anoSelecionado.get()])
             
             self.estacoes = self.pesquisa.get_estacoes()
+            self.estacoes = {k: v for k, v in sorted(self.estacoes.items(), key=lambda item: item[0])}
             
             self.frameEstacao.inpEstacoes['values'] = list(self.estacoes.keys())
-    
-    def seleciona_estacao(self, event):
-        pass
-    
-    def carregar(self):
-        if self.anoSelecionado.get() == '':
-            messagebox.showwarning('Aviso', 'Selecione um ano')
-        else:
-            popup = tk.Toplevel(self)
-            popup.title(f"Link ano {self.anoSelecionado.get()}")
             
-            label = tk.Label(popup, text=f"{self.anos[self.anoSelecionado.get()]}", fg="blue", cursor="hand2")
-            label.pack(padx=20, pady=20)
-            label.bind("<Button-1>", lambda e: webbrowser.open_new(self.anos[self.anoSelecionado.get()]))
+        loading_popup.destroy()
+    
+    def mostrar_grafico(self):
+        self.janelaGraficos = tk.Toplevel(self)
+        self.janelaGraficos.title('Gráficos')
+        
+        self.janelaGraficos.protocol("WM_DELETE_WINDOW", self.janelaGraficos.destroy)
+        
+        caminho = self.estacoes[self.estacaoSelecionada.get()]
+        
+        try:
+            self.fig = get_plot(caminho)
+            
+            self.canvas = FigureCanvasTkAgg(self.fig, master=self.janelaGraficos)
+            self.canvas.draw()
+            self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=1)
+        except Exception as e:
+            print(f'Erro: {e}')
+            
+    def on_closing(self):
+        self.destroy()

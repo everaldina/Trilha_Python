@@ -1,11 +1,11 @@
+import matplotlib.pyplot as plt
 import pandas as pd
 import os
-import matplotlib.pyplot as plt
 
-def trata_dados(caminho_estacao):
+def trata_dados(caminho_estacao: str) -> pd.DataFrame:
     if os.path.isfile(caminho_estacao):
         try:
-            estacao_df = pd.read_csv(caminho_estacao, header=8, sep=';', encoding='latin-1')
+            estacao_df = pd.read_csv(caminho_estacao, skiprows=9, sep=';', encoding='latin-1')
         except Exception as e:
             raise e
     else:
@@ -21,6 +21,8 @@ def trata_dados(caminho_estacao):
                             'UMIDADE RELATIVA DO AR, HORARIA (%)', 'VENTO, DIREÇÃO HORARIA (gr) (° (gr))', 
                             'VENTO, RAJADA MAXIMA (m/s)', 'VENTO, VELOCIDADE HORARIA (m/s)']
     
+    
+    
     # removendo colunas extras unnamed
     num_colunas = len(estacao_df.columns)
     num_colunas_padrao = len(lista_colunas_padrao)
@@ -29,9 +31,10 @@ def trata_dados(caminho_estacao):
             estacao_df.drop(columns=estacao_df.columns[num_colunas_padrao:], inplace=True)
         except:
             raise ValueError('Erro ao remover colunas extras')
-            
     
+    estacao_df.columns = lista_colunas_padrao
     
+    pd.set_option('future.no_silent_downcasting', True)
     
     # tratando coluna hora
     mask_utc = estacao_df['HORA (UTC)'].str.contains('UTC')  # mascara para pegar apenas os dados com UTC
@@ -44,7 +47,6 @@ def trata_dados(caminho_estacao):
     # colocando os dados tratados no dataframe
     estacao_df.loc[mask_utc, 'HORA (UTC)'] = dados_utc.values
 
-
     # tratando coluna data
     estacao_df['DATA (YYYY-MM-DD)'] = estacao_df['DATA (YYYY-MM-DD)'].str.replace('/', '-')
 
@@ -56,7 +58,6 @@ def trata_dados(caminho_estacao):
 
     # Define a coluna DATA HORA como índice
     estacao_df.set_index(estacao_df_index, inplace=True)
-
 
     # selecionando apenas as colunas usadas no plot
     estacao_df = estacao_df[['PRECIPITAÇÃO TOTAL, HORÁRIO (mm)', 'TEMPERATURA DO AR - BULBO SECO, HORARIA (°C)']]
@@ -72,35 +73,28 @@ def trata_dados(caminho_estacao):
     estacao_df.bfill(inplace=True)
     
     return estacao_df
-
-def plotar_graficos(caminho_estacao):
-    try:
-        # Chama a função para tratar os dados e obter o DataFrame
-        dados_estacao = trata_dados(caminho_estacao)
-
-        # Define o tamanho da figura para os gráficos
-        plt.figure(figsize=(12, 6))
-
-        # Plota o gráfico de precipitação
-        plt.subplot(1, 2, 1)  # Define a posição do primeiro gráfico
-        plt.plot(dados_estacao.index, dados_estacao['PRECIPITAÇÃO TOTAL, HORÁRIO (mm)'])
-        plt.title('Gráfico de Precipitação')
-        plt.xlabel('Data')
-        plt.ylabel('Precipitação (mm)')
-        plt.grid(True)
-
-        # Plota o gráfico de temperatura média
-        plt.subplot(1, 2, 2)  # Define a posição do segundo gráfico
-        plt.plot(dados_estacao.index, dados_estacao['TEMPERATURA DO AR - BULBO SECO, HORARIA (°C)'])
-        plt.title('Gráfico de Temperatura Média')
-        plt.xlabel('Data')
-        plt.ylabel('Temperatura (°C)')
-        plt.grid(True)
-
-        # Ajusta o layout para evitar sobreposição dos gráficos
-        plt.tight_layout()
-
-
-        plt.show()
-    except Exception as e:
-        print(f"Erro ao plotar os gráficos: {e}")
+ 
+def get_plot(caminho_arquivo: str) -> plt.Figure:
+    df = trata_dados(caminho_arquivo)
+    
+    fig, ax = plt.subplots(2, 1, figsize=(12, 6))
+    
+    media_precipitacao = df['PRECIPITAÇÃO TOTAL, HORÁRIO (mm)'].groupby(df.index.month).mean()
+    media_temperatura = df['TEMPERATURA DO AR - BULBO SECO, HORARIA (°C)'].groupby(df.index.month).mean()
+    meses = df.index.month.unique()
+    
+    ax[0].plot(meses, media_precipitacao, marker='o')
+    ax[0].set_title('Precipitação')
+    ax[0].set_xlabel('Mês')
+    ax[0].set_ylabel('Precipitação (mm)')
+    ax[0].grid(True)
+    
+    ax[1].plot(meses, media_temperatura, marker='o')
+    ax[1].set_title('Temperatura Média')
+    ax[1].set_xlabel('Mês')
+    ax[1].set_ylabel('Temperatura (°C)')
+    ax[1].grid(True)
+    
+    fig.tight_layout()
+    
+    return fig
