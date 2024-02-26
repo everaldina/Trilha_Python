@@ -1,5 +1,6 @@
 import requests
 import zipfile
+import shutil
 import bs4
 import os
 
@@ -62,6 +63,6 @@ class Search:
             
     def apagar_dados(self) -> None:
         if os.path.exists(self.pasta_ano):
-            os.remove(self.pasta_ano)
+            shutil.rmtree(self.pasta_ano)
         else:
             raise Exception('Pasta não existe')

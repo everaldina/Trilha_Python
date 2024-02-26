@@ -3,6 +3,7 @@ from estacaometereologica.search import Search
 from estacaometereologica.plot import get_plot
 from tkinter import messagebox, ttk
 import tkinter as tk
+import matplotlib
 import threading
 import requests
 
@@ -69,8 +70,13 @@ class Interface(tk.Tk):
             messagebox.showerror('Erro', e)
 
     def seleciona_ano(self, event):
+        self.frameEstacao.inpEstacoes['values'] = ['']
+        self.estacaoSelecionada.set('')
+
         loading_popup = tk.Toplevel(self)
         loading_popup.title("Downloading...")
+        loading_popup.protocol("WM_DELETE_WINDOW", self.on_closing_loading)
+
         label = tk.Label(loading_popup, text="Baixando dados...")
         label.pack()
         
@@ -79,8 +85,13 @@ class Interface(tk.Tk):
     def download(self, loading_popup):
         if self.anoSelecionado.get() == '':
             self.frameEstacao.inpEstacoes['values'] = ['']
-            
+            self.estacaoSelecionada.set('')
         else:
+            try:
+                self.pesquisa.apagar_dados()
+            except Exception as e:
+                print(f'Erro: {e}')
+
             self.pesquisa.carregar_estacoes(self.anos[self.anoSelecionado.get()])
             
             self.estacoes = self.pesquisa.get_estacoes()
@@ -91,10 +102,14 @@ class Interface(tk.Tk):
         loading_popup.destroy()
     
     def mostrar_grafico(self):
+        if self.estacaoSelecionada.get() == '':
+            messagebox.showerror('Erro', 'Selecione uma estação')
+            return
+
         self.janelaGraficos = tk.Toplevel(self)
         self.janelaGraficos.title('Gráficos')
         
-        self.janelaGraficos.protocol("WM_DELETE_WINDOW", self.janelaGraficos.destroy)
+        self.janelaGraficos.protocol("WM_DELETE_WINDOW", self.on_closing_janelaGraficos)
         
         caminho = self.estacoes[self.estacaoSelecionada.get()]
         
@@ -106,6 +121,19 @@ class Interface(tk.Tk):
             self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=1)
         except Exception as e:
             print(f'Erro: {e}')
-            
+    
     def on_closing(self):
+        try:
+            self.pesquisa.apagar_dados()
+        except Exception as e:
+            print(f'Erro: {e}')
+        
         self.destroy()
+
+    def on_closing_janelaGraficos(self):
+        matplotlib.pyplot.close('all')
+        self.canvas.get_tk_widget().destroy()
+        self.janelaGraficos.destroy()
+
+    def on_closing_loading(self):
+        pass
