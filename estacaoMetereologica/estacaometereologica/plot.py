@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+import matplotlib.pyplot as plt
 
 def trata_dados(caminho_estacao):
     if os.path.isfile(caminho_estacao):
@@ -71,3 +72,35 @@ def trata_dados(caminho_estacao):
     estacao_df.bfill(inplace=True)
     
     return estacao_df
+
+def plotar_graficos(caminho_estacao):
+    try:
+        # Chama a função para tratar os dados e obter o DataFrame
+        dados_estacao = trata_dados(caminho_estacao)
+
+        # Define o tamanho da figura para os gráficos
+        plt.figure(figsize=(12, 6))
+
+        # Plota o gráfico de precipitação
+        plt.subplot(1, 2, 1)  # Define a posição do primeiro gráfico
+        plt.plot(dados_estacao.index, dados_estacao['PRECIPITAÇÃO TOTAL, HORÁRIO (mm)'])
+        plt.title('Gráfico de Precipitação')
+        plt.xlabel('Data')
+        plt.ylabel('Precipitação (mm)')
+        plt.grid(True)
+
+        # Plota o gráfico de temperatura média
+        plt.subplot(1, 2, 2)  # Define a posição do segundo gráfico
+        plt.plot(dados_estacao.index, dados_estacao['TEMPERATURA DO AR - BULBO SECO, HORARIA (°C)'])
+        plt.title('Gráfico de Temperatura Média')
+        plt.xlabel('Data')
+        plt.ylabel('Temperatura (°C)')
+        plt.grid(True)
+
+        # Ajusta o layout para evitar sobreposição dos gráficos
+        plt.tight_layout()
+
+
+        plt.show()
+    except Exception as e:
+        print(f"Erro ao plotar os gráficos: {e}")
