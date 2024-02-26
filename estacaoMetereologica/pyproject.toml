@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "estacaometereologica"
-version = "0.2.1"
+version = "0.3.0"
 description = ""
 authors = ["Everaldina G. Barbosa <everaldinag@gmail.com>"]
 readme = "README.md"

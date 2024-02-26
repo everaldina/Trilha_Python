@@ -64,13 +64,15 @@ def trata_dados(caminho_estacao: str) -> pd.DataFrame:
 
     # Transformando colunas de string para float
     estacao_df.replace(',', '.', regex=True, inplace=True)
-    estacao_df = estacao_df.astype('float64')
+    
 
     # tiranddo todos os possiveis valores nulos
     estacao_df.replace(['-9999', -9999, -9999.0, '-9999.0'], value= None, inplace=True)
 
     # preenchendo valores nulos
     estacao_df.bfill(inplace=True)
+    
+    estacao_df = estacao_df.astype('float32', copy=True)
     
     return estacao_df
  
@@ -79,18 +81,25 @@ def get_plot(caminho_arquivo: str) -> plt.Figure:
     
     fig, ax = plt.subplots(2, 1, figsize=(12, 6))
     
-    media_precipitacao = df['PRECIPITAÇÃO TOTAL, HORÁRIO (mm)'].groupby(df.index.month).mean()
-    media_temperatura = df['TEMPERATURA DO AR - BULBO SECO, HORARIA (°C)'].groupby(df.index.month).mean()
+    acumulado_precipitacao = df.resample('ME')['PRECIPITAÇÃO TOTAL, HORÁRIO (mm)'].sum()
+    media_temperatura = df.groupby(df.index.month)['TEMPERATURA DO AR - BULBO SECO, HORARIA (°C)'].mean()
     meses = df.index.month.unique()
     
-    ax[0].plot(meses, media_precipitacao, marker='o')
-    ax[0].set_title('Precipitação')
+    dict_meses = {1: 'Jan', 2: 'Fev', 3: 'Mar', 
+                  4: 'Abr', 5: 'Mai', 6: 'Jun', 
+                  7: 'Jul', 8: 'Ago', 9: 'Set', 
+                  10: 'Out', 11: 'Nov', 12: 'Dez'}
+    
+    meses = [dict_meses[mes] for mes in meses]
+    
+    ax[0].plot(meses, acumulado_precipitacao, marker='o')
+    ax[0].set_title('Acumulado de precipitação no mês')
     ax[0].set_xlabel('Mês')
     ax[0].set_ylabel('Precipitação (mm)')
     ax[0].grid(True)
     
     ax[1].plot(meses, media_temperatura, marker='o')
-    ax[1].set_title('Temperatura Média')
+    ax[1].set_title('Temperatura Média por mês')
     ax[1].set_xlabel('Mês')
     ax[1].set_ylabel('Temperatura (°C)')
     ax[1].grid(True)
